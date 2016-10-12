@@ -1,5 +1,5 @@
-# README
-UCLA Fall 2016 CS188 project: CodeDocs
+# CodeDocs
+UCLA Fall 2016 CS188 project
 
 Team Member:
   - Jiuru Shao [@Brick-Mover](https://github.com/Brick-Mover)
