@@ -2,8 +2,8 @@
 UCLA Fall 2016 CS188 project: CodeDocs
 
 Team Member:
-  - Jiuru Shao [Sites Using React](https://github.com/Brick-Mover)
-  - Shuang Wang
+  - Jiuru Shao [@Brick-Mover](https://github.com/Brick-Mover)
+  - Shuang Wang [@Shuang-Wang](https://github.com/Shuang-Wang)
   - Haoxiang Zhang
   - Maolei Tang
 
