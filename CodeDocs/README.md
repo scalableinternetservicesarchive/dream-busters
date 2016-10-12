@@ -1,24 +1,27 @@
 # README
+UCLA Fall 2016 CS188 project: CodeDocs
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Team Member:
+  - Jiuru Shao [Sites Using React](https://github.com/Brick-Mover)
+  - Shuang Wang
+  - Haoxiang Zhang
+  - Maolei Tang
 
-Things you may want to cover:
+Ruby version: 2.3.1
 
-* Ruby version
+Rails version: 5.0.0.1
 
-* System dependencies
+System dependencies
 
-* Configuration
+Configuration
 
-* Database creation
+Database creation
 
-* Database initialization
+Database initialization
 
-* How to run the test suite
+How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
-
-* ...
+Deployment instructions
+ 
