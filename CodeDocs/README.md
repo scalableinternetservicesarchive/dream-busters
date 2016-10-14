@@ -1,6 +1,8 @@
 # CodeDocs
 UCLA Fall 2016 CS188 project
 
+Our web app CodeDocs is designed for multiple people to write code on the same file simultaneously. It also supports compilation and prints console output to the webpage. It'll be useful for collabration coding and coding interviews.
+
 Team Member:
   - Jiuru Shao [@Brick-Mover](https://github.com/Brick-Mover)
   - Shuang Wang [@Shuang-Wang](https://github.com/Shuang-Wang)
