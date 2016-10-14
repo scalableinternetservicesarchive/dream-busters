@@ -17,9 +17,9 @@ System dependencies: Linux Ubuntu 16.10
 
 Configuration
 
-Development
-	- Install VirtualBox from: www.virtualbox.org/wiki/Downloads
-	- Setup Ruby on Rails on Linux: https://gorails.com/setup/osx/10.11-el-capitan
+Development:
+  - Install VirtualBox from: www.virtualbox.org/wiki/Downloads
+  - Setup Ruby on Rails on Linux: https://gorails.com/setup/osx/10.11-el-capitan
 
 Database creation
 
