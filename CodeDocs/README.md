@@ -18,8 +18,8 @@ System dependencies
 Configuration
 
 Development
-    # Install VirtualBox from: www.virtualbox.org/wiki/Downloads
-    # Install Vagrant from: www.vagrantup.com/downloads.html
+# Install VirtualBox from: www.virtualbox.org/wiki/Downloads
+# Install Vagrant from: www.vagrantup.com/downloads.html
 
 
 Database creation
