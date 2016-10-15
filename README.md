@@ -22,8 +22,8 @@ Development
   - Setup Ruby on Rails on Linux: https://gorails.com/setup/osx/10.11-el-capitan
 
 Database creation
-  - modify config/database.yml with your username and password, don't change the database name for future development
-  - run command rake db:create in command line 
+
+Database initialization
 
 How to run the test suite
 

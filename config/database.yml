@@ -14,20 +14,20 @@ default: &default
   encoding: utf8
   pool: 5
   username: root
-  password: tml62285042
+  password: password
   host: localhost
-  socket: /tmp/mysql.sock
+  socket: /var/run/mysqld/mysqld.sock
 
 development:
   <<: *default
-  database: CodeDocs_development
+  database: #CodeDocs_development
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: CodeDocs_test
+  database: #CodeDocs_test
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -51,3 +51,5 @@ test:
 production:
   <<: *default
   database: CodeDocs_production
+  username: CodeDocs
+  password: <%= ENV['CODEDOCS_DATABASE_PASSWORD'] %>
