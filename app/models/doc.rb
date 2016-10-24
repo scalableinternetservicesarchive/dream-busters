@@ -1,2 +1,0 @@
-class Doc < ApplicationRecord
-end
