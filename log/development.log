@@ -2248,3 +2248,815 @@ Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-23 23:41:36 -0700
 Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
 EditorChannel is transmitting the subscription confirmation
 EditorChannel is streaming from editor_channel
+Started GET "/" for 127.0.0.1 at 2016-10-24 00:35:18 -0700
+Started GET "/" for 127.0.0.1 at 2016-10-24 00:35:18 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by EditorsController#show as HTML
+Processing by EditorsController#show as HTML
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 1.6ms)
+
+
+Completed 500 Internal Server Error in 86ms (ActiveRecord: 24.6ms)
+
+
+  
+  
+NameError (undefined local variable or method `dependent' for #<Class:0x00000003972d10>
+Did you mean?  descendants):
+NameError (undefined local variable or method `dependent' for #<Class:0x00000003908b18>
+Did you mean?  descendants):
+  
+  
+app/models/editor.rb:2:in `<class:Editor>'
+app/models/editor.rb:2:in `<class:Editor>'
+app/models/editor.rb:1:in `<top (required)>'
+app/models/editor.rb:1:in `<top (required)>'
+app/controllers/editors_controller.rb:4:in `show'
+app/controllers/editors_controller.rb:4:in `show'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (34.3ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (97.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (83.0ms)
+Started GET "/cable" for 127.0.0.1 at 2016-10-24 00:35:19 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 00:35:19 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started GET "/" for 127.0.0.1 at 2016-10-24 00:35:38 -0700
+Processing by EditorsController#show as HTML
+  Rendering editors/show.html.erb within layouts/application
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages`[0m
+  Rendered collection of messages/_message.html.erb [18 times] (1.5ms)
+  Rendered editors/show.html.erb within layouts/application (25.5ms)
+Completed 200 OK in 450ms (Views: 440.5ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2016-10-24 00:35:39 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 00:35:39 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started GET "/cable" for 127.0.0.1 at 2016-10-24 00:35:48 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 00:35:48 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started GET "/" for 127.0.0.1 at 2016-10-24 00:41:16 -0700
+Processing by EditorsController#show as HTML
+  Rendering editors/show.html.erb within layouts/application
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages`[0m
+  Rendered collection of messages/_message.html.erb [18 times] (1.7ms)
+  Rendered editors/show.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 84ms (Views: 81.1ms | ActiveRecord: 0.6ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 00:41:16 -0700
+EditorChannel stopped streaming from editor_channel
+Started GET "/cable" for 127.0.0.1 at 2016-10-24 00:41:16 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 00:41:16 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started GET "/" for 127.0.0.1 at 2016-10-24 00:41:19 -0700
+Processing by EditorsController#show as HTML
+  Rendering editors/show.html.erb within layouts/application
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages`[0m
+  Rendered collection of messages/_message.html.erb [18 times] (1.4ms)
+  Rendered editors/show.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 72ms (Views: 69.5ms | ActiveRecord: 0.5ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 00:41:20 -0700
+EditorChannel stopped streaming from editor_channel
+Started GET "/cable" for 127.0.0.1 at 2016-10-24 00:41:20 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 00:41:20 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started GET "/" for 127.0.0.1 at 2016-10-24 00:44:39 -0700
+Processing by EditorsController#show as HTML
+  Rendering editors/show.html.erb within layouts/application
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages`[0m
+  Rendered collection of messages/_message.html.erb [18 times] (1.1ms)
+  Rendered editors/show.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 530ms (Views: 527.0ms | ActiveRecord: 0.6ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 00:44:39 -0700
+EditorChannel stopped streaming from editor_channel
+Started GET "/cable" for 127.0.0.1 at 2016-10-24 00:44:39 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 00:44:39 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started GET "/" for 127.0.0.1 at 2016-10-24 00:45:43 -0700
+Processing by EditorsController#show as HTML
+  Rendering editors/show.html.erb within layouts/application
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages`[0m
+  Rendered collection of messages/_message.html.erb [18 times] (1.4ms)
+  Rendered editors/show.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 341ms (Views: 338.9ms | ActiveRecord: 0.6ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 00:45:43 -0700
+EditorChannel stopped streaming from editor_channel
+Started GET "/cable" for 127.0.0.1 at 2016-10-24 00:45:43 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 00:45:43 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+EditorChannel#speak({"message"=>"s"})
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+EditorChannel#speak({"message"=>"s"})
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Started GET "/" for 127.0.0.1 at 2016-10-24 00:47:11 -0700
+Processing by EditorsController#show as HTML
+  Rendering editors/show.html.erb within layouts/application
+  [1m[36mMessage Load (1.0ms)[0m  [1m[34mSELECT `messages`.* FROM `messages`[0m
+  Rendered collection of messages/_message.html.erb [18 times] (1.6ms)
+  Rendered editors/show.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 43ms (Views: 40.4ms | ActiveRecord: 1.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 00:47:11 -0700
+EditorChannel stopped streaming from editor_channel
+Started GET "/cable" for 127.0.0.1 at 2016-10-24 00:47:11 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 00:47:11 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+EditorChannel#speak({"message"=>"s"})
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+EditorChannel#speak({"message"=>"s"})
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Started GET "/cable" for 127.0.0.1 at 2016-10-24 00:48:44 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 00:48:45 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 00:48:45 -0700
+Started GET "/cable" for 127.0.0.1 at 2016-10-24 00:48:45 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 00:48:45 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started GET "/" for 127.0.0.1 at 2016-10-24 00:48:45 -0700
+Processing by EditorsController#show as HTML
+  Rendering editors/show.html.erb within layouts/application
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT `messages`.* FROM `messages`[0m
+  Rendered collection of messages/_message.html.erb [18 times] (1.4ms)
+  Rendered editors/show.html.erb within layouts/application (36.4ms)
+Completed 200 OK in 620ms (Views: 595.5ms | ActiveRecord: 3.1ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 00:48:46 -0700
+EditorChannel stopped streaming from editor_channel
+Started GET "/cable" for 127.0.0.1 at 2016-10-24 00:48:46 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 00:48:46 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started GET "/cable" for 127.0.0.1 at 2016-10-24 00:48:46 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 00:48:46 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+EditorChannel#speak({"message"=>"s"})
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+EditorChannel#speak({"message"=>"s"})
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+EditorChannel#speak({"message"=>"hello world"})
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+Started GET "/cable" for 127.0.0.1 at 2016-10-24 01:03:20 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 01:03:21 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started GET "/" for 127.0.0.1 at 2016-10-24 01:03:21 -0700
+Processing by EditorsController#show as HTML
+  Rendering editors/show.html.erb within layouts/application
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages`[0m
+  Rendered collection of messages/_message.html.erb [18 times] (1.4ms)
+  Rendered editors/show.html.erb within layouts/application (35.8ms)
+Completed 200 OK in 424ms (Views: 403.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2016-10-24 01:03:22 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 01:03:22 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+EditorChannel#speak({"message"=>"l"})
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO `messages` (`content`, `created_at`, `updated_at`) VALUES ('l', '2016-10-24 08:03:25', '2016-10-24 08:03:25')[0m
+  [1m[35m (78.7ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] Enqueued MessageBroadcastJob (Job ID: 2547554f-ca18-4c77-8715-03f4415fc4d7) to Async(default) with arguments: #<GlobalID:0x007fad51c55188 @uri=#<URI::GID gid://code-docs/Message/19>>
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`id` = 19 LIMIT 1[0m
+[ActiveJob] [MessageBroadcastJob] [2547554f-ca18-4c77-8715-03f4415fc4d7] Performing MessageBroadcastJob from Async(default) with arguments: #<GlobalID:0x007fad51b3b2c0 @uri=#<URI::GID gid://code-docs/Message/19>>
+[ActiveJob] [MessageBroadcastJob] [2547554f-ca18-4c77-8715-03f4415fc4d7]   Rendered messages/_message.html.erb (0.7ms)
+[ActiveJob] [MessageBroadcastJob] [2547554f-ca18-4c77-8715-03f4415fc4d7] [ActionCable] Broadcasting to room_channel: "<div class=\"message\">\n<p>l</p>\n</div>"
+[ActiveJob] [MessageBroadcastJob] [2547554f-ca18-4c77-8715-03f4415fc4d7] Performed MessageBroadcastJob from Async(default) in 13.11ms
+EditorChannel#speak({"message"=>"s"})
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO `messages` (`content`, `created_at`, `updated_at`) VALUES ('s', '2016-10-24 08:04:15', '2016-10-24 08:04:15')[0m
+  [1m[35m (33.6ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] Enqueued MessageBroadcastJob (Job ID: e99e8e7f-225f-4ada-b346-25947a057ba4) to Async(default) with arguments: #<GlobalID:0x007fad5147e540 @uri=#<URI::GID gid://code-docs/Message/20>>
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`id` = 20 LIMIT 1[0m
+[ActiveJob] [MessageBroadcastJob] [e99e8e7f-225f-4ada-b346-25947a057ba4] Performing MessageBroadcastJob from Async(default) with arguments: #<GlobalID:0x007fad513cb738 @uri=#<URI::GID gid://code-docs/Message/20>>
+[ActiveJob] [MessageBroadcastJob] [e99e8e7f-225f-4ada-b346-25947a057ba4]   Rendered messages/_message.html.erb (0.6ms)
+[ActiveJob] [MessageBroadcastJob] [e99e8e7f-225f-4ada-b346-25947a057ba4] [ActionCable] Broadcasting to room_channel: "<div class=\"message\">\n<p>s</p>\n</div>"
+[ActiveJob] [MessageBroadcastJob] [e99e8e7f-225f-4ada-b346-25947a057ba4] Performed MessageBroadcastJob from Async(default) in 8.69ms
+Started GET "/" for 127.0.0.1 at 2016-10-24 01:06:38 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by EditorsController#show as HTML
+  Rendering editors/show.html.erb within layouts/application
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT `messages`.* FROM `messages`[0m
+  Rendered collection of messages/_message.html.erb [20 times] (1.4ms)
+  Rendered editors/show.html.erb within layouts/application (33.5ms)
+Completed 200 OK in 456ms (Views: 430.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2016-10-24 01:06:39 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 01:06:39 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started GET "/cable" for 127.0.0.1 at 2016-10-24 01:06:41 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 01:06:41 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+EditorChannel#speak({"message"=>"k"})
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO `messages` (`content`, `created_at`, `updated_at`) VALUES ('k', '2016-10-24 08:06:51', '2016-10-24 08:06:51')[0m
+  [1m[35m (111.9ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] Enqueued MessageBroadcastJob (Job ID: 99b2027a-254d-4e13-af9e-96c7ab010a53) to Async(default) with arguments: #<GlobalID:0x00000002d457b8 @uri=#<URI::GID gid://code-docs/Message/21>>
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`id` = 21 LIMIT 1[0m
+[ActiveJob] [MessageBroadcastJob] [99b2027a-254d-4e13-af9e-96c7ab010a53] Performing MessageBroadcastJob from Async(default) with arguments: #<GlobalID:0x00000003922900 @uri=#<URI::GID gid://code-docs/Message/21>>
+[ActiveJob] [MessageBroadcastJob] [99b2027a-254d-4e13-af9e-96c7ab010a53]   Rendered messages/_message.html.erb (0.6ms)
+[ActiveJob] [MessageBroadcastJob] [99b2027a-254d-4e13-af9e-96c7ab010a53] [ActionCable] Broadcasting to room_channel: "<div class=\"message\">\n<p>k</p>\n</div>"
+[ActiveJob] [MessageBroadcastJob] [99b2027a-254d-4e13-af9e-96c7ab010a53] Performed MessageBroadcastJob from Async(default) in 19.26ms
+EditorChannel#speak({"message"=>";"})
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `messages` (`content`, `created_at`, `updated_at`) VALUES (';', '2016-10-24 08:07:30', '2016-10-24 08:07:30')[0m
+  [1m[35m (292.9ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] Enqueued MessageBroadcastJob (Job ID: fffc4e99-4261-4387-b24c-e18c3c1e8d9f) to Async(default) with arguments: #<GlobalID:0x007f0eed1cd420 @uri=#<URI::GID gid://code-docs/Message/22>>
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`id` = 22 LIMIT 1[0m
+[ActiveJob] [MessageBroadcastJob] [fffc4e99-4261-4387-b24c-e18c3c1e8d9f] Performing MessageBroadcastJob from Async(default) with arguments: #<GlobalID:0x007f0eed275710 @uri=#<URI::GID gid://code-docs/Message/22>>
+[ActiveJob] [MessageBroadcastJob] [fffc4e99-4261-4387-b24c-e18c3c1e8d9f]   Rendered messages/_message.html.erb (1.3ms)
+[ActiveJob] [MessageBroadcastJob] [fffc4e99-4261-4387-b24c-e18c3c1e8d9f] [ActionCable] Broadcasting to room_channel: "<div class=\"message\">\n<p>;</p>\n</div>"
+[ActiveJob] [MessageBroadcastJob] [fffc4e99-4261-4387-b24c-e18c3c1e8d9f] Performed MessageBroadcastJob from Async(default) in 9.22ms
+Started GET "/" for 127.0.0.1 at 2016-10-24 01:08:50 -0700
+Processing by EditorsController#show as HTML
+  Rendering editors/show.html.erb within layouts/application
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT `messages`.* FROM `messages`[0m
+  Rendered collection of messages/_message.html.erb [22 times] (2.3ms)
+  Rendered editors/show.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 74ms (Views: 71.4ms | ActiveRecord: 0.7ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 01:08:51 -0700
+EditorChannel stopped streaming from editor_channel
+Started GET "/cable" for 127.0.0.1 at 2016-10-24 01:08:51 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 01:08:51 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started GET "/" for 127.0.0.1 at 2016-10-24 01:09:10 -0700
+Processing by EditorsController#show as HTML
+  Rendering editors/show.html.erb within layouts/application
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages`[0m
+  Rendered collection of messages/_message.html.erb [22 times] (1.2ms)
+  Rendered editors/show.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 44ms (Views: 41.9ms | ActiveRecord: 0.5ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 01:09:10 -0700
+EditorChannel stopped streaming from editor_channel
+Started GET "/cable" for 127.0.0.1 at 2016-10-24 01:09:10 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 01:09:10 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+EditorChannel#speak({"message"=>"l"})
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `messages` (`content`, `created_at`, `updated_at`) VALUES ('l', '2016-10-24 08:09:13', '2016-10-24 08:09:13')[0m
+  [1m[35m (78.3ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] Enqueued MessageBroadcastJob (Job ID: 5261f32a-6ee8-4f19-b161-e85bf966b6f6) to Async(default) with arguments: #<GlobalID:0x007f0ee8015150 @uri=#<URI::GID gid://code-docs/Message/23>>
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`id` = 23 LIMIT 1[0m
+[ActiveJob] [MessageBroadcastJob] [5261f32a-6ee8-4f19-b161-e85bf966b6f6] Performing MessageBroadcastJob from Async(default) with arguments: #<GlobalID:0x007f0eb811a710 @uri=#<URI::GID gid://code-docs/Message/23>>
+[ActiveJob] [MessageBroadcastJob] [5261f32a-6ee8-4f19-b161-e85bf966b6f6]   Rendered messages/_message.html.erb (0.5ms)
+[ActiveJob] [MessageBroadcastJob] [5261f32a-6ee8-4f19-b161-e85bf966b6f6] [ActionCable] Broadcasting to room_channel: "<div class=\"message\">\n<p>l</p>\n</div>"
+[ActiveJob] [MessageBroadcastJob] [5261f32a-6ee8-4f19-b161-e85bf966b6f6] Performed MessageBroadcastJob from Async(default) in 5.42ms
+Started GET "/" for 127.0.0.1 at 2016-10-24 01:11:46 -0700
+Processing by EditorController#show as HTML
+  Rendering editor/show.html.erb within layouts/application
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT `messages`.* FROM `messages`[0m
+  Rendered collection of messages/_message.html.erb [23 times] (1.1ms)
+  Rendered editor/show.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 53ms (Views: 44.1ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2016-10-24 01:11:46 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 01:11:46 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+EditorChannel#speak({"message"=>"l"})
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `messages` (`content`, `created_at`, `updated_at`) VALUES ('l', '2016-10-24 08:11:49', '2016-10-24 08:11:49')[0m
+  [1m[35m (79.8ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] Enqueued MessageBroadcastJob (Job ID: 3f5e4cae-bfba-4d98-ab3f-5ffb8b36bdc4) to Async(default) with arguments: #<GlobalID:0x007f0eee215940 @uri=#<URI::GID gid://code-docs/Message/24>>
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`id` = 24 LIMIT 1[0m
+[ActiveJob] [MessageBroadcastJob] [3f5e4cae-bfba-4d98-ab3f-5ffb8b36bdc4] Performing MessageBroadcastJob from Async(default) with arguments: #<GlobalID:0x007f0eb81371a8 @uri=#<URI::GID gid://code-docs/Message/24>>
+[ActiveJob] [MessageBroadcastJob] [3f5e4cae-bfba-4d98-ab3f-5ffb8b36bdc4]   Rendered messages/_message.html.erb (0.9ms)
+[ActiveJob] [MessageBroadcastJob] [3f5e4cae-bfba-4d98-ab3f-5ffb8b36bdc4] [ActionCable] Broadcasting to room_channel: "<div class=\"message\">\n<p>l</p>\n</div>"
+[ActiveJob] [MessageBroadcastJob] [3f5e4cae-bfba-4d98-ab3f-5ffb8b36bdc4] Performed MessageBroadcastJob from Async(default) in 10.38ms
+Started GET "/cable" for 127.0.0.1 at 2016-10-24 01:11:54 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 01:11:54 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started GET "/" for 127.0.0.1 at 2016-10-24 01:12:05 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by EditorController#show as HTML
+  Rendering editor/show.html.erb within layouts/application
+  [1m[36mMessage Load (0.9ms)[0m  [1m[34mSELECT `messages`.* FROM `messages`[0m
+  Rendered collection of messages/_message.html.erb [24 times] (2.5ms)
+  Rendered editor/show.html.erb within layouts/application (38.3ms)
+Completed 200 OK in 443ms (Views: 421.3ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2016-10-24 01:12:06 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 01:12:06 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started GET "/cable" for 127.0.0.1 at 2016-10-24 01:12:07 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 01:12:07 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+EditorChannel#speak({"message"=>"o"})
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO `messages` (`content`, `created_at`, `updated_at`) VALUES ('o', '2016-10-24 08:12:10', '2016-10-24 08:12:10')[0m
+  [1m[35m (110.5ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] Enqueued MessageBroadcastJob (Job ID: 3c512821-f866-4fd5-acdc-26d202894c0c) to Async(default) with arguments: #<GlobalID:0x00000000d7ef10 @uri=#<URI::GID gid://code-docs/Message/25>>
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`id` = 25 LIMIT 1[0m
+[ActiveJob] [MessageBroadcastJob] [3c512821-f866-4fd5-acdc-26d202894c0c] Performing MessageBroadcastJob from Async(default) with arguments: #<GlobalID:0x000000020ad320 @uri=#<URI::GID gid://code-docs/Message/25>>
+[ActiveJob] [MessageBroadcastJob] [3c512821-f866-4fd5-acdc-26d202894c0c]   Rendered messages/_message.html.erb (1.7ms)
+[ActiveJob] [MessageBroadcastJob] [3c512821-f866-4fd5-acdc-26d202894c0c] [ActionCable] Broadcasting to room_channel: "<div class=\"message\">\n<p>o</p>\n</div>"
+[ActiveJob] [MessageBroadcastJob] [3c512821-f866-4fd5-acdc-26d202894c0c] Performed MessageBroadcastJob from Async(default) in 18.68ms
+Started GET "/" for 127.0.0.1 at 2016-10-24 01:12:21 -0700
+Processing by EditorController#show as HTML
+  Rendering editor/show.html.erb within layouts/application
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT `messages`.* FROM `messages`[0m
+  Rendered collection of messages/_message.html.erb [25 times] (2.1ms)
+  Rendered editor/show.html.erb within layouts/application (29.3ms)
+Completed 200 OK in 104ms (Views: 92.7ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2016-10-24 01:12:21 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 01:12:21 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+EditorChannel#speak({"message"=>"l"})
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `messages` (`content`, `created_at`, `updated_at`) VALUES ('l', '2016-10-24 08:12:25', '2016-10-24 08:12:25')[0m
+  [1m[35m (77.4ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] Enqueued MessageBroadcastJob (Job ID: 175eddb8-965e-493c-8dbc-3f1c8bad171b) to Async(default) with arguments: #<GlobalID:0x007fd5e0121de0 @uri=#<URI::GID gid://code-docs/Message/26>>
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`id` = 26 LIMIT 1[0m
+[ActiveJob] [MessageBroadcastJob] [175eddb8-965e-493c-8dbc-3f1c8bad171b] Performing MessageBroadcastJob from Async(default) with arguments: #<GlobalID:0x007fd5c410c5d8 @uri=#<URI::GID gid://code-docs/Message/26>>
+[ActiveJob] [MessageBroadcastJob] [175eddb8-965e-493c-8dbc-3f1c8bad171b]   Rendered messages/_message.html.erb (0.7ms)
+[ActiveJob] [MessageBroadcastJob] [175eddb8-965e-493c-8dbc-3f1c8bad171b] [ActionCable] Broadcasting to room_channel: "<div class=\"message\">\n<p>l</p>\n</div>"
+[ActiveJob] [MessageBroadcastJob] [175eddb8-965e-493c-8dbc-3f1c8bad171b] Performed MessageBroadcastJob from Async(default) in 7.58ms
+Started GET "/cable" for 127.0.0.1 at 2016-10-24 01:12:31 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 01:12:31 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+EditorChannel#speak({"message"=>"hello world"})
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `messages` (`content`, `created_at`, `updated_at`) VALUES ('hello world', '2016-10-24 08:13:15', '2016-10-24 08:13:15')[0m
+  [1m[35m (114.4ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] Enqueued MessageBroadcastJob (Job ID: 57972eef-d689-4d86-8b98-d7c4a57f4b80) to Async(default) with arguments: #<GlobalID:0x007fd5e014f128 @uri=#<URI::GID gid://code-docs/Message/27>>
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`id` = 27 LIMIT 1[0m
+[ActiveJob] [MessageBroadcastJob] [57972eef-d689-4d86-8b98-d7c4a57f4b80] Performing MessageBroadcastJob from Async(default) with arguments: #<GlobalID:0x007fd5c4135550 @uri=#<URI::GID gid://code-docs/Message/27>>
+[ActiveJob] [MessageBroadcastJob] [57972eef-d689-4d86-8b98-d7c4a57f4b80]   Rendered messages/_message.html.erb (1.1ms)
+[ActiveJob] [MessageBroadcastJob] [57972eef-d689-4d86-8b98-d7c4a57f4b80] [ActionCable] Broadcasting to room_channel: "<div class=\"message\">\n<p>hello world</p>\n</div>"
+[ActiveJob] [MessageBroadcastJob] [57972eef-d689-4d86-8b98-d7c4a57f4b80] Performed MessageBroadcastJob from Async(default) in 7.34ms
+EditorChannel#speak({"message"=>"x"})
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO `messages` (`content`, `created_at`, `updated_at`) VALUES ('x', '2016-10-24 08:13:25', '2016-10-24 08:13:25')[0m
+  [1m[35m (72.2ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] Enqueued MessageBroadcastJob (Job ID: a3db17e8-03fd-45b2-a9b0-44fcd9c382c9) to Async(default) with arguments: #<GlobalID:0x007fd5e0173f78 @uri=#<URI::GID gid://code-docs/Message/28>>
+  [1m[36mMessage Load (0.8ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`id` = 28 LIMIT 1[0m
+[ActiveJob] [MessageBroadcastJob] [a3db17e8-03fd-45b2-a9b0-44fcd9c382c9] Performing MessageBroadcastJob from Async(default) with arguments: #<GlobalID:0x007fd5c415a8c8 @uri=#<URI::GID gid://code-docs/Message/28>>
+[ActiveJob] [MessageBroadcastJob] [a3db17e8-03fd-45b2-a9b0-44fcd9c382c9]   Rendered messages/_message.html.erb (0.5ms)
+[ActiveJob] [MessageBroadcastJob] [a3db17e8-03fd-45b2-a9b0-44fcd9c382c9] [ActionCable] Broadcasting to room_channel: "<div class=\"message\">\n<p>x</p>\n</div>"
+[ActiveJob] [MessageBroadcastJob] [a3db17e8-03fd-45b2-a9b0-44fcd9c382c9] Performed MessageBroadcastJob from Async(default) in 5.48ms
+Started GET "/cable" for 127.0.0.1 at 2016-10-24 01:15:46 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 01:15:46 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started GET "/cable" for 127.0.0.1 at 2016-10-24 01:15:46 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 01:15:46 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+EditorChannel#speak({"message"=>"s"})
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO `messages` (`content`, `created_at`, `updated_at`) VALUES ('s', '2016-10-24 08:16:04', '2016-10-24 08:16:04')[0m
+  [1m[35m (114.3ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] Enqueued MessageBroadcastJob (Job ID: 4aa93f93-951e-46b0-b5c6-98bc81b43c93) to Async(default) with arguments: #<GlobalID:0x000000037187b8 @uri=#<URI::GID gid://code-docs/Message/29>>
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`id` = 29 LIMIT 1[0m
+[ActiveJob] [MessageBroadcastJob] [4aa93f93-951e-46b0-b5c6-98bc81b43c93] Performing MessageBroadcastJob from Async(default) with arguments: #<GlobalID:0x0000000382aed0 @uri=#<URI::GID gid://code-docs/Message/29>>
+[ActiveJob] [MessageBroadcastJob] [4aa93f93-951e-46b0-b5c6-98bc81b43c93]   Rendered messages/_message.html.erb (1.7ms)
+[ActiveJob] [MessageBroadcastJob] [4aa93f93-951e-46b0-b5c6-98bc81b43c93] [ActionCable] Broadcasting to room_channel: "<div class=\"message\">\n<p>s</p>\n</div>"
+[ActiveJob] [MessageBroadcastJob] [4aa93f93-951e-46b0-b5c6-98bc81b43c93] Performed MessageBroadcastJob from Async(default) in 22.31ms
+Started GET "/cable" for 127.0.0.1 at 2016-10-24 01:16:48 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 01:16:48 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started GET "/cable" for 127.0.0.1 at 2016-10-24 01:16:48 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 01:16:48 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started GET "/" for 127.0.0.1 at 2016-10-24 01:16:51 -0700
+Processing by EditorController#show as HTML
+  Rendering editor/show.html.erb within layouts/application
+  [1m[36mMessage Load (0.8ms)[0m  [1m[34mSELECT `messages`.* FROM `messages`[0m
+  Rendered collection of messages/_message.html.erb [29 times] (1.7ms)
+  Rendered editor/show.html.erb within layouts/application (37.8ms)
+Completed 200 OK in 397ms (Views: 375.5ms | ActiveRecord: 3.2ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 01:16:51 -0700
+EditorChannel stopped streaming from editor_channel
+Started GET "/cable" for 127.0.0.1 at 2016-10-24 01:16:52 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 01:16:52 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+EditorChannel#speak({"message"=>"z"})
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `messages` (`content`, `created_at`, `updated_at`) VALUES ('z', '2016-10-24 08:16:57', '2016-10-24 08:16:57')[0m
+EditorChannel#speak({"message"=>""})
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `messages` (`content`, `created_at`, `updated_at`) VALUES ('', '2016-10-24 08:16:57', '2016-10-24 08:16:57')[0m
+  [1m[35m (93.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (45.4ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] Enqueued MessageBroadcastJob (Job ID: 4c5341f6-7b19-41a2-9553-772873acb45c) to Async(default) with arguments: #<GlobalID:0x00000001e62750 @uri=#<URI::GID gid://code-docs/Message/30>>
+[ActiveJob] Enqueued MessageBroadcastJob (Job ID: 725d3b59-1c05-47b9-bd37-9c83b784e28c) to Async(default) with arguments: #<GlobalID:0x007fc1a4037b50 @uri=#<URI::GID gid://code-docs/Message/31>>
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`id` = 30 LIMIT 1[0m
+[ActiveJob] [MessageBroadcastJob] [4c5341f6-7b19-41a2-9553-772873acb45c] Performing MessageBroadcastJob from Async(default) with arguments: #<GlobalID:0x007fc1ea53b0c0 @uri=#<URI::GID gid://code-docs/Message/30>>
+[ActiveJob] [MessageBroadcastJob] [4c5341f6-7b19-41a2-9553-772873acb45c]   Rendered messages/_message.html.erb (0.7ms)
+  [1m[36mMessage Load (12.1ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`id` = 31 LIMIT 1[0m
+[ActiveJob] [MessageBroadcastJob] [4c5341f6-7b19-41a2-9553-772873acb45c] [ActionCable] Broadcasting to room_channel: "<div class=\"message\">\n<p>z</p>\n</div>"
+[ActiveJob] [MessageBroadcastJob] [725d3b59-1c05-47b9-bd37-9c83b784e28c] Performing MessageBroadcastJob from Async(default) with arguments: #<GlobalID:0x007fc1ea3a7128 @uri=#<URI::GID gid://code-docs/Message/31>>
+[ActiveJob] [MessageBroadcastJob] [4c5341f6-7b19-41a2-9553-772873acb45c] Performed MessageBroadcastJob from Async(default) in 15.34ms
+[ActiveJob] [MessageBroadcastJob] [725d3b59-1c05-47b9-bd37-9c83b784e28c]   Rendered messages/_message.html.erb (0.1ms)
+[ActiveJob] [MessageBroadcastJob] [725d3b59-1c05-47b9-bd37-9c83b784e28c] [ActionCable] Broadcasting to room_channel: "<div class=\"message\">\n<p></p>\n</div>"
+[ActiveJob] [MessageBroadcastJob] [725d3b59-1c05-47b9-bd37-9c83b784e28c] Performed MessageBroadcastJob from Async(default) in 9.1ms
+EditorChannel#speak({"message"=>"bbbbb"})
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `messages` (`content`, `created_at`, `updated_at`) VALUES ('bbbbb', '2016-10-24 08:17:21', '2016-10-24 08:17:21')[0m
+  [1m[35m (78.2ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] Enqueued MessageBroadcastJob (Job ID: 69b2c61c-a6f2-44a6-b8a0-92b3f8c02cb7) to Async(default) with arguments: #<GlobalID:0x007fc1ea1db678 @uri=#<URI::GID gid://code-docs/Message/32>>
+  [1m[36mMessage Load (0.8ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`id` = 32 LIMIT 1[0m
+[ActiveJob] [MessageBroadcastJob] [69b2c61c-a6f2-44a6-b8a0-92b3f8c02cb7] Performing MessageBroadcastJob from Async(default) with arguments: #<GlobalID:0x007fc1ea188798 @uri=#<URI::GID gid://code-docs/Message/32>>
+[ActiveJob] [MessageBroadcastJob] [69b2c61c-a6f2-44a6-b8a0-92b3f8c02cb7]   Rendered messages/_message.html.erb (0.5ms)
+[ActiveJob] [MessageBroadcastJob] [69b2c61c-a6f2-44a6-b8a0-92b3f8c02cb7] [ActionCable] Broadcasting to room_channel: "<div class=\"message\">\n<p>bbbbb</p>\n</div>"
+[ActiveJob] [MessageBroadcastJob] [69b2c61c-a6f2-44a6-b8a0-92b3f8c02cb7] Performed MessageBroadcastJob from Async(default) in 4.87ms
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 18:43:15 -0700
+EditorChannel stopped streaming from editor_channel
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 18:43:15 -0700
+EditorChannel stopped streaming from editor_channel
+Started GET "/cable" for 127.0.0.1 at 2016-10-24 18:43:15 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 18:43:15 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started GET "/cable" for 127.0.0.1 at 2016-10-24 18:43:16 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 18:43:16 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started GET "/cable" for 127.0.0.1 at 2016-10-24 18:44:55 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 18:44:55 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/cable" for 127.0.0.1 at 2016-10-24 18:44:55 -0700
+EditorChannel is transmitting the subscription confirmation
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 18:44:55 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is streaming from editor_channel
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+EditorChannel#speak({"message"=>"s"})
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `messages` (`content`, `created_at`, `updated_at`) VALUES ('s', '2016-10-25 01:44:57', '2016-10-25 01:44:57')[0m
+  [1m[35m (35.9ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] Enqueued MessageBroadcastJob (Job ID: 3a4639ff-37ef-4293-871d-ec461162fa62) to Async(default) with arguments: #<GlobalID:0x00000003e639f0 @uri=#<URI::GID gid://code-docs/Message/33>>
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`id` = 33 LIMIT 1[0m
+[ActiveJob] [MessageBroadcastJob] [3a4639ff-37ef-4293-871d-ec461162fa62] Performing MessageBroadcastJob from Async(default) with arguments: #<GlobalID:0x00000003f1b758 @uri=#<URI::GID gid://code-docs/Message/33>>
+[ActiveJob] [MessageBroadcastJob] [3a4639ff-37ef-4293-871d-ec461162fa62]   Rendered messages/_message.html.erb (1.7ms)
+[ActiveJob] [MessageBroadcastJob] [3a4639ff-37ef-4293-871d-ec461162fa62] [ActionCable] Broadcasting to room_channel: "<div class=\"message\">\n<p>s</p>\n</div>"
+[ActiveJob] [MessageBroadcastJob] [3a4639ff-37ef-4293-871d-ec461162fa62] Performed MessageBroadcastJob from Async(default) in 21.64ms
+EditorChannel#speak({"message"=>"s"})
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO `messages` (`content`, `created_at`, `updated_at`) VALUES ('s', '2016-10-25 01:44:59', '2016-10-25 01:44:59')[0m
+  [1m[35m (56.6ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] Enqueued MessageBroadcastJob (Job ID: eb0909dc-47b7-4eb1-baa2-facab6e4873c) to Async(default) with arguments: #<GlobalID:0x00000004139c88 @uri=#<URI::GID gid://code-docs/Message/34>>
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`id` = 34 LIMIT 1[0m
+[ActiveJob] [MessageBroadcastJob] [eb0909dc-47b7-4eb1-baa2-facab6e4873c] Performing MessageBroadcastJob from Async(default) with arguments: #<GlobalID:0x000000041a0910 @uri=#<URI::GID gid://code-docs/Message/34>>
+[ActiveJob] [MessageBroadcastJob] [eb0909dc-47b7-4eb1-baa2-facab6e4873c]   Rendered messages/_message.html.erb (0.6ms)
+[ActiveJob] [MessageBroadcastJob] [eb0909dc-47b7-4eb1-baa2-facab6e4873c] [ActionCable] Broadcasting to room_channel: "<div class=\"message\">\n<p>s</p>\n</div>"
+[ActiveJob] [MessageBroadcastJob] [eb0909dc-47b7-4eb1-baa2-facab6e4873c] Performed MessageBroadcastJob from Async(default) in 6.56ms
+Started GET "/cable" for 127.0.0.1 at 2016-10-24 18:45:20 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 18:45:20 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/cable" for 127.0.0.1 at 2016-10-24 18:45:20 -0700
+EditorChannel is transmitting the subscription confirmation
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 18:45:20 -0700
+EditorChannel is streaming from editor_channel
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started GET "/" for 127.0.0.1 at 2016-10-24 18:45:21 -0700
+Processing by EditorController#show as HTML
+  Rendering editor/show.html.erb within layouts/application
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages`[0m
+  Rendered collection of messages/_message.html.erb [34 times] (1.7ms)
+  Rendered editor/show.html.erb within layouts/application (34.4ms)
+Completed 200 OK in 629ms (Views: 609.2ms | ActiveRecord: 2.4ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 18:45:22 -0700
+EditorChannel stopped streaming from editor_channel
+Started GET "/cable" for 127.0.0.1 at 2016-10-24 18:45:22 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 18:45:22 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+EditorChannel#speak({"message"=>"a"})
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO `messages` (`content`, `created_at`, `updated_at`) VALUES ('a', '2016-10-25 01:45:26', '2016-10-25 01:45:26')[0m
+  [1m[35m (114.4ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] Enqueued MessageBroadcastJob (Job ID: 91e88183-84c5-496d-8a76-cd980f83236f) to Async(default) with arguments: #<GlobalID:0x000000020652a0 @uri=#<URI::GID gid://code-docs/Message/35>>
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`id` = 35 LIMIT 1[0m
+[ActiveJob] [MessageBroadcastJob] [91e88183-84c5-496d-8a76-cd980f83236f] Performing MessageBroadcastJob from Async(default) with arguments: #<GlobalID:0x000000024ebc98 @uri=#<URI::GID gid://code-docs/Message/35>>
+[ActiveJob] [MessageBroadcastJob] [91e88183-84c5-496d-8a76-cd980f83236f]   Rendered messages/_message.html.erb (0.7ms)
+[ActiveJob] [MessageBroadcastJob] [91e88183-84c5-496d-8a76-cd980f83236f] [ActionCable] Broadcasting to room_channel: "<div class=\"message\">\n<p>a</p>\n</div>"
+[ActiveJob] [MessageBroadcastJob] [91e88183-84c5-496d-8a76-cd980f83236f] Performed MessageBroadcastJob from Async(default) in 17.25ms
+Started GET "/" for 127.0.0.1 at 2016-10-24 18:46:09 -0700
+Processing by EditorController#show as HTML
+  Rendering editor/show.html.erb within layouts/application
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages`[0m
+  Rendered collection of messages/_message.html.erb [35 times] (2.4ms)
+  Rendered editor/show.html.erb within layouts/application (31.1ms)
+Completed 200 OK in 94ms (Views: 82.5ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2016-10-24 18:46:09 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 18:46:09 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+EditorChannel#speak({"message"=>"s"})
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `messages` (`content`, `created_at`, `updated_at`) VALUES ('s', '2016-10-25 01:46:13', '2016-10-25 01:46:13')[0m
+  [1m[35m (61.8ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] Enqueued MessageBroadcastJob (Job ID: cc31dca1-6eef-40d5-a79b-82c4efff8dfb) to Async(default) with arguments: #<GlobalID:0x007fdad8106d90 @uri=#<URI::GID gid://code-docs/Message/36>>
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`id` = 36 LIMIT 1[0m
+[ActiveJob] [MessageBroadcastJob] [cc31dca1-6eef-40d5-a79b-82c4efff8dfb] Performing MessageBroadcastJob from Async(default) with arguments: #<GlobalID:0x007fdacc0e4b98 @uri=#<URI::GID gid://code-docs/Message/36>>
+[ActiveJob] [MessageBroadcastJob] [cc31dca1-6eef-40d5-a79b-82c4efff8dfb]   Rendered messages/_message.html.erb (0.6ms)
+[ActiveJob] [MessageBroadcastJob] [cc31dca1-6eef-40d5-a79b-82c4efff8dfb] [ActionCable] Broadcasting to room_channel: "<div class=\"message\">\n<p>s</p>\n</div>"
+[ActiveJob] [MessageBroadcastJob] [cc31dca1-6eef-40d5-a79b-82c4efff8dfb] Performed MessageBroadcastJob from Async(default) in 6.29ms
+Started GET "/cable" for 127.0.0.1 at 2016-10-24 18:46:25 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 18:46:26 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started GET "/cable" for 127.0.0.1 at 2016-10-24 18:46:27 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 18:46:27 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started GET "/" for 127.0.0.1 at 2016-10-24 18:46:30 -0700
+Processing by EditorController#show as HTML
+  Rendering editor/show.html.erb within layouts/application
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages`[0m
+  Rendered collection of messages/_message.html.erb [36 times] (1.6ms)
+  Rendered editor/show.html.erb within layouts/application (42.3ms)
+Completed 200 OK in 388ms (Views: 367.4ms | ActiveRecord: 2.2ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 18:46:31 -0700
+EditorChannel stopped streaming from editor_channel
+Started GET "/cable" for 127.0.0.1 at 2016-10-24 18:46:31 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 18:46:31 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+EditorChannel#speak({"message"=>"q"})
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO `messages` (`content`, `created_at`, `updated_at`) VALUES ('q', '2016-10-25 01:46:34', '2016-10-25 01:46:34')[0m
+  [1m[35m (55.8ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] Enqueued MessageBroadcastJob (Job ID: fe92f791-7f37-4ed2-aa34-cc6f5db1ed02) to Async(default) with arguments: #<GlobalID:0x007f222012a220 @uri=#<URI::GID gid://code-docs/Message/37>>
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`id` = 37 LIMIT 1[0m
+[ActiveJob] [MessageBroadcastJob] [fe92f791-7f37-4ed2-aa34-cc6f5db1ed02] Performing MessageBroadcastJob from Async(default) with arguments: #<GlobalID:0x00000000c96698 @uri=#<URI::GID gid://code-docs/Message/37>>
+[ActiveJob] [MessageBroadcastJob] [fe92f791-7f37-4ed2-aa34-cc6f5db1ed02]   Rendered messages/_message.html.erb (0.7ms)
+[ActiveJob] [MessageBroadcastJob] [fe92f791-7f37-4ed2-aa34-cc6f5db1ed02] [ActionCable] Broadcasting to room_channel: "<div class=\"message\">\n<p>q</p>\n</div>"
+[ActiveJob] [MessageBroadcastJob] [fe92f791-7f37-4ed2-aa34-cc6f5db1ed02] Performed MessageBroadcastJob from Async(default) in 49.76ms
+Started GET "/" for 127.0.0.1 at 2016-10-24 18:56:57 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by EditorController#show as HTML
+  Rendering editor/show.html.erb within layouts/application
+  [1m[36mMessage Load (0.9ms)[0m  [1m[34mSELECT `messages`.* FROM `messages`[0m
+  Rendered collection of messages/_message.html.erb [37 times] (2.1ms)
+  Rendered editor/show.html.erb within layouts/application (39.5ms)
+Completed 200 OK in 404ms (Views: 383.1ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2016-10-24 18:56:59 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 18:56:59 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+EditorChannel#speak({"message"=>"a"})
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO `messages` (`content`, `created_at`, `updated_at`) VALUES ('a', '2016-10-25 01:57:03', '2016-10-25 01:57:03')[0m
+  [1m[35m (30.2ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] Enqueued MessageBroadcastJob (Job ID: c840f9d8-6d8f-4376-ad09-1c9ce4aa1bb7) to Async(default) with arguments: #<GlobalID:0x007f87ba13e0e0 @uri=#<URI::GID gid://code-docs/Message/38>>
+  [1m[36mMessage Load (0.8ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`id` = 38 LIMIT 1[0m
+[ActiveJob] [MessageBroadcastJob] [c840f9d8-6d8f-4376-ad09-1c9ce4aa1bb7] Performing MessageBroadcastJob from Async(default) with arguments: #<GlobalID:0x007f87ba025690 @uri=#<URI::GID gid://code-docs/Message/38>>
+[ActiveJob] [MessageBroadcastJob] [c840f9d8-6d8f-4376-ad09-1c9ce4aa1bb7]   Rendered messages/_message.html.erb (4.3ms)
+[ActiveJob] [MessageBroadcastJob] [c840f9d8-6d8f-4376-ad09-1c9ce4aa1bb7] [ActionCable] Broadcasting to room_channel: "<div class=\"message\">\n<p>a</p>\n</div>"
+[ActiveJob] [MessageBroadcastJob] [c840f9d8-6d8f-4376-ad09-1c9ce4aa1bb7] Performed MessageBroadcastJob from Async(default) in 15.66ms
+EditorChannel#speak({"message"=>"z"})
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `messages` (`content`, `created_at`, `updated_at`) VALUES ('z', '2016-10-25 01:57:06', '2016-10-25 01:57:06')[0m
+  [1m[35m (68.4ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] Enqueued MessageBroadcastJob (Job ID: 18354a60-fd7e-4f98-a755-e68e6f2211d6) to Async(default) with arguments: #<GlobalID:0x007f87b9cd1598 @uri=#<URI::GID gid://code-docs/Message/39>>
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`id` = 39 LIMIT 1[0m
+[ActiveJob] [MessageBroadcastJob] [18354a60-fd7e-4f98-a755-e68e6f2211d6] Performing MessageBroadcastJob from Async(default) with arguments: #<GlobalID:0x007f87b9c2e258 @uri=#<URI::GID gid://code-docs/Message/39>>
+[ActiveJob] [MessageBroadcastJob] [18354a60-fd7e-4f98-a755-e68e6f2211d6]   Rendered messages/_message.html.erb (0.5ms)
+[ActiveJob] [MessageBroadcastJob] [18354a60-fd7e-4f98-a755-e68e6f2211d6] [ActionCable] Broadcasting to room_channel: "<div class=\"message\">\n<p>z</p>\n</div>"
+[ActiveJob] [MessageBroadcastJob] [18354a60-fd7e-4f98-a755-e68e6f2211d6] Performed MessageBroadcastJob from Async(default) in 5.25ms
+Started GET "/cable" for 127.0.0.1 at 2016-10-24 18:57:08 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 18:57:08 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+EditorChannel#speak({"message"=>"hello world"})
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (63.6ms)[0m  [1m[32mINSERT INTO `messages` (`content`, `created_at`, `updated_at`) VALUES ('hello world', '2016-10-25 01:57:08', '2016-10-25 01:57:08')[0m
+  [1m[35m (33.6ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] Enqueued MessageBroadcastJob (Job ID: 324fee43-22f5-4907-8216-b4064da0f6ad) to Async(default) with arguments: #<GlobalID:0x007f87b99c8158 @uri=#<URI::GID gid://code-docs/Message/40>>
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`id` = 40 LIMIT 1[0m
+[ActiveJob] [MessageBroadcastJob] [324fee43-22f5-4907-8216-b4064da0f6ad] Performing MessageBroadcastJob from Async(default) with arguments: #<GlobalID:0x007f87b99180f0 @uri=#<URI::GID gid://code-docs/Message/40>>
+[ActiveJob] [MessageBroadcastJob] [324fee43-22f5-4907-8216-b4064da0f6ad]   Rendered messages/_message.html.erb (0.7ms)
+[ActiveJob] [MessageBroadcastJob] [324fee43-22f5-4907-8216-b4064da0f6ad] [ActionCable] Broadcasting to room_channel: "<div class=\"message\">\n<p>hello world</p>\n</div>"
+[ActiveJob] [MessageBroadcastJob] [324fee43-22f5-4907-8216-b4064da0f6ad] Performed MessageBroadcastJob from Async(default) in 7.36ms
+EditorChannel#speak({"message"=>"hello world"})
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `messages` (`content`, `created_at`, `updated_at`) VALUES ('hello world', '2016-10-25 01:57:11', '2016-10-25 01:57:11')[0m
+  [1m[35m (26.3ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] Enqueued MessageBroadcastJob (Job ID: 88bb137b-ac98-49d9-a0cc-1fe0d596ff21) to Async(default) with arguments: #<GlobalID:0x007f87b979caa0 @uri=#<URI::GID gid://code-docs/Message/41>>
+  [1m[36mMessage Load (0.9ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`id` = 41 LIMIT 1[0m
+[ActiveJob] [MessageBroadcastJob] [88bb137b-ac98-49d9-a0cc-1fe0d596ff21] Performing MessageBroadcastJob from Async(default) with arguments: #<GlobalID:0x007f87b96f1790 @uri=#<URI::GID gid://code-docs/Message/41>>
+[ActiveJob] [MessageBroadcastJob] [88bb137b-ac98-49d9-a0cc-1fe0d596ff21]   Rendered messages/_message.html.erb (0.7ms)
+[ActiveJob] [MessageBroadcastJob] [88bb137b-ac98-49d9-a0cc-1fe0d596ff21] [ActionCable] Broadcasting to room_channel: "<div class=\"message\">\n<p>hello world</p>\n</div>"
+[ActiveJob] [MessageBroadcastJob] [88bb137b-ac98-49d9-a0cc-1fe0d596ff21] Performed MessageBroadcastJob from Async(default) in 7.33ms
+Started GET "/" for 127.0.0.1 at 2016-10-24 19:02:18 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by EditorController#show as HTML
+  Rendering editor/show.html.erb within layouts/application
+  [1m[36mMessage Load (0.9ms)[0m  [1m[34mSELECT `messages`.* FROM `messages`[0m
+  Rendered collection of messages/_message.html.erb [41 times] (2.6ms)
+  Rendered editor/show.html.erb within layouts/application (40.8ms)
+Completed 200 OK in 406ms (Views: 384.7ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2016-10-24 19:02:19 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 19:02:19 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started GET "/cable" for 127.0.0.1 at 2016-10-24 19:02:20 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 19:02:20 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+EditorChannel#speak({"message"=>"s"})
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `messages` (`content`, `created_at`, `updated_at`) VALUES ('s', '2016-10-25 02:02:27', '2016-10-25 02:02:27')[0m
+  [1m[35m (35.6ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] Enqueued MessageBroadcastJob (Job ID: d0c8025d-18d8-44d4-ba46-96eb06805f99) to Async(default) with arguments: #<GlobalID:0x007f5f6e0da1b8 @uri=#<URI::GID gid://code-docs/Message/42>>
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`id` = 42 LIMIT 1[0m
+[ActiveJob] [MessageBroadcastJob] [d0c8025d-18d8-44d4-ba46-96eb06805f99] Performing MessageBroadcastJob from Async(default) with arguments: #<GlobalID:0x007f5f6df92530 @uri=#<URI::GID gid://code-docs/Message/42>>
+[ActiveJob] [MessageBroadcastJob] [d0c8025d-18d8-44d4-ba46-96eb06805f99]   Rendered messages/_message.html.erb (0.6ms)
+[ActiveJob] [MessageBroadcastJob] [d0c8025d-18d8-44d4-ba46-96eb06805f99] [ActionCable] Broadcasting to editor_channel: "<div class=\"message\">\n<p>s</p>\n</div>"
+[ActiveJob] [MessageBroadcastJob] [d0c8025d-18d8-44d4-ba46-96eb06805f99] Performed MessageBroadcastJob from Async(default) in 12.8ms
+EditorChannel transmitting "<div class=\"message\">\n<p>s</p>\n</div>" (via streamed from editor_channel)
+EditorChannel transmitting "<div class=\"message\">\n<p>s</p>\n</div>" (via streamed from editor_channel)
+Started GET "/" for 127.0.0.1 at 2016-10-24 19:13:22 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by EditorController#show as HTML
+  Rendering editor/show.html.erb within layouts/application
+  [1m[36mMessage Load (0.9ms)[0m  [1m[34mSELECT `messages`.* FROM `messages`[0m
+  Rendered collection of messages/_message.html.erb [42 times] (2.1ms)
+  Rendered editor/show.html.erb within layouts/application (41.2ms)
+Completed 200 OK in 460ms (Views: 435.4ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-24 19:13:24 -0700
+Processing by EditorController#show as HTML
+  Rendering editor/show.html.erb within layouts/application
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages`[0m
+  Rendered collection of messages/_message.html.erb [42 times] (2.1ms)
+  Rendered editor/show.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 90ms (Views: 86.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2016-10-24 19:13:24 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 19:13:24 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+EditorChannel#speak({"message"=>"s"})
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `messages` (`content`, `created_at`, `updated_at`) VALUES ('s', '2016-10-25 02:13:28', '2016-10-25 02:13:28')[0m
+  [1m[35m (37.1ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] Enqueued MessageBroadcastJob (Job ID: 1d01a791-a80a-4f71-94fd-cf182d493fa4) to Async(default) with arguments: #<GlobalID:0x007f78300e2888 @uri=#<URI::GID gid://code-docs/Message/43>>
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`id` = 43 LIMIT 1[0m
+[ActiveJob] [MessageBroadcastJob] [1d01a791-a80a-4f71-94fd-cf182d493fa4] Performing MessageBroadcastJob from Async(default) with arguments: #<GlobalID:0x007f782403b878 @uri=#<URI::GID gid://code-docs/Message/43>>
+[ActiveJob] [MessageBroadcastJob] [1d01a791-a80a-4f71-94fd-cf182d493fa4]   Rendered messages/_message.html.erb (0.8ms)
+[ActiveJob] [MessageBroadcastJob] [1d01a791-a80a-4f71-94fd-cf182d493fa4] [ActionCable] Broadcasting to editor_channel: "<div class=\"message\">\n<p>s</p>\n</div>"
+[ActiveJob] [MessageBroadcastJob] [1d01a791-a80a-4f71-94fd-cf182d493fa4] Performed MessageBroadcastJob from Async(default) in 16.35ms
+EditorChannel transmitting "<div class=\"message\">\n<p>s</p>\n</div>" (via streamed from editor_channel)
+Started GET "/cable" for 127.0.0.1 at 2016-10-24 19:13:30 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 19:13:30 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started GET "/" for 127.0.0.1 at 2016-10-24 19:16:15 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by EditorsController#show as HTML
+  Rendering editors/show.html.erb within layouts/application
+  [1m[36mMessage Load (0.8ms)[0m  [1m[34mSELECT `messages`.* FROM `messages`[0m
+  Rendered collection of messages/_message.html.erb [43 times] (1.8ms)
+  Rendered editors/show.html.erb within layouts/application (39.5ms)
+Completed 200 OK in 417ms (Views: 394.8ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2016-10-24 19:16:15 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 19:16:15 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+EditorChannel#speak({"message"=>"l"})
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `messages` (`content`, `created_at`, `updated_at`) VALUES ('l', '2016-10-25 02:16:19', '2016-10-25 02:16:19')[0m
+  [1m[35m (31.6ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] Enqueued MessageBroadcastJob (Job ID: a5572155-d99c-4ed7-ac25-3a1df4b98f1a) to Async(default) with arguments: #<GlobalID:0x007f8f7a1004f8 @uri=#<URI::GID gid://code-docs/Message/44>>
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`id` = 44 LIMIT 1[0m
+[ActiveJob] [MessageBroadcastJob] [a5572155-d99c-4ed7-ac25-3a1df4b98f1a] Performing MessageBroadcastJob from Async(default) with arguments: #<GlobalID:0x007f8f79f8f308 @uri=#<URI::GID gid://code-docs/Message/44>>
+[ActiveJob] [MessageBroadcastJob] [a5572155-d99c-4ed7-ac25-3a1df4b98f1a]   Rendered messages/_message.html.erb (0.6ms)
+[ActiveJob] [MessageBroadcastJob] [a5572155-d99c-4ed7-ac25-3a1df4b98f1a] [ActionCable] Broadcasting to editor_channel: "<div class=\"message\">\n<p>l</p>\n</div>"
+[ActiveJob] [MessageBroadcastJob] [a5572155-d99c-4ed7-ac25-3a1df4b98f1a] Performed MessageBroadcastJob from Async(default) in 11.29ms
+EditorChannel transmitting "<div class=\"message\">\n<p>l</p>\n</div>" (via streamed from editor_channel)
+Started GET "/cable" for 127.0.0.1 at 2016-10-24 19:16:19 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-10-24 19:16:19 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel

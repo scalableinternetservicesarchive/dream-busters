@@ -11,10 +11,4 @@ class EditorChannel < ApplicationCable::Channel
   def speak(data)
   	Message.create content: data['message']
   end
-
-  def edit(data)
-  	line = data['text']
-  	
-  end
-
 end

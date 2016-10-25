@@ -3,4 +3,7 @@ class EditorController < ApplicationController
   	@messages = Message.all
   	@default_content = Editor.default_content
   end
+
+
+  
 end
