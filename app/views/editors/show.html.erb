@@ -5,7 +5,7 @@
 	<%= render @messages %>
 </div>
 
-<body onload="loadUser()">
+<body onload="loadUser()" onunload="removeUser()">
 
 <form>
 	<label>Say something:</label><br>
