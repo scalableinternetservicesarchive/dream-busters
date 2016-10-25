@@ -9,11 +9,14 @@
 
 <form>
 	<label>Say something:</label><br>
-	<input type="text" data-behavior="room_speaker">
+	<input type="text" id="chat" data-behavior="room_speaker">
+	<input type="button" value="Enter" data-behavior="room_speaker_enter">
 </form>
 
+<br>
+
 <%= form_for @default_content do |f| %>
- 	<%= f.text_area :content, :value => @default_content, data: { behavior: "room_speaker" }, size: "100x30" %>
+ 	<%= f.text_area :content, :value => @default_content, data: { behavior: "room_editor" }, size: "100x30" %>
 <% end %>
 
 </body>
