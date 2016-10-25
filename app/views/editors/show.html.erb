@@ -1,17 +1,41 @@
-<h1>Code Docs</h1>
+<h1>Chat Room</h1>
+<h2><p id="username"></p></h2>
+
 <div id="messages">
 	<%= render @messages %>
 </div>
 
+<body onload="loadUser()">
+
 <form>
 	<label>Say something:</label><br>
-	<input type="text" id="chat" data-behavior="room_speaker">
-	<input type="button" value="Enter" data-behavior="room_speaker_enter">
+	<input type="text" data-behavior="room_speaker">
 </form>
 
-
-<br>
-
 <%= form_for @default_content do |f| %>
- 	<%= f.text_area :content, :value => @default_content, data: { behavior: "room_editor" }, size: "100x30" %>
+ 	<%= f.text_area :content, :value => @default_content, data: { behavior: "room_speaker" }, size: "100x30" %>
 <% end %>
+
+</body>
+
+
+<script>
+// if first time user, prompt and store in localStorage
+// otherwise directly load 
+function loadUser() {
+	var inputname = localStorage.getItem("name");
+	if (inputname) {
+		document.getElementById("username").innerHTML = inputname;
+	} else {
+		do {
+			inputname = prompt("Please enter your name", "Harry Potter");
+		} while (inputname == "");
+		localStorage.setItem("name", inputname);
+		document.getElementById("username").innerHTML = inputname;
+	}
+}
+
+function removeUser() {
+	localStorage.removeItem("name");
+}
+</script>
