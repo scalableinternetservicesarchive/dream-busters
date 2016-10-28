@@ -12,7 +12,6 @@ App.editor = App.cable.subscriptions.create "EditorChannel",
     $('#messages').append data
 
   speak: (message) ->
-    alert 'The variable has value' + gon.editor_id
     @perform 'speak', message: message, username: username, editor_id: gon.editor_id
 
 $(document).on 'keypress', '[data-behavior~=room_speaker]', (event) ->
