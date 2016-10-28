@@ -12,7 +12,7 @@ App.editor = App.cable.subscriptions.create "EditorChannel",
     $('#messages').append data
 
   speak: (message) ->
-    @perform 'speak', message: message
+    @perform 'speak', message: message, username: username
 
 $(document).on 'keypress', '[data-behavior~=room_speaker]', (event) ->
 	if event.keyCode is 13
