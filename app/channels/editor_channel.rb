@@ -9,6 +9,6 @@ class EditorChannel < ApplicationCable::Channel
   end
 
   def speak(data)
-  	Message.create content: data['message'], speaker: data['username']
+  	Message.create content: data['message'], speaker: data['username'], editor_id: data['editor_id']
   end
 end
