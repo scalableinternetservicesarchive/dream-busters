@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  path: MyString
+  user1: MyString
+  user2: MyString
+  user3: MyString
+  user4: MyString
+  user5: MyString
+
+two:
+  path: MyString
+  user1: MyString
+  user2: MyString
+  user3: MyString
+  user4: MyString
+  user5: MyString

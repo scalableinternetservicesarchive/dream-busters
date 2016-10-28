@@ -1,0 +1,9 @@
+<%= form_for(@editor) do |f| %>
+  <div class="field">
+    <%= f.label :user1 %><br>
+    <%= f.text_field :user1 %>
+  </div>
+  <div class="actions">
+    <%= f.submit class: 'btn btn-primary' %>
+  </div>
+<% end %>
