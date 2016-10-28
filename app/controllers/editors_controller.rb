@@ -25,7 +25,7 @@ class EditorsController < ApplicationController
 
   def edit
   	@id = params[:id]
-  	@messages = Message.all
+  	@messages = Message.find_by(editor_id: @id)
   	@default_content = "hello world"
   end
 
