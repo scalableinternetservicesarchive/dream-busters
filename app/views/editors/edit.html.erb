@@ -43,9 +43,13 @@
 
 
 <%= @id %>
-<h1>Chat Room</h1>
-<h2><p id="username"></p></h2>
+<center><h1>Editor</h1></center>
 
+<%= form_for @default_content do |f| %>
+  <%= f.text_area :content, :value => @default_content, data: { behavior: "room_editor" }, :cols => "80", :rows => "60" %>
+<% end %>
+
+<h2>Chat Room</h2>
 <div id="messages">
 	<%= render @messages %>
 </div>
@@ -60,9 +64,7 @@
 
 <br>
 
-<%= form_for @default_content do |f| %>
- 	<%= f.text_area :content, :value => @default_content, data: { behavior: "room_editor" }, size: "100x30" %>
-<% end %>
+
 <!-- 
 </body> -->
 
