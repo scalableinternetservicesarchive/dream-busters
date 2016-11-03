@@ -11,24 +11,25 @@ class EditorsController < ApplicationController
   		next_id = 0
   	else
   		next_id = Editor.maximum(:id)+1;
- 	end
+ 	  end
 
- 	permitted = params.require(:editor).permit(:user1)
- 	permitted[:path] = next_id.to_s
- 	@editor = Editor.new(permitted)
+   	permitted = params.require(:editor).permit(:user1)
+   	permitted[:path] = next_id.to_s
+   	@editor = Editor.new(permitted)
 
- 	if @editor.save
- 		redirect_to edit_editor_path(@editor.id)
- 	else 
- 		render 'new'
- 	end
+   	if @editor.save
+      # Dir.mkdir '/tmp/'.concat(@editor.id)
+   		redirect_to edit_editor_path(@editor.id)
+   	else 
+   		render 'new'
+   	end
   end 
 
   def edit
   	@editor_id = params[:id]
     gon.editor_id = @editor_id
     @id = params[:id]
-  	@messages = Message.all
+  	@messages = Message.find_by(editor_id: @id)
   	@default_content = "hello world"
   end
 

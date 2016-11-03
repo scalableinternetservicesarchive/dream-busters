@@ -47,7 +47,9 @@
 <h2><p id="username"></p></h2>
 
 <div id="messages">
-	<%= render @messages %>
+  <% unless @messages.blank? %>
+    <%= render @messages %>
+  <% end %>
 </div>
 
 <!-- <body onload="loadUser()" onunload="removeUser()"> -->
