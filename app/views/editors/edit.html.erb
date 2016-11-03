@@ -53,9 +53,14 @@
 <div id="chatroom" class="container-fluid">
       <div class="row">
         <div id="sidebar" class="col-xs-3">
-          <center><h3>Chat Room</h3></center>
+          <center><h3>Chat</h3></center>
           <%= render @messages %>
+          <form>
+            <input type="text" id="chat" data-behavior="room_speaker"
+            placeholder="Say something...">
+          </form>
         </div>
+
         <div id="content" class="col-xs-9">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -68,10 +73,6 @@
 </div>
 
 
-<form>
-	<label>Say something:</label><br>
-	<input type="text" id="chat" data-behavior="room_speaker">
-	<input type="button" value="Enter" data-behavior="room_speaker_enter">
-</form>
+
 
 <br>
