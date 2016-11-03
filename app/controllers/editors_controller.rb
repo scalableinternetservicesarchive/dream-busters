@@ -11,10 +11,14 @@ class EditorsController < ApplicationController
   		next_id = 0
   	else
   		next_id = Editor.maximum(:id)+1;
-   	end
-   	permitted = params.require(:editor).permit(:user1)
-   	permitted[:path] = next_id.to_s
-   	@editor = Editor.new(permitted)
+<<<<<<< HEAD
+=======
+ 	end
+
+ 	permitted = params.require(:editor).permit(:user1)
+ 	permitted[:path] = next_id.to_s
+ 	@editor = Editor.new(permitted)
+>>>>>>> 8a884d327f5c45e0e0fb358f83c6dc1dbbfaf426
 
    	if @editor.save
    		redirect_to edit_editor_path(@editor.id)
@@ -24,7 +28,8 @@ class EditorsController < ApplicationController
   end 
 
   def edit
-  	@id = params[:id]
+  	@editor_id = params[:id]
+    gon.editor_id = @editor_id
   	@messages = Message.all
   	@default_content = "hello world"
   end
