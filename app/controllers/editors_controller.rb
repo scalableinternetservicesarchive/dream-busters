@@ -27,6 +27,7 @@ class EditorsController < ApplicationController
   def edit
   	@editor_id = params[:id]
     gon.editor_id = @editor_id
+    @id = params[:id]
   	@messages = Message.all
   	@default_content = "hello world"
   end
