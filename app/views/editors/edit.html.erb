@@ -45,11 +45,6 @@
 <%= @id %>
 <center><h1>Editor</h1></center>
 
-<div id="messages">
-  <% unless @messages.blank? %>
-    <%= render @messages %>
-  <% end %>
-
 <%= form_for @default_content do |f| %>
   <%= f.text_area :content, :value => @default_content, data: { behavior: "room_editor" }, :cols => "80", :rows => "60" %>
 <% end %>
@@ -59,7 +54,7 @@
       <div class="row">
         <div id="sidebar" class="col-xs-3">
           <center><h3>Chat Room</h3></center>
-          <%= render @messages %>
+          
         </div>
         <div id="content" class="col-xs-9">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -70,7 +65,6 @@
           proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </div>
       </div>
->>>>>>> 58a74216c6f8afc785e7a7f321dc636c00fcc377
 </div>
 
 
@@ -79,5 +73,11 @@
 	<input type="text" id="chat" data-behavior="room_speaker">
 	<input type="button" value="Enter" data-behavior="room_speaker_enter">
 </form>
+
+<div id="messages">
+  <% unless @messages.blank? %>
+    <%= render @messages %>
+  <% end %>
+</div>
 
 <br>

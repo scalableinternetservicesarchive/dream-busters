@@ -12,4 +12,11 @@ class EditorChannel < ApplicationCable::Channel
   	message = Message.create content: data['message'], speaker: data['username'], editor_id: data['editor_id']
   	MessageBroadcastJob.perform_later message, "#{params[:id]}"
   end
+
+  def edit(data)
+  	content = data['content']
+  	username = data['username']
+  	editor_id = data['editor_id']
+  	system("git -C /tmp/#{@editor_id} checkout -b ".concat(username))
+  end
 end
