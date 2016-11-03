@@ -1,3 +1,13 @@
 <h1>Welcome</h1>
 
-<%= link_to 'New Editor', new_editor_path %>
+<%= link_to 'New Editor', new_editor_path %><br>
+<%= form_for :editor, url: editors_path do |f| %>
+	<p>
+		<%= f.label :'Doc ID'%><br>
+		<%= f.text_field :id %>
+	</p>
+
+	<p>
+		<%= f.submit :'load file' %>
+	</p>
+<% end %>

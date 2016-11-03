@@ -1,5 +1,6 @@
 class EditorsController < ApplicationController
-  def index 
+  def index
+
   end
 
   def new 
@@ -7,6 +8,10 @@ class EditorsController < ApplicationController
   end
 
   def create
+    unless params.require(:editor).permit(:id).nil?
+      return redirect_to edit_editor_path(params[:editor][:id])
+    end
+
   	if Editor.maximum(:id).nil?
   		next_id = 0
   	else
@@ -18,11 +23,6 @@ class EditorsController < ApplicationController
    	@editor = Editor.new(permitted)
 
    	if @editor.save
-<<<<<<< HEAD
-      # Dir.mkdir '/tmp/'.concat(@editor.id)
-=======
-      # Dir.mkdir '/tmp/'.concat(@editor.id)
->>>>>>> 181cda51352652491f4ccce5b2a4fcf8862a1cfd
    		redirect_to edit_editor_path(@editor.id)
    	else 
    		render 'new'
