@@ -18,7 +18,12 @@ class EditorsController < ApplicationController
    	@editor = Editor.new(permitted)
 
    	if @editor.save
-      # Dir.mkdir '/tmp/'.concat(@editor.id)
+      a = 5
+      Dir.mkdir "/tmp/#{@editor.id}"
+      system("git -C /tmp/#{@editor.id} init")
+      system("touch /tmp/#{@editor.id}/file.txt")
+      system("git -C /tmp/#{@editor.id} add /tmp/#{@editor.id}/*")
+      system("git -C /tmp/#{@editor.id} commit -m \"init repo\"")
    		redirect_to edit_editor_path(@editor.id)
    	else 
    		render 'new'
@@ -29,7 +34,7 @@ class EditorsController < ApplicationController
   	@editor_id = params[:id]
     gon.editor_id = @editor_id
     @id = params[:id]
-  	@messages = Message.find_by(editor_id: @id)
+  	@messages = Message.where(editor_id: @id)
   	@default_content = "hello world"
   end
 
