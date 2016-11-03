@@ -45,6 +45,11 @@
 <%= @id %>
 <center><h1>Editor</h1></center>
 
+<div id="messages">
+  <% unless @messages.blank? %>
+    <%= render @messages %>
+  <% end %>
+
 <%= form_for @default_content do |f| %>
   <%= f.text_area :content, :value => @default_content, data: { behavior: "room_editor" }, :cols => "80", :rows => "60" %>
 <% end %>
@@ -70,6 +75,7 @@
           proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </div>
       </div>
+>>>>>>> 58a74216c6f8afc785e7a7f321dc636c00fcc377
 </div>
 
 
