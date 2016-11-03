@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+
+gem 'bootstrap', '~> 4.0.0.alpha5'
+gem 'autoprefixer-rails'
 # Pass values from controller to Javascript
 gem 'gon'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
