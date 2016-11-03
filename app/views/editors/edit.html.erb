@@ -43,14 +43,30 @@
 
 
 <%= @id %>
-<h1>Chat Room</h1>
-<h2><p id="username"></p></h2>
+<center><h1>Editor</h1></center>
 
-<div id="messages">
-	<%= render @messages %>
+<%= form_for @default_content do |f| %>
+  <%= f.text_area :content, :value => @default_content, data: { behavior: "room_editor" }, :cols => "80", :rows => "60" %>
+<% end %>
+
+
+<div id="chatroom" class="container-fluid">
+      <div class="row">
+        <div id="sidebar" class="col-xs-3">
+          <center><h3>Chat Room</h3></center>
+          <%= render @messages %>
+        </div>
+        <div id="content" class="col-xs-9">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+      </div>
 </div>
 
-<!-- <body onload="loadUser()" onunload="removeUser()"> -->
 
 <form>
 	<label>Say something:</label><br>
@@ -59,32 +75,3 @@
 </form>
 
 <br>
-
-<%= form_for @default_content do |f| %>
- 	<%= f.text_area :content, :value => @default_content, data: { behavior: "room_editor" }, size: "100x30" %>
-<% end %>
-<!-- 
-</body> -->
-
-
-<!-- <script>
-// if first time user, prompt and store in localStorage
-// otherwise directly load 
-function loadUser() {
-	var inputname = localStorage.getItem("name");
-	if (inputname) {
-		document.getElementById("username").innerHTML = inputname;
-	} else {
-		do {
-			inputname = prompt("Please enter your name", "Harry Potter");
-		} while (inputname == "");
-		localStorage.setItem("name", inputname);
-		document.getElementById("username").innerHTML = inputname;
-	}
-}
-
-function removeUser() {
-	localStorage.removeItem("name");
-}
-</script>
- -->

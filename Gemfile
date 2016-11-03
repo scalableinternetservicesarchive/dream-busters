@@ -1,11 +1,14 @@
 source 'https://rubygems.org'
 
+
+gem 'bootstrap', '~> 4.0.0.alpha5'
+gem 'autoprefixer-rails'
 # Pass values from controller to Javascript
 gem 'gon'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 # Use mysql as the database for Active Record
-gem 'mysql2'
+# gem 'mysql2'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
