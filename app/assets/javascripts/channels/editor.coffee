@@ -1,6 +1,6 @@
 username = ""
 
-App.editor = App.cable.subscriptions.create "EditorChannel",
+App.editor = App.cable.subscriptions.create { channel: "EditorChannel", id: gon.editor_id },
   connected: ->
     # Called when the subscription is ready for use on the server
     $('#myModal').modal('show')
