@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 
 # Bootstrap
 gem 'bootstrap', '~> 4.0.0.alpha5'
-gem 'autoprefixer-rails'
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.1.0'
 end
