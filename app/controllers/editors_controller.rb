@@ -18,7 +18,6 @@ class EditorsController < ApplicationController
    	@editor = Editor.new(permitted)
 
    	if @editor.save
-      a = 5
       Dir.mkdir "/tmp/#{@editor.id}"
       system("git -C /tmp/#{@editor.id} init")
       system("touch /tmp/#{@editor.id}/file.txt")
@@ -35,7 +34,7 @@ class EditorsController < ApplicationController
     gon.editor_id = @editor_id
     @id = params[:id]
   	@messages = Message.where(editor_id: @id)
-  	@default_content = "hello world"
+  	@default_content = ""
   end
 
 end 

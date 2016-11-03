@@ -17,6 +17,25 @@ class EditorChannel < ApplicationCable::Channel
   	content = data['content']
   	username = data['username']
   	editor_id = data['editor_id']
-  	system("git -C /tmp/#{@editor_id} checkout -b ".concat(username))
+  	
+  	system("git -C /tmp/#{editor_id} checkout -b ".concat(username))
+
+  	File.open("/tmp/#{editor_id}/file.txt", 'w') do |f2|  
+  		f2.puts content
+	end
+
+	system("git -C /tmp/#{editor_id} add /tmp/#{editor_id}/*")
+
+	# git commit
+	system("git -C /tmp/#{editor_id} commit -m \"".concat(username).concat("\""))
+
+	# git checkout master
+	system("git -C /tmp/#{editor_id} checkout master")
+
+	system("git -C /tmp/#{editor_id} merge ".concat(username))
+
+	file = File.open("/tmp/#{editor_id}", "rb")
+	new_content = file.read+"aaa"
+
   end
 end
