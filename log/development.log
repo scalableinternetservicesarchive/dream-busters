@@ -855,3 +855,167 @@ Started GET "/cable/" [WebSocket] for ::1 at 2016-10-27 20:18:56 -0700
 Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
 EditorChannel is transmitting the subscription confirmation
 EditorChannel is streaming from editor_channel
+Started GET "/" for ::1 at 2016-11-02 19:33:56 -0700
+  
+Mysql2::Error (Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)):
+  
+mysql2 (0.4.4) lib/mysql2/client.rb:87:in `connect'
+mysql2 (0.4.4) lib/mysql2/client.rb:87:in `initialize'
+activerecord (5.0.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in `new'
+activerecord (5.0.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in `mysql2_connection'
+activerecord (5.0.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:721:in `new_connection'
+activerecord (5.0.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:765:in `checkout_new_connection'
+activerecord (5.0.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:744:in `try_to_checkout_new_connection'
+activerecord (5.0.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:705:in `acquire_connection'
+activerecord (5.0.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:501:in `checkout'
+activerecord (5.0.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:364:in `connection'
+activerecord (5.0.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:875:in `retrieve_connection'
+activerecord (5.0.0.1) lib/active_record/connection_handling.rb:128:in `retrieve_connection'
+activerecord (5.0.0.1) lib/active_record/connection_handling.rb:91:in `connection'
+activerecord (5.0.0.1) lib/active_record/migration.rb:558:in `connection'
+activerecord (5.0.0.1) lib/active_record/migration.rb:545:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+request_store (1.3.1) lib/request_store/middleware.rb:9:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/tangmaolei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/tangmaolei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/tangmaolei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.4ms)
+  Rendering /Users/tangmaolei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/tangmaolei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/tangmaolei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/tangmaolei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/tangmaolei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (85.7ms)
+Started GET "/" for ::1 at 2016-11-02 19:34:33 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (5.6ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Started GET "/" for ::1 at 2016-11-02 19:34:51 -0700
+  
+  
+SyntaxError (/Users/tangmaolei/Desktop/fall16/dream-busters/app/controllers/editors_controller.rb:14: syntax error, unexpected <<, expecting keyword_end
+<<<<<<< HEAD
+  ^
+/Users/tangmaolei/Desktop/fall16/dream-busters/app/controllers/editors_controller.rb:21: syntax error, unexpected >>, expecting keyword_end
+>>>>>>> 8a884d327f5c45e0e0fb358f83c6dc1dbbfaf426
+  ^
+/Users/tangmaolei/Desktop/fall16/dream-busters/app/controllers/editors_controller.rb:37: syntax error, unexpected end-of-input, expecting keyword_end):
+SyntaxError (/Users/tangmaolei/Desktop/fall16/dream-busters/app/controllers/editors_controller.rb:14: syntax error, unexpected <<, expecting keyword_end
+<<<<<<< HEAD
+  ^
+/Users/tangmaolei/Desktop/fall16/dream-busters/app/controllers/editors_controller.rb:21: syntax error, unexpected >>, expecting keyword_end
+>>>>>>> 8a884d327f5c45e0e0fb358f83c6dc1dbbfaf426
+  ^
+/Users/tangmaolei/Desktop/fall16/dream-busters/app/controllers/editors_controller.rb:37: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+  
+app/controllers/editors_controller.rb:14: syntax error, unexpected <<, expecting keyword_end
+app/controllers/editors_controller.rb:14: syntax error, unexpected <<, expecting keyword_end
+app/controllers/editors_controller.rb:21: syntax error, unexpected >>, expecting keyword_end
+app/controllers/editors_controller.rb:21: syntax error, unexpected >>, expecting keyword_end
+app/controllers/editors_controller.rb:37: syntax error, unexpected end-of-input, expecting keyword_end
+app/controllers/editors_controller.rb:37: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /Users/tangmaolei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/tangmaolei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/tangmaolei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendering /Users/tangmaolei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/tangmaolei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.6ms)
+  Rendered /Users/tangmaolei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.6ms)
+  Rendering /Users/tangmaolei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendering /Users/tangmaolei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/tangmaolei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/tangmaolei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /Users/tangmaolei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendering /Users/tangmaolei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/tangmaolei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (11.5ms)
+  Rendered /Users/tangmaolei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.0ms)
+  Rendered /Users/tangmaolei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (148.8ms)
+  Rendered /Users/tangmaolei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (128.0ms)
+Started GET "/" for ::1 at 2016-11-02 19:36:10 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by EditorsController#index as HTML
+  Rendering editors/index.html.erb within layouts/application
+  Rendered editors/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 920ms (Views: 906.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cable" for ::1 at 2016-11-02 19:36:12 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2016-11-02 19:36:12 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started GET "/editors/new" for ::1 at 2016-11-02 19:36:13 -0700
+Processing by EditorsController#new as HTML
+  Rendering editors/new.html.erb within layouts/application
+  Rendered editors/new.html.erb within layouts/application (37.7ms)
+Completed 200 OK in 141ms (Views: 76.3ms | ActiveRecord: 19.9ms)
+
+
+Started POST "/editors" for ::1 at 2016-11-02 19:36:18 -0700
+Processing by EditorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LoQdvmxE0hx4apYBwPUQ7FHuB++JQ+lLkIUnvyRWBrjLk5QsC1aJUbOXKMkuA7dm074RXLsVI/b9DEz1HGvS0Q==", "editor"=>{"user1"=>"tml"}, "commit"=>"Create Editor"}
+  [1m[35m (8.0ms)[0m  [1m[34mSELECT MAX(`editors`.`id`) FROM `editors`[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT MAX(`editors`.`id`) FROM `editors`[0m
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (5.7ms)[0m  [1m[32mINSERT INTO `editors` (`path`, `user1`, `created_at`, `updated_at`) VALUES ('3', 'tml', '2016-11-03 02:36:18', '2016-11-03 02:36:18')[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/editors/3/edit
+Completed 302 Found in 23ms (ActiveRecord: 16.5ms)
+
+
+Started GET "/editors/3/edit" for ::1 at 2016-11-02 19:36:18 -0700
+Processing by EditorsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  Rendering editors/edit.html.erb within layouts/application
+  [1m[36mMessage Load (2.2ms)[0m  [1m[34mSELECT `messages`.* FROM `messages`[0m
+  Rendered collection of messages/_message.html.erb [2 times] (0.6ms)
+  Rendered editors/edit.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 70ms (Views: 61.1ms | ActiveRecord: 3.0ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2016-11-02 19:36:18 -0700
+EditorChannel stopped streaming from editor_channel
+Started GET "/cable" for ::1 at 2016-11-02 19:36:19 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2016-11-02 19:36:19 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+EditorChannel#speak({"message"=>"dd", "username"=>"new chat", "editor_id"=>"3"})
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `messages` (`editor_id`, `speaker`, `content`, `created_at`, `updated_at`) VALUES (3, 'new chat', 'dd', '2016-11-03 02:36:41', '2016-11-03 02:36:41')[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] Enqueued MessageBroadcastJob (Job ID: e749b11f-27f3-42fa-8e8d-641df50d7f53) to Async(default) with arguments: #<GlobalID:0x007fcc04471e68 @uri=#<URI::GID gid://code-docs/Message/3>>
+  [1m[36mMessage Load (3.2ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`id` = 3 LIMIT 1[0m
+[ActiveJob] [MessageBroadcastJob] [e749b11f-27f3-42fa-8e8d-641df50d7f53] Performing MessageBroadcastJob from Async(default) with arguments: #<GlobalID:0x007fcc0348e780 @uri=#<URI::GID gid://code-docs/Message/3>>
+[ActiveJob] [MessageBroadcastJob] [e749b11f-27f3-42fa-8e8d-641df50d7f53]   Rendered messages/_message.html.erb (0.4ms)
+[ActiveJob] [MessageBroadcastJob] [e749b11f-27f3-42fa-8e8d-641df50d7f53] [ActionCable] Broadcasting to editor_channel: "<div class=\"message\">\n<p> new chat: dd</p>\n</div>"
+[ActiveJob] [MessageBroadcastJob] [e749b11f-27f3-42fa-8e8d-641df50d7f53] Performed MessageBroadcastJob from Async(default) in 13.92ms
+EditorChannel transmitting "<div class=\"message\">\n<p> new chat: dd</p>\n</div>" (via streamed from editor_channel)
