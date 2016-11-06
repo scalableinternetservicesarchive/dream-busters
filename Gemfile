@@ -7,7 +7,10 @@ gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 
 gem 'devise'
 
-gem 'mysql2'
+gem 'twitter-bootstrap-rails'
+gem 'devise-bootstrap-views'
+
+gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
