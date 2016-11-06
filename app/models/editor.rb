@@ -1,2 +1,0 @@
-class Editor < ApplicationRecord
-end
