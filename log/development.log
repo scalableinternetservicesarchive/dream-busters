@@ -3739,3 +3739,33 @@ EditorChannel is transmitting the subscription confirmation
 EditorChannel is streaming from editor_channel
 Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-11-06 02:13:29 -0800
 EditorChannel stopped streaming from editor_channel
+Started GET "/" for 127.0.0.1 at 2016-11-06 15:19:17 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by EditorsController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 401 Unauthorized in 20ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-11-06 15:19:17 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/haoxiang/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/haoxiang/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (1.0ms)
+  Rendered /home/haoxiang/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 186ms (Views: 185.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2016-11-06 15:19:17 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-11-06 15:19:17 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started GET "/users/sign_up" for 127.0.0.1 at 2016-11-06 15:19:19 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /home/haoxiang/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/haoxiang/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (0.8ms)
+  Rendered /home/haoxiang/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/registrations/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 26ms (Views: 24.4ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-11-06 15:19:20 -0800
+EditorChannel stopped streaming from editor_channel
