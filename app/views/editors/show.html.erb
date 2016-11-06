@@ -1,4 +1,7 @@
 <h1>Code Docs</h1>
+
+<%= link_to "logout", destroy_user_session_path, method: :delete %>
+
 <div id="messages">
 	<%= render @messages %>
 </div>
@@ -15,3 +18,4 @@
 <%= form_for @default_content do |f| %>
  	<%= f.text_area :content, :value => @default_content, data: { behavior: "room_editor" }, size: "100x30" %>
 <% end %>
+

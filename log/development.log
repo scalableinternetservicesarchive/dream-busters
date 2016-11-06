@@ -3223,3 +3223,519 @@ puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
   Rendering /home/haoxiang/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
   Rendered /home/haoxiang/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
   Rendered /home/haoxiang/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.9ms)
+Started GET "/" for 127.0.0.1 at 2016-11-06 01:56:40 -0800
+  
+Gem::LoadError (Specified 'mysql2' for database adapter, but the gem is not loaded. Add `gem 'mysql2'` to your Gemfile (and ensure its version is at the minimum required by ActiveRecord).):
+  
+activerecord (5.0.0.1) lib/active_record/connection_adapters/connection_specification.rb:176:in `rescue in spec'
+activerecord (5.0.0.1) lib/active_record/connection_adapters/connection_specification.rb:173:in `spec'
+activerecord (5.0.0.1) lib/active_record/connection_handling.rb:53:in `establish_connection'
+activerecord (5.0.0.1) lib/active_record/railtie.rb:125:in `block (2 levels) in <class:Railtie>'
+activesupport (5.0.0.1) lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+activesupport (5.0.0.1) lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+activesupport (5.0.0.1) lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+activesupport (5.0.0.1) lib/active_support/lazy_load_hooks.rb:44:in `each'
+activesupport (5.0.0.1) lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+activerecord (5.0.0.1) lib/active_record/base.rb:324:in `<module:ActiveRecord>'
+activerecord (5.0.0.1) lib/active_record/base.rb:24:in `<top (required)>'
+activesupport (5.0.0.1) lib/active_support/dependencies.rb:293:in `require'
+activesupport (5.0.0.1) lib/active_support/dependencies.rb:293:in `block in require'
+activesupport (5.0.0.1) lib/active_support/dependencies.rb:259:in `load_dependency'
+activesupport (5.0.0.1) lib/active_support/dependencies.rb:293:in `require'
+activerecord (5.0.0.1) lib/active_record/migration.rb:558:in `connection'
+activerecord (5.0.0.1) lib/active_record/migration.rb:545:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home/haoxiang/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/haoxiang/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/haoxiang/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.9ms)
+  Rendering /home/haoxiang/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/haoxiang/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /home/haoxiang/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/haoxiang/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/haoxiang/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.9ms)
+Started GET "/" for 127.0.0.1 at 2016-11-06 01:58:11 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by EditorsController#show as HTML
+  Rendering editors/show.html.erb within layouts/application
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages`[0m
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered editors/show.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 376ms (Views: 366.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2016-11-06 01:58:11 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-11-06 01:58:11 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+EditorChannel#speak({"message"=>"hi"})
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `messages` (`content`, `created_at`, `updated_at`) VALUES ('hi', '2016-11-06 09:58:14', '2016-11-06 09:58:14')[0m
+  [1m[35m (58.1ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] Enqueued MessageBroadcastJob (Job ID: f9401687-ede6-4a84-aa46-cfe21cf70cc9) to Async(default) with arguments: #<GlobalID:0x007f1ff5e99e88 @uri=#<URI::GID gid://code-docs/Message/1>>
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`id` = 1 LIMIT 1[0m
+[ActiveJob] [MessageBroadcastJob] [f9401687-ede6-4a84-aa46-cfe21cf70cc9] Performing MessageBroadcastJob from Async(default) with arguments: #<GlobalID:0x007f1ff5fe9c98 @uri=#<URI::GID gid://code-docs/Message/1>>
+[ActiveJob] [MessageBroadcastJob] [f9401687-ede6-4a84-aa46-cfe21cf70cc9]   Rendered messages/_message.html.erb (1.2ms)
+[ActiveJob] [MessageBroadcastJob] [f9401687-ede6-4a84-aa46-cfe21cf70cc9] [ActionCable] Broadcasting to editor_channel: "<div class=\"message\">\n<p>hi</p>\n</div>"
+[ActiveJob] [MessageBroadcastJob] [f9401687-ede6-4a84-aa46-cfe21cf70cc9] Performed MessageBroadcastJob from Async(default) in 9.81ms
+EditorChannel transmitting "<div class=\"message\">\n<p>hi</p>\n</div>" (via streamed from editor_channel)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('1394480906631217755', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.9ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('1394480906631217755')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `editors`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'editors'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `messages`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'messages'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `users`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'users'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'CodeDocs_development'
+  AND fk.table_name = 'editors'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'CodeDocs_development'
+  AND fk.table_name = 'messages'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'CodeDocs_development'
+  AND fk.table_name = 'users'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (134.0ms)[0m  [1m[35mDROP TABLE `editors` CASCADE[0m
+  [1m[35m (234.5ms)[0m  [1m[35mCREATE TABLE `editors` (`id` int AUTO_INCREMENT PRIMARY KEY, `user1` varchar(255), `user2` varchar(255), `user3` varchar(255), `user4` varchar(255), `user5` varchar(255), `path` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (133.2ms)[0m  [1m[35mDROP TABLE `messages` CASCADE[0m
+  [1m[35m (234.6ms)[0m  [1m[35mCREATE TABLE `messages` (`id` int AUTO_INCREMENT PRIMARY KEY, `editor_id` varchar(255), `integer` varchar(255), `speaker` varchar(255), `string` varchar(255), `content` varchar(255), `text` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (134.3ms)[0m  [1m[35mDROP TABLE `users` CASCADE[0m
+  [1m[35m (367.6ms)[0m  [1m[35mCREATE TABLE `users` (`id` int AUTO_INCREMENT PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int DEFAULT 0 NOT NULL, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, UNIQUE INDEX `index_users_on_email` USING btree (`email`), UNIQUE INDEX `index_users_on_reset_password_token` USING btree (`reset_password_token`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT version FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (132.5ms)[0m  [1m[35mDROP TABLE `editors` CASCADE[0m
+  [1m[35m (234.6ms)[0m  [1m[35mCREATE TABLE `editors` (`id` int AUTO_INCREMENT PRIMARY KEY, `user1` varchar(255), `user2` varchar(255), `user3` varchar(255), `user4` varchar(255), `user5` varchar(255), `path` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (133.2ms)[0m  [1m[35mDROP TABLE `messages` CASCADE[0m
+  [1m[35m (242.9ms)[0m  [1m[35mCREATE TABLE `messages` (`id` int AUTO_INCREMENT PRIMARY KEY, `editor_id` varchar(255), `integer` varchar(255), `speaker` varchar(255), `string` varchar(255), `content` varchar(255), `text` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (133.4ms)[0m  [1m[35mDROP TABLE `users` CASCADE[0m
+  [1m[35m (335.5ms)[0m  [1m[35mCREATE TABLE `users` (`id` int AUTO_INCREMENT PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int DEFAULT 0 NOT NULL, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, UNIQUE INDEX `index_users_on_email` USING btree (`email`), UNIQUE INDEX `index_users_on_reset_password_token` USING btree (`reset_password_token`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (67.8ms)[0m  [1m[32mINSERT INTO schema_migrations (version) VALUES ('20161019085919');
+
+[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('1394480906631217755', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('1394480906631217755')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `editors`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'editors'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `messages`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'messages'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `users`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'users'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'CodeDocs_development'
+  AND fk.table_name = 'editors'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'CodeDocs_development'
+  AND fk.table_name = 'messages'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'CodeDocs_development'
+  AND fk.table_name = 'users'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('1394480906631217755', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('1394480906631217755')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `editors`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'editors'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `messages`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'messages'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `users`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'users'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'CodeDocs_development'
+  AND fk.table_name = 'editors'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'CodeDocs_development'
+  AND fk.table_name = 'messages'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'CodeDocs_development'
+  AND fk.table_name = 'users'
+[0m
+Started GET "/" for 127.0.0.1 at 2016-11-06 02:07:00 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by EditorsController#show as HTML
+  Rendering editors/show.html.erb within layouts/application
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT `messages`.* FROM `messages`[0m
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered editors/show.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 490ms (Views: 468.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2016-11-06 02:07:01 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-11-06 02:07:01 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started GET "/cable" for 127.0.0.1 at 2016-11-06 02:09:34 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-11-06 02:09:34 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started GET "/" for 127.0.0.1 at 2016-11-06 02:09:35 -0800
+Processing by EditorsController#show as HTML
+Completed 401 Unauthorized in 24ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-11-06 02:09:35 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/haoxiang/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/haoxiang/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (1.1ms)
+  Rendered /home/haoxiang/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (28.9ms)
+Completed 200 OK in 214ms (Views: 203.6ms | ActiveRecord: 0.9ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-11-06 02:09:35 -0800
+EditorChannel stopped streaming from editor_channel
+Started GET "/cable" for 127.0.0.1 at 2016-11-06 02:09:35 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-11-06 02:09:35 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started GET "/users/sign_up" for 127.0.0.1 at 2016-11-06 02:09:39 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /home/haoxiang/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/haoxiang/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (0.7ms)
+  Rendered /home/haoxiang/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/registrations/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2016-11-06 02:09:45 -0800
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"loXhquQ8VfZujmgDSmvjO0HroP5/F/4nsVHnQJg8kSTXIZnuZDXZTZb9aH150C3Rd4zMcy+8Q9xiTm4x+ul/SQ==", "user"=>{"email"=>"haoxiang@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (17.9ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'haoxiang@example.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`email`, `encrypted_password`, `created_at`, `updated_at`) VALUES ('haoxiang@example.com', '$2a$11$JU3c2jGg6vNXVrcRyi8xCuZaxlwAZcMYscXuHE2hxnrrfKsTZbdsm', '2016-11-06 10:09:45', '2016-11-06 10:09:45')[0m
+  [1m[35m (50.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE `users` SET `sign_in_count` = 1, `current_sign_in_at` = '2016-11-06 10:09:45', `last_sign_in_at` = '2016-11-06 10:09:45', `current_sign_in_ip` = '127.0.0.1', `last_sign_in_ip` = '127.0.0.1' WHERE `users`.`id` = 1[0m
+  [1m[35m (54.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 532ms (ActiveRecord: 123.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-06 02:09:45 -0800
+Processing by EditorsController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering editors/show.html.erb within layouts/application
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT `messages`.* FROM `messages`[0m
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered editors/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 22ms (Views: 17.6ms | ActiveRecord: 0.8ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-11-06 02:09:45 -0800
+EditorChannel stopped streaming from editor_channel
+Started GET "/cable" for 127.0.0.1 at 2016-11-06 02:09:45 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-11-06 02:09:45 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+EditorChannel#speak({"message"=>"asdfs"})
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `messages` (`content`, `created_at`, `updated_at`) VALUES ('asdfs', '2016-11-06 10:09:47', '2016-11-06 10:09:47')[0m
+  [1m[35m (36.6ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] Enqueued MessageBroadcastJob (Job ID: d72a7730-3e5e-4f3d-b5b7-dd4c3c91ce09) to Async(default) with arguments: #<GlobalID:0x007f5430c5cd40 @uri=#<URI::GID gid://code-docs/Message/1>>
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`id` = 1 LIMIT 1[0m
+[ActiveJob] [MessageBroadcastJob] [d72a7730-3e5e-4f3d-b5b7-dd4c3c91ce09] Performing MessageBroadcastJob from Async(default) with arguments: #<GlobalID:0x007f5430e5cf78 @uri=#<URI::GID gid://code-docs/Message/1>>
+[ActiveJob] [MessageBroadcastJob] [d72a7730-3e5e-4f3d-b5b7-dd4c3c91ce09]   Rendered messages/_message.html.erb (1.4ms)
+[ActiveJob] [MessageBroadcastJob] [d72a7730-3e5e-4f3d-b5b7-dd4c3c91ce09] [ActionCable] Broadcasting to editor_channel: "<div class=\"message\">\n<p>asdfs</p>\n</div>"
+[ActiveJob] [MessageBroadcastJob] [d72a7730-3e5e-4f3d-b5b7-dd4c3c91ce09] Performed MessageBroadcastJob from Async(default) in 18.68ms
+EditorChannel transmitting "<div class=\"message\">\n<p>asdfs</p>\n</div>" (via streamed from editor_channel)
+EditorChannel#speak({"message"=>"asdf"})
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `messages` (`content`, `created_at`, `updated_at`) VALUES ('asdf', '2016-11-06 10:09:48', '2016-11-06 10:09:48')[0m
+  [1m[35m (65.3ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] Enqueued MessageBroadcastJob (Job ID: 86b72b1e-0bd7-4b70-b26c-149026f50687) to Async(default) with arguments: #<GlobalID:0x007f5430fe9ff8 @uri=#<URI::GID gid://code-docs/Message/2>>
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  `messages`.* FROM `messages` WHERE `messages`.`id` = 2 LIMIT 1[0m
+[ActiveJob] [MessageBroadcastJob] [86b72b1e-0bd7-4b70-b26c-149026f50687] Performing MessageBroadcastJob from Async(default) with arguments: #<GlobalID:0x007f5431092838 @uri=#<URI::GID gid://code-docs/Message/2>>
+[ActiveJob] [MessageBroadcastJob] [86b72b1e-0bd7-4b70-b26c-149026f50687]   Rendered messages/_message.html.erb (0.3ms)
+[ActiveJob] [MessageBroadcastJob] [86b72b1e-0bd7-4b70-b26c-149026f50687] [ActionCable] Broadcasting to editor_channel: "<div class=\"message\">\n<p>asdf</p>\n</div>"
+[ActiveJob] [MessageBroadcastJob] [86b72b1e-0bd7-4b70-b26c-149026f50687] Performed MessageBroadcastJob from Async(default) in 8.08ms
+EditorChannel transmitting "<div class=\"message\">\n<p>asdf</p>\n</div>" (via streamed from editor_channel)
+Started GET "/" for 127.0.0.1 at 2016-11-06 02:10:37 -0800
+Processing by EditorsController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering editors/show.html.erb within layouts/application
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT `messages`.* FROM `messages`[0m
+  Rendered collection of messages/_message.html.erb [2 times] (0.4ms)
+  Rendered editors/show.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 43ms (Views: 40.9ms | ActiveRecord: 0.5ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-11-06 02:10:37 -0800
+EditorChannel stopped streaming from editor_channel
+Started GET "/cable" for 127.0.0.1 at 2016-11-06 02:10:38 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-11-06 02:10:38 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started GET "/" for 127.0.0.1 at 2016-11-06 02:10:40 -0800
+Processing by EditorsController#show as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering editors/show.html.erb within layouts/application
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT `messages`.* FROM `messages`[0m
+  Rendered collection of messages/_message.html.erb [2 times] (0.3ms)
+  Rendered editors/show.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 26ms (Views: 22.6ms | ActiveRecord: 0.6ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-11-06 02:10:40 -0800
+EditorChannel stopped streaming from editor_channel
+Started GET "/cable" for 127.0.0.1 at 2016-11-06 02:10:40 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-11-06 02:10:40 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started GET "/" for 127.0.0.1 at 2016-11-06 02:10:49 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by EditorsController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering editors/show.html.erb within layouts/application
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT `messages`.* FROM `messages`[0m
+  Rendered collection of messages/_message.html.erb [2 times] (0.3ms)
+  Rendered editors/show.html.erb within layouts/application (19.7ms)
+Completed 200 OK in 221ms (Views: 199.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2016-11-06 02:10:49 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-11-06 02:10:49 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started GET "/" for 127.0.0.1 at 2016-11-06 02:13:01 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by EditorsController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering editors/show.html.erb within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages`[0m
+  Rendered collection of messages/_message.html.erb [2 times] (0.3ms)
+  Rendered editors/show.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 223ms (Views: 201.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2016-11-06 02:13:01 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-11-06 02:13:01 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2016-11-06 02:13:03 -0800
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"5BiAIFJ6jPKsDp8szd13ZOk8/tEmTCDAERKq5eNA6P/LaaHxvuPQvpZKRSpKNDX6GHC6GffuBZ6ZxwwrjW3a+A=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 39ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-06 02:13:03 -0800
+Processing by EditorsController#show as HTML
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-11-06 02:13:03 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/haoxiang/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/haoxiang/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (2.3ms)
+  Rendered /home/haoxiang/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 55ms (Views: 53.6ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-11-06 02:13:03 -0800
+EditorChannel stopped streaming from editor_channel
+Started GET "/cable" for 127.0.0.1 at 2016-11-06 02:13:03 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-11-06 02:13:03 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started GET "/users/sign_up" for 127.0.0.1 at 2016-11-06 02:13:05 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /home/haoxiang/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/haoxiang/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (1.5ms)
+  Rendered /home/haoxiang/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/registrations/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 33ms (Views: 31.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2016-11-06 02:13:19 -0800
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7adrQb4iIzbRNhbcUEJ+tyKYPJAABrCEOuFdoXdH4nBWSdvMIntYG3K5Ez8yQo5PWT8yo8pFTxDQnZ0B/nY1jQ==", "user"=>{"email"=>"haoxiang@examadfaple.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'haoxiang@examadfaple.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`email`, `encrypted_password`, `created_at`, `updated_at`) VALUES ('haoxiang@examadfaple.com', '$2a$11$ihTl648/mH.bv/kE61/s.ODevENim1O9dgKwvsAEe5.DElImBv3Wa', '2016-11-06 10:13:19', '2016-11-06 10:13:19')[0m
+  [1m[35m (72.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE `users` SET `sign_in_count` = 1, `current_sign_in_at` = '2016-11-06 10:13:19', `last_sign_in_at` = '2016-11-06 10:13:19', `current_sign_in_ip` = '127.0.0.1', `last_sign_in_ip` = '127.0.0.1' WHERE `users`.`id` = 2[0m
+  [1m[35m (63.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 286ms (ActiveRecord: 137.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-06 02:13:19 -0800
+Processing by EditorsController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering editors/show.html.erb within layouts/application
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT `messages`.* FROM `messages`[0m
+  Rendered collection of messages/_message.html.erb [2 times] (0.2ms)
+  Rendered editors/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 16ms (Views: 13.4ms | ActiveRecord: 0.5ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-11-06 02:13:19 -0800
+EditorChannel stopped streaming from editor_channel
+Started GET "/cable" for 127.0.0.1 at 2016-11-06 02:13:20 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-11-06 02:13:20 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2016-11-06 02:13:25 -0800
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"P2wtHshOO6k8w3bswi8P9Ql7+HUp2dWbakfEu9qZOZomxYNY+B/J/WYt4h35yGmXT/mW/Ei1KD057YrlDtPfsw=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-06 02:13:25 -0800
+Processing by EditorsController#show as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-11-06 02:13:25 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/haoxiang/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/haoxiang/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (0.7ms)
+  Rendered /home/haoxiang/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 17ms (Views: 16.7ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-11-06 02:13:25 -0800
+EditorChannel stopped streaming from editor_channel
+Started GET "/cable" for 127.0.0.1 at 2016-11-06 02:13:25 -0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-11-06 02:13:25 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-11-06 02:13:29 -0800
+EditorChannel stopped streaming from editor_channel
