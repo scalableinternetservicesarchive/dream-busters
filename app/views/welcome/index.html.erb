@@ -1,6 +1,4 @@
-<h1><center>Welcome to CodeDocs</center></h1>
+<h1>Welcome</h1>
 <p>Find me in app/views/welcome/index.html.erb</p>
 
-<%# this is comment %>
-<center><%= text_area "post", "body", "cols" => 100, "rows" => 60%>
-</center>
+<%= link_to "logout", destroy_user_session_path, method: :delete %>
