@@ -6,5 +6,5 @@ class User < ApplicationRecord
   
   has_many :user_editor_relationships
   has_many :editors, :through => :user_editor_relationships
-  has_one :user_name
+  has_one :username
 end
