@@ -4091,3 +4091,954 @@ EditorChannel is transmitting the subscription confirmation
 EditorChannel is streaming from editor_channel
 Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-11-06 15:52:19 -0800
 EditorChannel stopped streaming from editor_channel
+Started GET "/" for ::1 at 2016-11-06 17:08:13 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by EditorsController#show as HTML
+Completed 401 Unauthorized in 32ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-11-06 17:08:13 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (37.9ms)
+Completed 200 OK in 6626ms (Views: 6599.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/cable" for ::1 at 2016-11-06 17:08:20 -0800
+Started GET "/cable/" [WebSocket] for ::1 at 2016-11-06 17:08:20 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started GET "/images/favicon.ico" for ::1 at 2016-11-06 17:08:21 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/images/favicon.ico"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered collection of /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [17 times] (400.5ms)
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.3ms)
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.1ms)
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1225.6ms)
+Started GET "/users/sign_up" for ::1 at 2016-11-06 17:08:33 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 184ms (Views: 181.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2016-11-06 17:08:41 -0800
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PrKj1DR+1UPStD9aaTMP9W9N8hVI+tWSiJDXkPoZ0Cejfa/yLxuTgvq1H2AK7vDS3USRQdxZFAEvEtwutpRoRw==", "user"=>{"email"=>"shaojiuru@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "shaojiuru@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "shaojiuru@gmail.com"], ["encrypted_password", "$2a$11$yWdg6sgDfOhQ9U.8gMjDxuHoAdKrRzdIawgd4qrGVRdLkOCkHzkuq"], ["created_at", 2016-11-07 01:08:41 UTC], ["updated_at", 2016-11-07 01:08:41 UTC]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = ?, "current_sign_in_at" = ?, "last_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_ip" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["sign_in_count", 1], ["current_sign_in_at", 2016-11-07 01:08:41 UTC], ["last_sign_in_at", 2016-11-07 01:08:41 UTC], ["current_sign_in_ip", "::1"], ["last_sign_in_ip", "::1"], ["updated_at", 2016-11-07 01:08:41 UTC], ["id", 3]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 290ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-06 17:08:41 -0800
+Processing by EditorsController#show as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering editors/show.html.erb within layouts/application
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered editors/show.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 117ms (Views: 102.0ms | ActiveRecord: 1.8ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2016-11-06 17:08:42 -0800
+EditorChannel stopped streaming from editor_channel
+Started GET "/cable" for ::1 at 2016-11-06 17:08:42 -0800
+Started GET "/cable/" [WebSocket] for ::1 at 2016-11-06 17:08:42 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+EditorChannel#speak({"message"=>"..."})
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (8.0ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "..."], ["created_at", 2016-11-07 01:08:46 UTC], ["updated_at", 2016-11-07 01:08:46 UTC]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] Enqueued MessageBroadcastJob (Job ID: d7904800-4bc1-4517-ba12-70a74849f6e2) to Async(default) with arguments: #<GlobalID:0x007fbc087ceae0 @uri=#<URI::GID gid://code-docs/Message/1>>
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[ActiveJob] [MessageBroadcastJob] [d7904800-4bc1-4517-ba12-70a74849f6e2] Performing MessageBroadcastJob from Async(default) with arguments: #<GlobalID:0x007fbc07d55938 @uri=#<URI::GID gid://code-docs/Message/1>>
+[ActiveJob] [MessageBroadcastJob] [d7904800-4bc1-4517-ba12-70a74849f6e2]   Rendered messages/_message.html.erb (0.6ms)
+[ActiveJob] [MessageBroadcastJob] [d7904800-4bc1-4517-ba12-70a74849f6e2] [ActionCable] Broadcasting to editor_channel: "<div class=\"message\">\n<p>...</p>\n</div>"
+[ActiveJob] [MessageBroadcastJob] [d7904800-4bc1-4517-ba12-70a74849f6e2] Performed MessageBroadcastJob from Async(default) in 14.28ms
+EditorChannel transmitting "<div class=\"message\">\n<p>...</p>\n</div>" (via streamed from editor_channel)
+Finished "/cable/" [WebSocket] for ::1 at 2016-11-06 17:09:01 -0800
+EditorChannel stopped streaming from editor_channel
+Started GET "/" for ::1 at 2016-11-06 17:14:28 -0800
+Processing by EditorsController#show as HTML
+  Rendering editors/show.html.erb within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered collection of messages/_message.html.erb [1 times] (0.8ms)
+  Rendered editors/show.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 132ms (Views: 119.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/cable" for ::1 at 2016-11-06 17:14:28 -0800
+Started GET "/cable/" [WebSocket] for ::1 at 2016-11-06 17:14:28 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started GET "/" for ::1 at 2016-11-06 17:34:07 -0800
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 124ms (Views: 121.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cable" for ::1 at 2016-11-06 17:34:07 -0800
+Started GET "/cable/" [WebSocket] for ::1 at 2016-11-06 17:34:07 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started GET "/" for ::1 at 2016-11-06 17:34:28 -0800
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 106ms (Views: 103.8ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2016-11-06 17:34:28 -0800
+EditorChannel stopped streaming from editor_channel
+Started GET "/cable" for ::1 at 2016-11-06 17:34:28 -0800
+Started GET "/cable/" [WebSocket] for ::1 at 2016-11-06 17:34:28 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Finished "/cable/" [WebSocket] for ::1 at 2016-11-06 17:34:30 -0800
+EditorChannel stopped streaming from editor_channel
+Started GET "/" for ::1 at 2016-11-06 17:36:12 -0800
+Processing by Devise::SessionsController#new as HTML
+[Devise] Could not find devise mapping for path "/".
+This may happen for two reasons:
+
+1) You forgot to wrap your route inside the scope block. For example:
+
+  devise_scope :user do
+    get "/some/route" => "some_devise_controller"
+  end
+
+2) You are testing a Devise controller bypassing the router.
+   If so, you can explicitly tell Devise which mapping to use:
+
+   @request.env["devise.mapping"] = Devise.mappings[:user]
+
+
+Completed 404 Not Found in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+AbstractController::ActionNotFound (Could not find devise mapping for path "/".
+This may happen for two reasons:
+
+1) You forgot to wrap your route inside the scope block. For example:
+
+  devise_scope :user do
+    get "/some/route" => "some_devise_controller"
+  end
+
+2) You are testing a Devise controller bypassing the router.
+   If so, you can explicitly tell Devise which mapping to use:
+
+   @request.env["devise.mapping"] = Devise.mappings[:user]
+
+):
+  
+devise (4.2.0) app/controllers/devise_controller.rb:88:in `unknown_action!'
+devise (4.2.0) app/controllers/devise_controller.rb:63:in `assert_is_devise_resource!'
+devise (4.2.0) app/controllers/devise_controller.rb:101:in `require_no_authentication'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:382:in `block in make_lambda'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:150:in `block (2 levels) in halting_and_conditional'
+actionpack (5.0.0.1) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:151:in `block in halting_and_conditional'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:454:in `block in call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:454:in `each'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:454:in `call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.0.0.1) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.0.0.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.0.0.1) lib/active_support/notifications.rb:164:in `block in instrument'
+activesupport (5.0.0.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.0.0.1) lib/active_support/notifications.rb:164:in `instrument'
+actionpack (5.0.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.0.0.1) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+activerecord (5.0.0.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+actionpack (5.0.0.1) lib/abstract_controller/base.rb:126:in `process'
+actionview (5.0.0.1) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.0.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.0.1) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+warden (1.2.6) lib/warden/manager.rb:34:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.0.1) lib/active_record/migration.rb:552:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.7ms)
+Started GET "/" for ::1 at 2016-11-06 17:36:12 -0800
+Processing by Devise::SessionsController#new as HTML
+[Devise] Could not find devise mapping for path "/".
+This may happen for two reasons:
+
+1) You forgot to wrap your route inside the scope block. For example:
+
+  devise_scope :user do
+    get "/some/route" => "some_devise_controller"
+  end
+
+2) You are testing a Devise controller bypassing the router.
+   If so, you can explicitly tell Devise which mapping to use:
+
+   @request.env["devise.mapping"] = Devise.mappings[:user]
+
+
+Completed 404 Not Found in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+AbstractController::ActionNotFound (Could not find devise mapping for path "/".
+This may happen for two reasons:
+
+1) You forgot to wrap your route inside the scope block. For example:
+
+  devise_scope :user do
+    get "/some/route" => "some_devise_controller"
+  end
+
+2) You are testing a Devise controller bypassing the router.
+   If so, you can explicitly tell Devise which mapping to use:
+
+   @request.env["devise.mapping"] = Devise.mappings[:user]
+
+):
+  
+devise (4.2.0) app/controllers/devise_controller.rb:88:in `unknown_action!'
+devise (4.2.0) app/controllers/devise_controller.rb:63:in `assert_is_devise_resource!'
+devise (4.2.0) app/controllers/devise_controller.rb:101:in `require_no_authentication'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:382:in `block in make_lambda'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:150:in `block (2 levels) in halting_and_conditional'
+actionpack (5.0.0.1) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:151:in `block in halting_and_conditional'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:454:in `block in call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:454:in `each'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:454:in `call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.0.0.1) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.0.0.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.0.0.1) lib/active_support/notifications.rb:164:in `block in instrument'
+activesupport (5.0.0.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.0.0.1) lib/active_support/notifications.rb:164:in `instrument'
+actionpack (5.0.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.0.0.1) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+activerecord (5.0.0.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+actionpack (5.0.0.1) lib/abstract_controller/base.rb:126:in `process'
+actionview (5.0.0.1) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.0.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.0.1) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+warden (1.2.6) lib/warden/manager.rb:34:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.0.1) lib/active_record/migration.rb:552:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.6ms)
+Started GET "/" for ::1 at 2016-11-06 17:38:43 -0800
+Processing by EditorsController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering editors/show.html.erb within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered collection of messages/_message.html.erb [1 times] (0.7ms)
+  Rendered editors/show.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 145ms (Views: 117.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/cable" for ::1 at 2016-11-06 17:38:43 -0800
+Started GET "/cable/" [WebSocket] for ::1 at 2016-11-06 17:38:43 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started GET "/" for ::1 at 2016-11-06 17:39:04 -0800
+Processing by EditorsController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering editors/show.html.erb within layouts/application
+  [1m[36mMessage Load (0.9ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered collection of messages/_message.html.erb [1 times] (1.1ms)
+  Rendered editors/show.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 101ms (Views: 93.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/path1" for ::1 at 2016-11-06 17:39:05 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/path1"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered collection of /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [17 times] (359.2ms)
+Started GET "/" for ::1 at 2016-11-06 17:39:08 -0800
+Processing by EditorsController#show as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering editors/show.html.erb within layouts/application
+  [1m[36mMessage Load (0.9ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.3ms)
+  Rendered collection of messages/_message.html.erb [1 times] (0.4ms)
+  Rendered editors/show.html.erb within layouts/application (43.6ms)
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (2543.7ms)
+Completed 200 OK in 271ms (Views: 265.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2016-11-06 17:39:41 -0800
+Processing by EditorsController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering editors/show.html.erb within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered collection of messages/_message.html.erb [1 times] (0.5ms)
+  Rendered editors/show.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 129ms (Views: 122.9ms | ActiveRecord: 0.7ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2016-11-06 17:39:41 -0800
+EditorChannel stopped streaming from editor_channel
+Started GET "/cable" for ::1 at 2016-11-06 17:39:42 -0800
+Started GET "/cable/" [WebSocket] for ::1 at 2016-11-06 17:39:42 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started GET "/" for ::1 at 2016-11-06 17:40:05 -0800
+Processing by EditorsController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering editors/show.html.erb within layouts/application
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered collection of messages/_message.html.erb [1 times] (0.5ms)
+  Rendered editors/show.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 152ms (Views: 148.8ms | ActiveRecord: 0.4ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2016-11-06 17:40:05 -0800
+EditorChannel stopped streaming from editor_channel
+Started GET "/cable" for ::1 at 2016-11-06 17:40:06 -0800
+Started GET "/cable/" [WebSocket] for ::1 at 2016-11-06 17:40:06 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started GET "/" for ::1 at 2016-11-06 17:40:22 -0800
+Processing by EditorsController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering editors/show.html.erb within layouts/application
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered collection of messages/_message.html.erb [1 times] (0.5ms)
+  Rendered editors/show.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 84ms (Views: 80.9ms | ActiveRecord: 0.4ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2016-11-06 17:40:22 -0800
+EditorChannel stopped streaming from editor_channel
+Started GET "/cable" for ::1 at 2016-11-06 17:40:22 -0800
+Started GET "/cable/" [WebSocket] for ::1 at 2016-11-06 17:40:22 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started DELETE "/users/sign_out" for ::1 at 2016-11-06 17:40:24 -0800
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"NT0MM2hz7SapHJfs2tMcCwiGlEH0inU1RDhI3JRhwl9MULAkR0KKJeaLUzhCeZFncTaVmuk01Znzh4ZtIVKXPQ=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-11-06 17:40:24 -0800
+Processing by EditorsController#show as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-11-06 17:40:24 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (4.6ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    24:   </div>
+    25: </div>
+    26: 
+    27: <%= form_for(@editor) do |f| %>
+    28:     <div class="field">
+    29:       <%= f.label :filename %><br>
+    30:       <%= f.text_field :filename %>
+  
+app/views/devise/sessions/new.html.erb:27:in `_app_views_devise_sessions_new_html_erb__1002278227511000869_70222751526880'
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.3ms)
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (110.5ms)
+Finished "/cable/" [WebSocket] for ::1 at 2016-11-06 17:40:24 -0800
+EditorChannel stopped streaming from editor_channel
+Started GET "/users/sign_in" for ::1 at 2016-11-06 17:41:06 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (10.8ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `new' for nil:NilClass):
+    24:   </div>
+    25: </div>
+    26: 
+    27: <%= form_for(@editor.new) do |f| %>
+    28:     <div class="field">
+    29:       <%= f.label :filename %><br>
+    30:       <%= f.text_field :filename %>
+  
+app/views/devise/sessions/new.html.erb:27:in `_app_views_devise_sessions_new_html_erb__1002278227511000869_70222819267300'
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.9ms)
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (86.7ms)
+Started GET "/users/sign_in" for ::1 at 2016-11-06 17:43:48 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (727.4ms)
+Completed 500 Internal Server Error in 741ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `create_editor_path' for #<#<Class:0x007fbc044852e8>:0x007fbc0840ca88>):
+    24:   </div>
+    25: </div>
+    26: 
+    27: <%= form_for @editor, :url => create_editor_path(@editor) do |f| %>
+    28:     <div class="field">
+    29:       <%= f.label :filename %><br>
+    30:       <%= f.text_field :filename %>
+  
+app/views/devise/sessions/new.html.erb:27:in `_app_views_devise_sessions_new_html_erb__1002278227511000869_70222781298120'
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.9ms)
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (91.6ms)
+Started GET "/users/sign_in" for ::1 at 2016-11-06 17:44:40 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (6.4ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    24:   </div>
+    25: </div>
+    26: 
+    27: <%= form_for @editor, :url => { :controller => "editors", :action => "create"} do |f| %>
+    28:     <div class="field">
+    29:       <%= f.label :filename %><br>
+    30:       <%= f.text_field :filename %>
+  
+app/views/devise/sessions/new.html.erb:27:in `_app_views_devise_sessions_new_html_erb__1002278227511000869_70222779953460'
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.5ms)
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (94.5ms)
+Started GET "/users/sign_in" for ::1 at 2016-11-06 17:45:23 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (263.0ms)
+Completed 500 Internal Server Error in 281ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `create_editor_path' for #<#<Class:0x007fbc044852e8>:0x007fbc07b51ba0>):
+    24:   </div>
+    25: </div>
+    26: 
+    27: <%= form_for @editors, :url => create_editor_path(@editors) do |f| %>
+    28:     <div class="field">
+    29:       <%= f.label :filename %><br>
+    30:       <%= f.text_field :filename %>
+  
+app/views/devise/sessions/new.html.erb:27:in `_app_views_devise_sessions_new_html_erb__1002278227511000869_70222779941700'
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.5ms)
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (97.3ms)
+Started GET "/users/sign_in" for ::1 at 2016-11-06 17:47:45 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (8.8ms)
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    24:   </div>
+    25: </div>
+    26: 
+    27: <%= form_for @editor, :url => { :controller => "editor", :action => "create" } do |f| %>
+    28:     <div class="field">
+    29:       <%= f.label :filename %><br>
+    30:       <%= f.text_field :filename %>
+  
+app/views/devise/sessions/new.html.erb:27:in `_app_views_devise_sessions_new_html_erb__1002278227511000869_70222812858620'
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.2ms)
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (92.5ms)
+Started GET "/users/sign_in" for ::1 at 2016-11-06 17:55:13 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (6.7ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    24:   </div>
+    25: </div>
+    26: 
+    27: <%= form_for @editor, :url => { :controller => "editor", :action => "create" } do |f| %>
+    28:     <div class="field">
+    29:       <%= f.label :filename %><br>
+    30:       <%= f.text_field :filename %>
+  
+app/views/devise/sessions/new.html.erb:27:in `_app_views_devise_sessions_new_html_erb__1002278227511000869_70222833270680'
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.9ms)
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (97.0ms)
+Started GET "/users/sign_in" for ::1 at 2016-11-06 17:55:32 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 143ms (Views: 141.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cable" for ::1 at 2016-11-06 17:55:33 -0800
+Started GET "/cable/" [WebSocket] for ::1 at 2016-11-06 17:55:33 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started GET "/newPage" for ::1 at 2016-11-06 17:55:38 -0800
+Processing by EditorsController#create as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-11-06 17:55:38 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 97ms (Views: 94.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-11-06 17:55:43 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DSZUfz6rzbonhIBl9YQv/LEq3THTg0jKBBtPFLYHg+ktnkS3LHfLp6I4gK4rHDt08DE6NKWwBJH8hd5Os3jadg==", "user"=>{"email"=>"shaojiuru@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "shaojiuru@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", 2016-11-07 01:55:43 UTC], ["sign_in_count", 2], ["updated_at", 2016-11-07 01:55:43 UTC], ["id", 3]]
+  [1m[35m (9.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/newPage
+Completed 302 Found in 221ms (ActiveRecord: 9.8ms)
+
+
+Started GET "/newPage" for ::1 at 2016-11-06 17:55:43 -0800
+Processing by EditorsController#create as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT MAX("editors"."id") FROM "editors"[0m
+Completed 400 Bad Request in 10ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: editor):
+  
+app/controllers/editors_controller.rb:14:in `create'
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.3ms)
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (17.4ms)
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (102.6ms)
+Finished "/cable/" [WebSocket] for ::1 at 2016-11-06 17:55:43 -0800
+EditorChannel stopped streaming from editor_channel
+Started GET "/users/sign_in" for ::1 at 2016-11-06 17:55:48 -0800
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-11-06 17:55:48 -0800
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-11-06 17:55:48 -0800
+Processing by EditorsController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering editors/show.html.erb within layouts/application
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered collection of messages/_message.html.erb [1 times] (0.6ms)
+  Rendered editors/show.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 101ms (Views: 92.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/cable" for ::1 at 2016-11-06 17:55:49 -0800
+Started GET "/cable/" [WebSocket] for ::1 at 2016-11-06 17:55:49 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started DELETE "/users/sign_out" for ::1 at 2016-11-06 17:55:52 -0800
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gA5Jf4qDgn+LCBYvc1nnEbGer2sxeb/08kpipUwIkdthijSEsbsyBfnlKkRFm6S3Z1atuxS/MNtc7U2hUIziOg=="}
+  [1m[36mUser Load (9.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 19ms (ActiveRecord: 9.9ms)
+
+
+Started GET "/" for ::1 at 2016-11-06 17:55:52 -0800
+Processing by EditorsController#show as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-11-06 17:55:52 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 99ms (Views: 96.1ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2016-11-06 17:55:52 -0800
+EditorChannel stopped streaming from editor_channel
+Started GET "/cable" for ::1 at 2016-11-06 17:55:52 -0800
+Started GET "/cable/" [WebSocket] for ::1 at 2016-11-06 17:55:52 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started GET "/users/sign_in" for ::1 at 2016-11-06 17:58:58 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 143ms (Views: 131.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/cable" for ::1 at 2016-11-06 17:58:59 -0800
+Started GET "/cable/" [WebSocket] for ::1 at 2016-11-06 17:58:59 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started POST "/users/sign_in" for ::1 at 2016-11-06 17:59:00 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rpuWjqGu0tUrTg2ShfEaCXJ30MApN5T2Lf+A2XBCmGpnVbPOmT/Vi6aSary1qvHbXa4KQFsr07RganFYQJTQlw==", "user"=>{"email"=>"shaojiuru@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "shaojiuru@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", 2016-11-07 01:59:01 UTC], ["last_sign_in_at", 2016-11-07 01:55:43 UTC], ["sign_in_count", 3], ["updated_at", 2016-11-07 01:59:01 UTC], ["id", 3]]
+  [1m[35m (9.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 228ms (ActiveRecord: 10.1ms)
+
+
+Started GET "/" for ::1 at 2016-11-06 17:59:01 -0800
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 83ms (Views: 79.5ms | ActiveRecord: 0.3ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2016-11-06 17:59:01 -0800
+EditorChannel stopped streaming from editor_channel
+Started GET "/cable" for ::1 at 2016-11-06 17:59:01 -0800
+Started GET "/cable/" [WebSocket] for ::1 at 2016-11-06 17:59:01 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started GET "/newPage" for ::1 at 2016-11-06 17:59:03 -0800
+Processing by EditorsController#create as HTML
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT MAX("editors"."id") FROM "editors"[0m
+Completed 400 Bad Request in 9ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: editor):
+  
+app/controllers/editors_controller.rb:14:in `create'
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.8ms)
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (87.4ms)
+Started GET "/cable" for ::1 at 2016-11-06 17:59:14 -0800
+Started GET "/cable/" [WebSocket] for ::1 at 2016-11-06 17:59:14 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started GET "/newPage" for ::1 at 2016-11-06 17:59:31 -0800
+Processing by EditorsController#create as HTML
+  [1m[35m (10.7ms)[0m  [1m[34mSELECT MAX("editors"."id") FROM "editors"[0m
+Completed 400 Bad Request in 13ms (ActiveRecord: 10.7ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: editor):
+  
+app/controllers/editors_controller.rb:14:in `create'
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.2ms)
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (92.2ms)
+Started GET "/newPage" for ::1 at 2016-11-06 18:00:02 -0800
+Processing by EditorsController#create as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT MAX("editors"."id") FROM "editors"[0m
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: editor):
+  
+app/controllers/editors_controller.rb:14:in `create'
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (83.6ms)
+Finished "/cable/" [WebSocket] for ::1 at 2016-11-06 18:00:02 -0800
+EditorChannel stopped streaming from editor_channel
+Finished "/cable/" [WebSocket] for ::1 at 2016-11-06 18:00:02 -0800
+EditorChannel stopped streaming from editor_channel
+Started GET "/users/sign_in" for ::1 at 2016-11-06 18:00:04 -0800
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/cable" for ::1 at 2016-11-06 18:00:04 -0800
+Started GET "/cable/" [WebSocket] for ::1 at 2016-11-06 18:00:04 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started GET "/" for ::1 at 2016-11-06 18:00:04 -0800
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 130ms (Views: 123.5ms | ActiveRecord: 0.3ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2016-11-06 18:00:04 -0800
+EditorChannel stopped streaming from editor_channel
+Started GET "/cable" for ::1 at 2016-11-06 18:00:04 -0800
+Started GET "/cable/" [WebSocket] for ::1 at 2016-11-06 18:00:04 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
