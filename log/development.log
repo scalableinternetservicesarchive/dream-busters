@@ -5042,3 +5042,396 @@ Started GET "/cable/" [WebSocket] for ::1 at 2016-11-06 18:00:04 -0800
 Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
 EditorChannel is transmitting the subscription confirmation
 EditorChannel is streaming from editor_channel
+Started GET "/" for ::1 at 2016-11-06 18:13:21 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 549ms (Views: 490.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/cable" for ::1 at 2016-11-06 18:13:22 -0800
+Started GET "/cable/" [WebSocket] for ::1 at 2016-11-06 18:13:22 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started GET "/newPage" for ::1 at 2016-11-06 18:13:25 -0800
+Processing by EditorsController#create as HTML
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT MAX("editors"."id") FROM "editors"[0m
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 1.6ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/editors_controller.rb:18:in `create'
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.2ms)
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (106.0ms)
+Started GET "/newPage" for ::1 at 2016-11-06 18:14:08 -0800
+Processing by EditorsController#create as HTML
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT MAX("editors"."id") FROM "editors"[0m
+Completed 400 Bad Request in 12ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: editor):
+  
+app/controllers/editors_controller.rb:15:in `create'
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.1ms)
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (93.3ms)
+Started GET "/newPage" for ::1 at 2016-11-06 18:14:28 -0800
+Processing by EditorsController#create as HTML
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT MAX("editors"."id") FROM "editors"[0m
+Completed 400 Bad Request in 9ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: editor):
+  
+app/controllers/editors_controller.rb:15:in `create'
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.5ms)
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (89.0ms)
+Started GET "/newPage" for ::1 at 2016-11-06 18:21:37 -0800
+Processing by EditorsController#create as HTML
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT MAX("editors"."id") FROM "editors"[0m
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 2.3ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/editors_controller.rb:20:in `create'
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.6ms)
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (98.7ms)
+Started GET "/newPage" for ::1 at 2016-11-06 18:24:20 -0800
+Processing by EditorsController#create as HTML
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT MAX("editors"."id") FROM "editors"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.6ms)[0m  [1m[32mINSERT INTO "editors" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", 2016-11-07 02:24:20 UTC], ["updated_at", 2016-11-07 02:24:20 UTC]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 169ms (ActiveRecord: 4.9ms)
+
+
+  
+NoMethodError (undefined method `edit_editor_path' for #<EditorsController:0x007fbc75a37e18>
+Did you mean?  edit_password_path):
+  
+app/controllers/editors_controller.rb:28:in `create'
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.6ms)
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (162.6ms)
+Started GET "/newPage" for ::1 at 2016-11-06 18:28:17 -0800
+Processing by EditorsController#create as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT MAX("editors"."id") FROM "editors"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT MAX("editors"."id") FROM "editors"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "editors" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", 2016-11-07 02:28:17 UTC], ["updated_at", 2016-11-07 02:28:17 UTC]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/editors/2/edit
+Completed 302 Found in 106ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/editors/2/edit" for ::1 at 2016-11-06 18:28:17 -0800
+Processing by EditorsController#edit as HTML
+  Parameters: {"id"=>"2"}
+Completed 500 Internal Server Error in 122ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `gon' for #<EditorsController:0x007fbc72d36bf8>):
+  
+app/controllers/editors_controller.rb:41:in `edit'
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.9ms)
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.4ms)
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (153.1ms)
+Started GET "/editors/2/edit" for ::1 at 2016-11-06 18:28:30 -0800
+Processing by EditorsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  Rendering editors/edit.html.erb within layouts/application
+  Rendered editors/edit.html.erb within layouts/application (4.5ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error ('nil' is not an ActiveModel-compatible object. It must implement :to_partial_path.):
+    3: <%= link_to "logout", destroy_user_session_path, method: :delete %>
+    4: 
+    5: <div id="messages">
+    6:   <%= render @messages %>
+    7: </div>
+    8: 
+    9: <form>
+  
+app/views/editors/edit.html.erb:6:in `_app_views_editors_edit_html_erb___143655452105026332_70223693440780'
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.6ms)
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (103.5ms)
+Started GET "/editors/2/edit" for ::1 at 2016-11-06 18:28:42 -0800
+Processing by EditorsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  Rendering editors/edit.html.erb within layouts/application
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered collection of messages/_message.html.erb [1 times] (0.8ms)
+  Rendered editors/edit.html.erb within layouts/application (14.8ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    15: 
+    16: <br>
+    17: 
+    18: <%= form_for @default_content do |f| %>
+    19:     <%= f.text_area :content, :value => @default_content, data: { behavior: "room_editor" }, size: "100x30" %>
+    20: <% end %>
+  
+app/views/editors/edit.html.erb:18:in `_app_views_editors_edit_html_erb___143655452105026332_70223701097480'
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.6ms)
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (94.3ms)
+Started GET "/editors/2/edit" for ::1 at 2016-11-06 18:28:53 -0800
+Processing by EditorsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  Rendering editors/edit.html.erb within layouts/application
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered collection of messages/_message.html.erb [1 times] (0.8ms)
+  Rendered editors/edit.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 144ms (Views: 132.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/cable" for ::1 at 2016-11-06 18:28:53 -0800
+Started GET "/cable/" [WebSocket] for ::1 at 2016-11-06 18:28:53 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started GET "/" for ::1 at 2016-11-06 18:29:08 -0800
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 138ms (Views: 114.8ms | ActiveRecord: 1.1ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2016-11-06 18:29:09 -0800
+EditorChannel stopped streaming from editor_channel
+Started GET "/cable" for ::1 at 2016-11-06 18:29:09 -0800
+Started GET "/cable/" [WebSocket] for ::1 at 2016-11-06 18:29:09 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started GET "/newPage" for ::1 at 2016-11-06 18:29:10 -0800
+Processing by EditorsController#create as HTML
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT MAX("editors"."id") FROM "editors"[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT MAX("editors"."id") FROM "editors"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "editors" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", 2016-11-07 02:29:10 UTC], ["updated_at", 2016-11-07 02:29:10 UTC]]
+  [1m[35m (8.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/editors/3/edit
+Completed 302 Found in 133ms (ActiveRecord: 10.3ms)
+
+
+Started GET "/editors/3/edit" for ::1 at 2016-11-06 18:29:10 -0800
+Processing by EditorsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  Rendering editors/edit.html.erb within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered collection of messages/_message.html.erb [1 times] (1.0ms)
+  Rendered editors/edit.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 104ms (Views: 100.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2016-11-06 18:33:12 -0800
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 170ms (Views: 128.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/cable" for ::1 at 2016-11-06 18:33:12 -0800
+Started GET "/cable/" [WebSocket] for ::1 at 2016-11-06 18:33:12 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started GET "/newPage" for ::1 at 2016-11-06 18:33:13 -0800
+Processing by EditorsController#create as HTML
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT MAX("editors"."id") FROM "editors"[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT MAX("editors"."id") FROM "editors"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "editors" ("filename", "hashpath", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["filename", "default"], ["hashpath", "4"], ["created_at", 2016-11-07 02:33:13 UTC], ["updated_at", 2016-11-07 02:33:13 UTC]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/editors/4/edit
+Completed 302 Found in 100ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/editors/4/edit" for ::1 at 2016-11-06 18:33:13 -0800
+Processing by EditorsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  Rendering editors/edit.html.erb within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered collection of messages/_message.html.erb [1 times] (0.9ms)
+  Rendered editors/edit.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 148ms (Views: 141.5ms | ActiveRecord: 1.3ms)
+
+
+EditorChannel#speak({"message"=>"hh"})
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "hh"], ["created_at", 2016-11-07 02:33:54 UTC], ["updated_at", 2016-11-07 02:33:54 UTC]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] Enqueued MessageBroadcastJob (Job ID: 184dd67c-6a17-44dd-b9a1-8b16582d562d) to Async(default) with arguments: #<GlobalID:0x007fbc75c69ba0 @uri=#<URI::GID gid://code-docs/Message/2>>
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[ActiveJob] [MessageBroadcastJob] [184dd67c-6a17-44dd-b9a1-8b16582d562d] Performing MessageBroadcastJob from Async(default) with arguments: #<GlobalID:0x007fbc74bc08f8 @uri=#<URI::GID gid://code-docs/Message/2>>
+[ActiveJob] [MessageBroadcastJob] [184dd67c-6a17-44dd-b9a1-8b16582d562d]   Rendered messages/_message.html.erb (0.7ms)
+[ActiveJob] [MessageBroadcastJob] [184dd67c-6a17-44dd-b9a1-8b16582d562d] [ActionCable] Broadcasting to editor_channel: "<div class=\"message\">\n<p>hh</p>\n</div>"
+[ActiveJob] [MessageBroadcastJob] [184dd67c-6a17-44dd-b9a1-8b16582d562d] Performed MessageBroadcastJob from Async(default) in 43.47ms
+Started GET "/cable" for ::1 at 2016-11-06 18:34:04 -0800
+Started GET "/cable/" [WebSocket] for ::1 at 2016-11-06 18:34:04 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started GET "/editors/2/edit" for ::1 at 2016-11-06 18:34:35 -0800
+Processing by EditorsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  Rendering editors/edit.html.erb within layouts/application
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered collection of messages/_message.html.erb [2 times] (0.9ms)
+  Rendered editors/edit.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 178ms (Views: 167.0ms | ActiveRecord: 0.2ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2016-11-06 18:34:35 -0800
+EditorChannel stopped streaming from editor_channel
+Started GET "/cable" for ::1 at 2016-11-06 18:34:35 -0800
+Started GET "/cable/" [WebSocket] for ::1 at 2016-11-06 18:34:35 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started GET "/editors/4/edit" for ::1 at 2016-11-06 18:35:15 -0800
+Processing by EditorsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  Rendering editors/edit.html.erb within layouts/application
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered collection of messages/_message.html.erb [2 times] (0.9ms)
+  Rendered editors/edit.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 149ms (Views: 146.1ms | ActiveRecord: 0.6ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2016-11-06 18:35:15 -0800
+EditorChannel stopped streaming from editor_channel
+Started GET "/cable" for ::1 at 2016-11-06 18:35:15 -0800
+Started GET "/cable/" [WebSocket] for ::1 at 2016-11-06 18:35:15 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+Started GET "/editors/4/edit" for ::1 at 2016-11-06 18:38:42 -0800
+Processing by EditorsController#edit as HTML
+  Parameters: {"id"=>"4"}
+Completed 500 Internal Server Error in 120ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `gon' for #<EditorsController:0x007fbc7593df30>):
+  
+app/controllers/editors_controller.rb:37:in `edit'
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.2ms)
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/apple/.rvm/gems/ruby-2.3.1@global/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (148.7ms)
+Started GET "/editors/4/edit" for ::1 at 2016-11-06 18:39:22 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by EditorsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  Rendering editors/edit.html.erb within layouts/application
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."editor_id" = ?[0m  [["editor_id", 4]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered editors/edit.html.erb within layouts/application (28.3ms)
+Completed 200 OK in 499ms (Views: 479.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cable" for ::1 at 2016-11-06 18:39:22 -0800
+Started GET "/cable/" [WebSocket] for ::1 at 2016-11-06 18:39:23 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+EditorChannel is transmitting the subscription confirmation
+EditorChannel is streaming from editor_channel
+EditorChannel#speak({"message"=>"j"})
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "j"], ["created_at", 2016-11-07 02:40:41 UTC], ["updated_at", 2016-11-07 02:40:41 UTC]]
+  [1m[35m (8.7ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] Enqueued MessageBroadcastJob (Job ID: 5cf1a1a8-4d99-4274-8928-7c48d78e85c5) to Async(default) with arguments: #<GlobalID:0x007f9f909dda00 @uri=#<URI::GID gid://code-docs/Message/3>>
+  [1m[36mMessage Load (1.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[ActiveJob] [MessageBroadcastJob] [5cf1a1a8-4d99-4274-8928-7c48d78e85c5] Performing MessageBroadcastJob from Async(default) with arguments: #<GlobalID:0x007f9f8ab0abb8 @uri=#<URI::GID gid://code-docs/Message/3>>
+[ActiveJob] [MessageBroadcastJob] [5cf1a1a8-4d99-4274-8928-7c48d78e85c5]   Rendered messages/_message.html.erb (0.7ms)
+[ActiveJob] [MessageBroadcastJob] [5cf1a1a8-4d99-4274-8928-7c48d78e85c5] [ActionCable] Broadcasting to editor_channel: "<div class=\"message\">\n<p>j</p>\n</div>"
+[ActiveJob] [MessageBroadcastJob] [5cf1a1a8-4d99-4274-8928-7c48d78e85c5] Performed MessageBroadcastJob from Async(default) in 114.66ms
+EditorChannel transmitting "<div class=\"message\">\n<p>j</p>\n</div>" (via streamed from editor_channel)
+EditorChannel#speak({"message"=>"kk"})
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "kk"], ["created_at", 2016-11-07 02:40:47 UTC], ["updated_at", 2016-11-07 02:40:47 UTC]]
+  [1m[35m (8.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[ActiveJob] Enqueued MessageBroadcastJob (Job ID: 9116135c-f42e-4c97-8a2c-37bcc7adb6c5) to Async(default) with arguments: #<GlobalID:0x007f9f908d3c68 @uri=#<URI::GID gid://code-docs/Message/4>>
+[ActiveJob] [MessageBroadcastJob] [9116135c-f42e-4c97-8a2c-37bcc7adb6c5] Performing MessageBroadcastJob from Async(default) with arguments: #<GlobalID:0x007f9f8fe0d5b8 @uri=#<URI::GID gid://code-docs/Message/4>>
+[ActiveJob] [MessageBroadcastJob] [9116135c-f42e-4c97-8a2c-37bcc7adb6c5]   Rendered messages/_message.html.erb (0.5ms)
+[ActiveJob] [MessageBroadcastJob] [9116135c-f42e-4c97-8a2c-37bcc7adb6c5] [ActionCable] Broadcasting to editor_channel: "<div class=\"message\">\n<p>kk</p>\n</div>"
+[ActiveJob] [MessageBroadcastJob] [9116135c-f42e-4c97-8a2c-37bcc7adb6c5] Performed MessageBroadcastJob from Async(default) in 12.99ms
+EditorChannel transmitting "<div class=\"message\">\n<p>kk</p>\n</div>" (via streamed from editor_channel)
+EditorChannel#speak({"message"=>"kk"})
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "kk"], ["created_at", 2016-11-07 02:40:56 UTC], ["updated_at", 2016-11-07 02:40:56 UTC]]
+  [1m[35m (9.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[ActiveJob] Enqueued MessageBroadcastJob (Job ID: 6adcd40e-30a0-4615-afbe-c5997947b024) to Async(default) with arguments: #<GlobalID:0x007f9f90829d58 @uri=#<URI::GID gid://code-docs/Message/5>>
+[ActiveJob] [MessageBroadcastJob] [6adcd40e-30a0-4615-afbe-c5997947b024] Performing MessageBroadcastJob from Async(default) with arguments: #<GlobalID:0x007f9f8aa8c790 @uri=#<URI::GID gid://code-docs/Message/5>>
+[ActiveJob] [MessageBroadcastJob] [6adcd40e-30a0-4615-afbe-c5997947b024]   Rendered messages/_message.html.erb (0.8ms)
+[ActiveJob] [MessageBroadcastJob] [6adcd40e-30a0-4615-afbe-c5997947b024] [ActionCable] Broadcasting to editor_channel: "<div class=\"message\">\n<p>kk</p>\n</div>"
+[ActiveJob] [MessageBroadcastJob] [6adcd40e-30a0-4615-afbe-c5997947b024] Performed MessageBroadcastJob from Async(default) in 13.0ms
+EditorChannel transmitting "<div class=\"message\">\n<p>kk</p>\n</div>" (via streamed from editor_channel)

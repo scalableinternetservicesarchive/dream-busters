@@ -11,9 +11,9 @@ class EditorsController < ApplicationController
       next_id = Editor.maximum(:id)+1;
     end
 
-    permitted = params.require(:editor).permit(:user1)
-    permitted[:path] = next_id.to_s
-    @editor = Editor.new(permitted)
+    @editor = Editor.new(params[:params])
+    @editor.filename = "default"
+    @editor.hashpath = next_id.to_s
 
     if @editor.save
       Dir.mkdir "/tmp/#{@editor.id}"
@@ -31,4 +31,13 @@ class EditorsController < ApplicationController
   	@messages = Message.all
   	@default_content = Editor.default_content
   end
+
+  def edit
+    @editor_id = params[:id]
+    gon.editor_id = @editor_id
+    @id = params[:id]
+    @messages = Message.where(editor_id: @id)
+    @default_content = ""
+  end
+
 end
