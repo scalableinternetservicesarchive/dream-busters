@@ -37,12 +37,12 @@ ActiveRecord::Schema.define(version: 20161107052633) do
     t.index ["user_id"], name: "index_user_editor_relationships_on_user_id"
   end
 
-  create_table "usernames", force: :cascade do |t|
+  create_table "user_names", force: :cascade do |t|
     t.integer  "user_id"
     t.string   "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_usernames_on_user_id"
+    t.index ["user_id"], name: "index_user_names_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
