@@ -12,7 +12,7 @@ gem 'gon'
 gem 'twitter-bootstrap-rails'
 gem 'devise-bootstrap-views'
 
-gem 'sqlite3'
+# gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
