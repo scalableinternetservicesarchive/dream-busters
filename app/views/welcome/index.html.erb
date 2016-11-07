@@ -1,5 +1,7 @@
 <h1><center>Welcome to CodeDocs</center></h1>
 
+<p><%= @user.username.username %></p>
+
 <table style="width:100%">
   <tr>
     <th>File Name</th>
@@ -13,4 +15,4 @@
 </table>
 
 <%= link_to "new editor", newPage_path %>
-
+<%= link_to "logout", destroy_user_session_path, method: :delete %>
