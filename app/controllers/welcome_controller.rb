@@ -7,10 +7,10 @@ class WelcomeController < ApplicationController
       redirect_to new_user_session_path, notice: 'You are not logged in.'
     end
 
-    if @user.username.nil?
-      @username = Username.create(username: @user.email.partition("@").first)
-      @user.username = @username
-    end
+    # if @user.username.nil?
+    #   @username = Username.create(username: @user.email.partition("@").first)
+    #   @user.username = @username
+    # end
 
     @editors = @user.editors.all
   end
