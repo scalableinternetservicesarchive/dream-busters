@@ -1,6 +1,8 @@
 <h1><center>Welcome to CodeDocs</center></h1>
 
 <p><%= @user.username.username %></p>
+<%= link_to "Change Password", change_password_path %><br>
+<%= link_to "Change Username", change_username_path %><br>
 
 <table style="width:100%">
   <tr>
@@ -14,5 +16,5 @@
   <% end %>
 </table>
 
-<%= link_to "new editor", newPage_path %>
-<%= link_to "logout", destroy_user_session_path, method: :delete %>
+<%= link_to "New Editor", newPage_path %><br>
+<%= link_to "Logout", destroy_user_session_path, method: :delete %>

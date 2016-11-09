@@ -1,6 +1,6 @@
-class WelcomeController < ApplicationController
+class WelcomesController < ApplicationController
   before_action :authenticate_user!
-  def index
+  def show
     if current_user
       @user = current_user
     else

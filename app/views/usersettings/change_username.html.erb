@@ -1,0 +1,14 @@
+<p>This is change username page</p>
+<%= form_for @username, url: update_username_path(@username), method: :patch do |f| %>
+    <div class="field">
+      <%= f.label "New User Name" %><br>
+      <%= f.text_field :username %>
+    </div>
+
+    <div class="action_container">
+      <%= f.submit "Update"%>
+    </div>
+
+<% end %>
+
+<%= link_to "Back", welcomes_path%>
