@@ -1,24 +1,36 @@
-# README
+# CodeDocs
+UCLA Fall 2016 CS188 project
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Our web app CodeDocs is designed for multiple people to write code on the same file simultaneously. It also supports compilation and prints console output to the webpage. It'll be useful for collabration coding and coding interviews.
 
-Things you may want to cover:
+Team Member:
+  - Jiuru Shao [@Brick-Mover](https://github.com/Brick-Mover)
+  - Shuang Wang [@Shuang-Wang](https://github.com/Shuang-Wang)
+  - Haoxiang Zhang [@haoxiangzhx](https://github.com/haoxiangzhx)
+  - Maolei Tang [@hahtml](https://github.com/hahtml)
 
-* Ruby version
+Ruby version: 2.3.1
 
-* System dependencies
+Rails version: 5.0.0.1
 
-* Configuration
+System dependencies: Linux Ubuntu 16.10
 
-* Database creation
+Configuration
 
-* Database initialization
+Development
+  - Install VirtualBox from: www.virtualbox.org/wiki/Downloads
+  - Setup Ruby on Rails on Linux: https://gorails.com/setup/osx/10.11-el-capitan
 
-* How to run the test suite
+Database creation
+  - run command rake db:create to create new databases
+  - modify password in config/database.yml to own password instead
+  - uncomment the database names in development and test database
 
-* Services (job queues, cache servers, search engines, etc.)
+Database initialization
 
-* Deployment instructions
+How to run the test suite
 
-* ...
+Services (job queues, cache servers, search engines, etc.)
+
+Deployment instructions
+ 
