@@ -43,34 +43,20 @@
     <%= javascript_include_tag "application" %>
 
   </head>
+
+  <%= render 'layouts/header' %>
+
   <body>
-
-    <div class="navbar navbar-default navbar-static-top">
-      <div class="container">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="/">CodeDocs</a>
-        <div class="navbar-collapse collapse navbar-responsive-collapse">
-          <ul class="nav navbar-nav">
-            <li><%= link_to "Manage Username", change_username_path %></li>
-            <li><%= link_to "Manage Password", change_password_path  %></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
 
     <div class="col-lg-12">
       <%= bootstrap_flash %>
       <%= yield %>
     </div>
 
-
     <footer>
+    <div class="col-lg-10 col-lg-offset-1">
       <p>&copy; Company 2016</p>
+    </div>
     </footer>
 
     </div> <!-- /container -->
