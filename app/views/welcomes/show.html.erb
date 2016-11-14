@@ -1,0 +1,79 @@
+<h1>Welcome to CodeDocs</h1>
+
+<p>Username: <%= @user.username.username %></p>
+
+<table style="width:100%">
+  <tr>
+    <th>File Name</th>
+  </tr>
+
+  <% @editors.each do |editor| %>
+    <tr>
+      <td><%= editor.filename %></td>
+      <td><%= link_to 'Edit', editor_path(editor) %></td>
+    </tr>
+  <% end %>
+
+</table>
+
+<%# create a new editor %>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Add New Document
+</button>
+
+<%# load existing editor %>
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal2">
+  Load Document
+</button>
+
+
+<!-- Modal -->
+<%= form_for Editor.new, :url => create_editor_path(@editor), :html => {:method => :post} do |f| %>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Please enter document name: </h4>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <%= f.text_field :filename, autofocus: true, class: 'form-control' %>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <%= f.submit "Add!", class: 'btn btn-primary' %>
+      </div>
+    </div>
+  </div>
+</div>
+<% end %>
+
+<!-- Modal -->
+<%= form_tag("/load", method: "get") do %>
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Please enter document ID: </h4>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <%= text_field_tag(:hashpath, '', :class => 'form-control') %>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <%= button_tag(type: 'submit', class: "btn btn-large btn-search btn-primary") do %>
+          <i class="icon icon-search"></i>Load
+          <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+<% end %>
+
+<%= link_to 'Logout', destroy_user_session_path, method: :delete %>

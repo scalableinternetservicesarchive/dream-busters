@@ -1,0 +1,11 @@
+<h1>Add new editor</h1>
+
+<%= form_for @editor do |f| %>
+    <div class="form-group">
+      <%= f.label :filename %>
+      <%= f.text_field :filename, autofocus: true %>
+      <%= debug params %>
+    </div>
+
+    <%= f.submit "Add!", class: 'btn btn-primary' %>
+<% end %>
