@@ -12,6 +12,10 @@ gem 'gon'
 gem 'twitter-bootstrap-rails'
 gem 'devise-bootstrap-views'
 
+gem 'bootstrap-sass', '3.3.6'
+
+gem 'friendly_id'
+
 #gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
