@@ -60,7 +60,7 @@ class EditorsController < ApplicationController
   def show
     @editor = Editor.where(hashpath: params[:id]).first
 
-    @editor_id = params[:id]
+    @editor_id = @editor.id
     gon.editor_id = @editor_id
 
     @username = current_user.username.username
@@ -70,16 +70,13 @@ class EditorsController < ApplicationController
   end
 
   def update
-    @editor = Editor.find_by_id(params[:id])
-    @editor_id = params[:id]
+    @editor = Editor.where(hashpath: params[:id]).first
+    @editor_id = @editor.id
 
     @content = params[:editor][:content]
     @username = current_user.username.username
 
     @editor.set_content(@content, @username)
-
-    # render :show do |page|
-    #   page.replace_html 'x', :partial => "text", :locals => { :f => @editor }
 
     respond_to do |format|
       format.js
