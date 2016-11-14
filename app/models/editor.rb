@@ -7,26 +7,26 @@ class Editor < ApplicationRecord
   	has_many :messages
 
 	def get_content
-		@editor_id = self.id
-		file = File.open("/tmp/#{@editor_id}/file.txt", "rb")
+		@hashpath = self.hashpath
+		file = File.open("/tmp/"+@hashpath+"/file.txt", "rb")
 		file.read
 	end
 
 	def set_content(content, username)
 		@editor_id = self.id
-		system("git -C /tmp/#{@editor_id} checkout ".concat(username))
+		system("git -C /tmp/"+@hashpath+" checkout ".concat(username))
 
 		# write
-		File.open("/tmp/#{@editor_id}/file.txt", 'w') do |f2|
+		File.open("/tmp/"+@hashpath+"/file.txt", 'w') do |f2|
 			f2.puts content
 		end
 
-		system("git -C /tmp/#{@editor_id} add /tmp/#{@editor_id}/file.txt")
-		system("git -C /tmp/#{@editor_id} commit -m \"".concat(username).concat("\""))
+		system("git -C /tmp/"+@hashpath+" add /tmp/"+@hashpath+"/file.txt")
+		system("git -C /tmp/"+@hashpath+" commit -m \"".concat(username).concat("\""))
 
-		system("git -C /tmp/#{@editor_id} checkout master")
+		system("git -C /tmp/"+@hashpath+" checkout master")
 
-		system("git -C /tmp/#{@editor_id} merge ".concat(username))
+		system("git -C /tmp/"+@hashpath+" merge ".concat(username))
 	end
 	
 

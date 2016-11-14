@@ -45,12 +45,12 @@ class EditorsController < ApplicationController
         redirect_to new_user_session_path, notice: 'You are not logged in.'
       end
 
-      Dir.mkdir "/tmp/#{@editor.id}"
-      system("git -C /tmp/#{@editor.id} init")
-      system("touch /tmp/#{@editor.id}/file.txt")
-      system("git -C /tmp/#{@editor.id} add /tmp/#{@editor.id}/*")
-      system("git -C /tmp/#{@editor.id} commit -m \"init repo\"")
-      system("git -C /tmp/#{@editor.id} checkout -b" + @user.email)
+      Dir.mkdir "/tmp/#{@editor.hashpath}"
+      system("git -C /tmp/#{@editor.hashpath} init")
+      system("touch /tmp/#{@editor.hashpath}/file.txt")
+      system("git -C /tmp/#{@editor.hashpath} add /tmp/#{@editor.hashpath}/*")
+      system("git -C /tmp/#{@editor.hashpath} commit -m \"init repo\"")
+      system("git -C /tmp/#{@editor.hashpath} checkout -b" + @user.email)
       redirect_to editor_path(@editor)
     else
       render 'new'
@@ -74,7 +74,7 @@ class EditorsController < ApplicationController
     @editor_id = @editor.id
 
     @content = params[:editor][:content]
-    @username = current_user.username.username
+    @username = current_user.email
 
     @editor.set_content(@content, @username)
 
