@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   root to: 'welcomes#index'
   resource :welcomes
 
+  get '/home', to: 'welcomes#index'
+  get '/profile', to: 'welcomes#show'
   get '/change_password', to: 'usersettings#change_password'
   get '/change_username', to: 'usersettings#change_username'
   patch '/change_username/:id', to: 'usersettings#update_username', as: :update_username

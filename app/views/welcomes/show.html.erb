@@ -1,32 +1,64 @@
-<h1>Welcome to CodeDocs</h1>
 
-<p>Username: <%= @user.username.username %></p>
 
-<table style="width:100%">
-  <tr>
-    <th>File Name</th>
-  </tr>
+<div id="page-wrapper">
+  <div class="row">
+    <div class="col-lg-10 col-lg-offset-1">
+      <h2 style="padding-top:50px;">Welcome to CodeDocs, <%= @user.username.username %></h2>
+    </div>
+    <!-- /.col-lg-12 -->
+  </div>
 
-  <% @editors.each do |editor| %>
-    <tr>
-      <td><%= editor.filename %></td>
-      <td><%= link_to 'Edit', editor_path(editor) %></td>
-    </tr>
-  <% end %>
+  <div class="row">
+    <div class="col-lg-10 col-lg-offset-1">                 
+      <div class="panel panel-info">
+        <!-- Panel Heading -->
+        <div class="panel-heading">
+        <h3 class="panel-title">Documents</h3>          
+        </div>
 
-</table>
+        <!-- Panel Body -->
+        <div class="panel-body">
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Filename</th>
+                  <th>Last modified time</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <% @editors.each do |editor| %>
+                <tr>
+                  <td><%= editor.filename %></td>
+                  <td><%= editor.updated_at %></td>
+                  <td><%= link_to 'Edit', editor_path(editor), class: "btn btn-primary" %></td>
+                </tr>
+                <% end %>
+              </tbody>
+            </table>
+          </div>
+          <!-- /.table-responsive -->
+        </div>
 
-<%# create a new editor %>
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  Add New Document
-</button>
+        <!-- Panel Footer -->
+        <div class="panel-footer">
+          <%# create a new editor %>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+            Add New Document
+          </button>
 
-<%# load existing editor %>
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal2">
-  Load Document
-</button>
-
+          <%# load existing editor %>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">
+            Load Document
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /#page-wrapper -->
 
 <!-- Modal -->
 <%= form_for Editor.new, :url => create_editor_path(@editor), :html => {:method => :post} do |f| %>
@@ -75,5 +107,3 @@
   </div>
 </div>
 <% end %>
-
-<%= link_to 'Logout', destroy_user_session_path, method: :delete %>

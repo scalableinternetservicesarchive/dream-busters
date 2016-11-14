@@ -1,5 +1,5 @@
 <%= form_for @editor, remote: true do |f| %>
     <%= f.text_area :content, :value => @editor.get_content, :cols => "80", :rows => "20" %>
-    <%= f.submit 'fuck' %>
+    <%= f.submit 'Submit' %>
     <%= debug params %>
 <% end %>
