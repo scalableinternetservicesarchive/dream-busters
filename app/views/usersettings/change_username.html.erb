@@ -1,14 +1,34 @@
-<p>This is change username page</p>
-<%= form_for @username, url: update_username_path(@username), method: :patch do |f| %>
-    <div class="field">
-      <%= f.label "New User Name" %><br>
-      <%= f.text_field :username %>
-    </div>
+<%= stylesheet_link_tag 'custom', media: 'all' %>
 
-    <div class="action_container">
-      <%= f.submit "Update"%>
-    </div>
+<div class="row">
+	<div class="col-lg-6 col-lg-offset-3">
+		<div class="panel panel-info">
+			<div class="panel-heading">
+				<h3 class="panel-title">Change Username</h3>          
+			</div>
+			<div class="panel-body">
+				<div class="form-group has-warning">
+					<%= form_for @username, url: update_username_path(@username), method: :patch do |f| %>
+						<div class="field">
+							<%= f.label "New User Name", class: "control-label" %><br>
+							<%= f.text_field :username, class: "form-control" %>
+						</div>
 
-<% end %>
+						<h5></h5>
+						<div class="action_container">
+							<%= f.submit "Update", class: "btn btn-primary" %>
+						</div>
+					<% end %>
+				</div>
+			</div>
 
-<%= link_to "Back", welcomes_path%>
+			<div class="panel-footer">
+				<%= link_to "Back", welcomes_path, class: "btn btn-primary" %>
+			</div>
+
+		</div>
+
+	</div>
+	<!-- /.col-lg-12 -->
+</div>
+<!-- /.row -->
