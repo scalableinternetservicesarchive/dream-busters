@@ -16,6 +16,9 @@ gem 'bootstrap-sass', '3.3.6'
 
 gem 'friendly_id'
 
+gem 'nobrainer'  
+gem 'nobrainer_streams'
+
 #gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
