@@ -13,3 +13,7 @@ Rails.application.config.assets.version = '1.0'
 Rails.application.config.assets.precompile += %w( custom.css )
 Rails.application.config.assets.precompile += %w( welcome.css )
 Rails.application.config.assets.precompile += %w( styles.css )
+Rails.application.config.assets.precompile += %w( devise.css )
+Rails.application.config.assets.precompile += %w( welcome_index.css )
+Rails.application.config.assets.precompile += %w( editors.css )
+Rails.application.config.assets.precompile += %w( layout.css )

@@ -1,4 +1,6 @@
-<div class="panel panel-default devise-bs">
+<%= stylesheet_link_tag 'devise', media: 'all' %>
+<div class="col-lg-6 col-lg-offset-3">
+<div class="panel panel-info devise-bs">
   <div class="panel-heading">
     <h4><%= t('.sign_in', :default => "Sign in") %></h4>
   </div>
@@ -24,5 +26,6 @@
   </div>
 </div>
 
-
 <%= render "devise/shared/links" %>
+
+</div>

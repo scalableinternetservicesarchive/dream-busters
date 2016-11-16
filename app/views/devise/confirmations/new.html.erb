@@ -1,5 +1,7 @@
+<%= stylesheet_link_tag 'devise', media: 'all' %>
+<div class="col-lg-6 col-lg-offset-3">
 <%= bootstrap_devise_error_messages! %>
-<div class="panel panel-default devise-bs">
+<div class="panel panel-info devise-bs">
   <div class="panel-heading">
     <h4><%= t('.resend_confirmation_instructions', :default => 'Resend confirmation instructions') %></h4>
   </div>
@@ -16,3 +18,4 @@
 </div>
 
 <%= render "devise/shared/links" %>
+</div>
