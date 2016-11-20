@@ -4,7 +4,7 @@ class ActiveUsersChannel < ApplicationCable::Channel
 
   def subscribed
   	@active_user = ActiveUser.create editor_id: params[:id], name: params[:name]
-  	stream_from ActiveUser.where(editor_id: params[:id])
+  	stream_from ActiveUser.where(editor_id: params[:id]), include_initial: true
   end
 
   def unsubscribed
