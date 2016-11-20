@@ -68,4 +68,3 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'json'
-gem 'multi_json', '1.7.8'
