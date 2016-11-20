@@ -1,4 +1,4 @@
-App.active_users = App.cable.subscriptions.create "ActiveUsersChannel",
+App.active_users = App.cable.subscriptions.create { channel: "ActiveUsersChannel", id: gon.editor_id, name: gon.username},
   connected: ->
     # Called when the subscription is ready for use on the server
 
