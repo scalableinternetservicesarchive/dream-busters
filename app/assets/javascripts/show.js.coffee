@@ -13,3 +13,13 @@ App.page =
         $('#active_users_list').html(
             ("<li>#{user.name}</li>" for name,user of @active_users).join("")
         )
+
+    setup: () ->
+        container = document.getElementById('ace')
+        aceEditor = ace.edit(container)
+        ace.config.set 'basePath', '/ace'
+        aceEditor.setTheme 'ace/theme/twilight'
+        aceEditor.session.setMode 'ace/mode/c_cpp'
+
+
+$ -> App.page.setup()
