@@ -9,6 +9,10 @@
 <% javascript_include_tag 'ace/theme-twilight.js' %>
 <% javascript_include_tag 'ace/mode-c_cpp.js' %>
 <% javascript_include_tag 'ace/mode-javascript.js' %>
+<% javascript_include_tag 'ace/mode-java.js' %>
+<% javascript_include_tag 'ace/mode-ruby.js' %>
+<% javascript_include_tag 'ace/mode-python.js' %>
+<% javascript_include_tag 'ace/mode-lisp.js' %>
 <% javascript_include_tag "show" %>
 
 <div class="row show-grid">
@@ -19,12 +23,26 @@
   <div class="col-lg-4">
 
     <div class="form-group">
-      <label for="pl">Select list:</label>
+      <label for="pl">Select language:</label>
       <select class="form-control" id="pl">
-        <option>Javascript</option>
         <option>C/C++</option>
+        <option>Java</option>
+        <option>Javascript</option>
         <option>Ruby</option>
         <option>Python</option>
+        <option>Lisp</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="pl">Select language:</label>
+      <select class="form-control" id="theme">
+        <option>C/C++</option>
+        <option>Java</option>
+        <option>Javascript</option>
+        <option>Ruby</option>
+        <option>Python</option>
+        <option>Lisp</option>
       </select>
     </div>
 
@@ -79,15 +97,24 @@
     var selectedPl = $(this).find("option:selected").text();
     var container = document.getElementById('ace');
     var aceEditor = ace.edit(container);
-    console.log(selectedPl);
+
     if (selectedPl == "Javascript") {
-      console.log("select Javascript");
       aceEditor.session.setMode('ace/mode/javascript');
     }
     else if (selectedPl == "C/C++") {
-      console.log("select c/c++");
       aceEditor.session.setMode('ace/mode/c_cpp');
     }
-
+    else if (selectedPl == "Java") {
+      aceEditor.session.setMode('ace/mode/java');
+    }
+    else if (selectedPl == "Ruby") {
+      aceEditor.session.setMode('ace/mode/ruby');
+    }
+    else if (selectedPl == "Python") {
+      aceEditor.session.setMode('ace/mode/python');
+    }
+    else if (selectedPl == "Lisp") {
+      aceEditor.session.setMode('ace/mode/lisp');
+    }
   });
 </script>
