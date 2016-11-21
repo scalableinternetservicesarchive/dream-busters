@@ -10,3 +10,8 @@ App.active_users = App.cable.subscriptions.create { channel: "ActiveUsersChannel
       App.page.remove_user(data.old_val)
     else if data.new_val
       App.page.new_user(data.new_val)
+    else if data.current_user
+      App.page.set_current_user(data.current_user)
+
+  select_line: (line) ->
+    @perform('select_line', selected_line: line)
