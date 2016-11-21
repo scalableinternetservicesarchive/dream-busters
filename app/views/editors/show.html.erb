@@ -2,29 +2,35 @@
   <%= include_gon %>
 </head>
 
-<h2>Code Docs</h2>
+<h1>Code Docs</h1>
 
 <%= stylesheet_link_tag 'custom', media: 'all' %>
+<!--include themes you want to use here-->
+<% javascript_include_tag 'ace/theme-twilight.js' %>
+<% javascript_include_tag 'ace/mode-c_cpp.js' %>
+<% javascript_include_tag "show" %>
 
 <div class="row show-grid">
-  <div class="col-md-8">
-    <div class="ace-editor">
-      <textarea> </textarea>
+  <div class="col-md-8" style="min-height: 594px;">
+    <div class="ace" id="ace">
+
     </div>
-    <section id="ace-container">
-    </section>
+
   </div>
   <div class="col-lg-4">
-
-
-    <div class="form-group" >
-      <label for="sel1">Select list:</label>
-      <select class="form-control" id="sel1">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-      </select>
+    <div class="btn-group">
+      <i class="dropdown-arrow dropdown-arrow-inverse"></i>
+      <button class="btn btn-primary status">status</button>
+      <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu dropdown-inverse">
+        <li><a href="#fakelink">pending</a>
+        </li>
+        <li><a href="#fakelink">active</a>
+        </li>
+        <li><a href="#fakelink">discontinued</a>
+        </li>
+      </ul>
     </div>
 
     <div class="panel panel-info">
@@ -73,44 +79,4 @@
     <!-- /.panel .chat-panel -->
   </div>
 </div>
-
-
-<!--include themes you want to use here-->
-<% javascript_include_tag 'ace/theme-twilight.js' %>
-<% javascript_include_tag 'ace/mode-c_cpp.js' %>
-
-<script type="text/javascript" charset="utf-8">
-  $('#sel1').change(function () {
-    var selectedText = $(this).find("option:selected").text();
-    console.log(selectedText);
-  });
-
-  $(document).ready(function() {
-    // initialize all Ace editors on the page.
-    $(".ace-editor").each(function(index, item) {
-      initAceEditor(item);
-    });
-  });
-
-  function initAceEditor(container) {
-    container = $(container);
-    var textarea = container.find("textarea");
-    var aceEditorDiv = $('<div>', {
-      "class": "ace"
-    }).insertBefore(textarea);
-    ace.config.set("basePath", "/ace");
-
-    var aceEditor = ace.edit(aceEditorDiv[0]);
-
-    aceEditor.setTheme("ace/theme/twilight");
-
-    aceEditor.session.setMode("ace/mode/c_cpp");
-
-    textarea.closest('form').submit(function() {
-      textarea.val(aceEditor.getValue());
-    });
-  }
-</script>
-
-
 
