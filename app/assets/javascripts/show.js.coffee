@@ -45,7 +45,7 @@ App.page =
         container = document.getElementById('ace')
         aceEditor = ace.edit(container)
         ace.config.set 'basePath', '/ace'
-        aceEditor.setTheme 'ace/theme/twilight'
+        aceEditor.setTheme 'ace/theme/github'
         aceEditor.session.setMode 'ace/mode/c_cpp'
         aceEditor.session.textarea.closest('form').submit ->
             textarea.val aceEditor.getValue()

@@ -18,10 +18,6 @@ Rails.application.config.assets.precompile += %w( welcome_index.css )
 Rails.application.config.assets.precompile += %w( editors.css )
 Rails.application.config.assets.precompile += %w( layout.css )
 Rails.application.config.assets.precompile += %w( show.js )
-Rails.application.config.assets.precompile += %w( ace/theme-twilight.js )
-Rails.application.config.assets.precompile += %w( ace/mode-javascript.js )
-Rails.application.config.assets.precompile += %w( ace/mode-c_cpp.js )
-Rails.application.config.assets.precompile += %w( ace/mode-java.js )
-Rails.application.config.assets.precompile += %w( ace/mode-ruby.js )
-Rails.application.config.assets.precompile += %w( ace/mode-python.js )
-Rails.application.config.assets.precompile += %w( ace/mode-lisp.js )
+
+Rails.application.config.assets.precompile += %w( ace/* )
+
