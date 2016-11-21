@@ -134,3 +134,9 @@ textarea.codemirror {
 .user-10 { @include colored-border(#cab2d6);}
 .user-11 { @include colored-border(#ffff99);}
 .user-12 { @include colored-border(#1f78b4);}
+
+.myMarker {
+  position:absolute;
+  background:rgba(100,200,100,0.5);
+  z-index:20
+}

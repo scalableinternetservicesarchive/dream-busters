@@ -41,13 +41,26 @@ App.page =
     #             cell.classList.add('user-' + user.num)
 
     setup: () ->
-        @selected_line = []
         container = document.getElementById('ace')
-        aceEditor = ace.edit(container)
+        EditSession = ace.require("ace/edit_session").EditSession
+        @aceEditor = ace.edit(container)
+        @aceEditor.setSession('')
         ace.config.set 'basePath', '/ace'
-        aceEditor.setTheme 'ace/theme/twilight'
-        aceEditor.session.setMode 'ace/mode/c_cpp'
-        aceEditor.session.textarea.closest('form').submit ->
-            textarea.val aceEditor.getValue()
+        @aceEditor.setTheme 'ace/theme/twilight'
+        @aceEditor.getSession().setMode 'ace/mode/c_cpp'
+        @aceEditor.setShowPrintMargin false
+        # aceEditor.session.textarea.closest('form').submit ->
+        #     textarea.val aceEditor.getValue()
+        @aceEditor.on 'change', (event) ->
+            selected = event.end
+            deselected = event.start
+            # @select_line(selected)
+            # Range = ace.require('ace/range').Range
+            # @aceEditor.session.addMarker(new Range(1, 1, 2, 2), "myMarker", "fullLine")
+
+    select_line: (line) ->
+        App.active_users.select_line(line)
+
+    deselect_line: () -> App.active_users.select_line(null)
 
 $ -> App.page.setup()
