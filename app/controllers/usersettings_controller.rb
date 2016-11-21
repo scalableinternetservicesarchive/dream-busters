@@ -18,7 +18,8 @@ class UsersettingsController < ApplicationController
 
   def update_username
     unless params[:username].nil?
-      @username = User.username
+      @user = current_user
+      @username = @user.username
       # @username = Username.find(params[:id])
       @username.update(params.require(:username).permit(:username))
       return redirect_to welcomes_path, notice: "Username changed successfully"

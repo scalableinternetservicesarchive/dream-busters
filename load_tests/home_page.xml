@@ -74,13 +74,16 @@
                   <http url="/users" method="POST" version="1.1"
                     contents="utf8=%E2%9C%93&amp;authenticity_token=%%_authenticity_token%%&amp;user%5Bemail%5D=user%%_random_email_address%%@hotmail.com&amp;user%5Bpassword%5D=password&amp;user%5Bpassword_confirmation%5D=password&amp;commit=Sign+up"></http>
               </request>
+
+              <!-- view the home page time -->
+              <thinktime value="2" random="true"></thinktime>
           </transaction>
 
           <transaction name="change_user_name">
               <!-- view the home page time -->
               <thinktime value="2" random="true"></thinktime>
 
-              <!-- change user name -->
+              <!-- get username page -->
               <request>
                   <http url='/change_username' version='1.1' method='GET'></http>
               </request>
@@ -98,10 +101,46 @@
                 <var name="random_username" />
               </setdynvars>
               <request subst="true">
-                  <http url="/users" method="PATCH" version="1.1"
-                    contents="utf8=%E2%9C%93&amp;authenticity_token=%%_authenticity_token%%&amp;username%5Busername%5D=%%_random_username&amp;commit=Update"></http>
-              </request>              
+                  <http url="/change_username" method="POST" version="1.1"
+                    contents="utf8=%E2%9C%93&amp;_method=patch&amp;authenticity_token=%%_authenticity_token%%&amp;username%5Busername%5D=%%_random_username&amp;commit=Update"></http>
+              </request>
+
+              <!-- view the home page time -->
+              <thinktime value="2" random="true"></thinktime>
+
           </transaction>
+
+          <transaction name="change_user_password">
+              <!-- view the home page time -->
+              <thinktime value="2" random="true"></thinktime>
+
+              <!-- get user password page -->
+              <request>
+                  <http url='/change_password' version='1.1' method='GET'></http>
+              </request>
+
+              <!-- view the home page time -->
+              <thinktime value="2" random="true"></thinktime>
+
+              <setdynvars sourcetype="eval" code="fun({Pid,DynVars})->
+                  {ok, Val} = ts_dynvars:lookup(authenticity_token, DynVars),
+                  list_to_binary(http_uri:encode(binary_to_list(Val)))
+                  end.">
+                  <var name="authenticity_token" />
+              </setdynvars>
+              <request subst="true">
+                  <http url="/change_password" method="POST" version="1.1"
+                    contents="utf8=%E2%9C%93&amp;_method=patch&amp;authenticity_token=%%_authenticity_token%%&amp;user%5Bpassword%5D=newpassword&amp;user%5Bpassword_confirmation%5D=newpassword&amp;commit=Update+User"></http>
+              </request>
+
+              <!-- view the home page time -->
+              <thinktime value="2" random="true"></thinktime>
+
+              <!-- re-login with new password -->
+              
+
+          </transaction>
+
 
 
 
