@@ -20,7 +20,7 @@ App.page =
         aceEditor = ace.edit(container)
         ace.config.set 'basePath', '/ace'
         aceEditor.setTheme 'ace/theme/twilight'
-        aceEditor.session.setMode 'ace/mode/c_cpp'
+        aceEditor.session.setMode 'ace/mode/javascript'
 
 
 $ -> App.page.setup()

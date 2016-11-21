@@ -8,6 +8,7 @@
 <!--include themes you want to use here-->
 <% javascript_include_tag 'ace/theme-twilight.js' %>
 <% javascript_include_tag 'ace/mode-c_cpp.js' %>
+<% javascript_include_tag 'ace/mode-javascript.js' %>
 <% javascript_include_tag "show" %>
 
 <div class="row show-grid">
@@ -15,22 +16,18 @@
     <div class="ace" id="ace">
 
     </div>
-
   </div>
+
   <div class="col-lg-4">
-    <div class="btn-group">
-      <i class="dropdown-arrow dropdown-arrow-inverse"></i>
-      <button class="btn btn-primary status">status</button>
-      <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> <span class="caret"></span>
-      </button>
-      <ul class="dropdown-menu dropdown-inverse">
-        <li><a href="#fakelink">pending</a>
-        </li>
-        <li><a href="#fakelink">active</a>
-        </li>
-        <li><a href="#fakelink">discontinued</a>
-        </li>
-      </ul>
+
+    <div class="form-group">
+      <label for="pl">Select list:</label>
+      <select class="form-control" id="pl">
+        <option>Javascript</option>
+        <option>C/C++</option>
+        <option>Ruby</option>
+        <option>Python</option>
+      </select>
     </div>
 
     <div class="panel panel-info">
@@ -68,10 +65,10 @@
         <div class="input-group">
           <input id="chat" type="text" class="form-control input-sm" data-behavior="room_speaker" placeholder="Type your message here..." />
           <span class="input-group-btn">
-                            <button class="btn btn-warning btn-sm" id="btn-chat" data-behavior="room_speaker_enter">
-                                Send
-                            </button>
-                        </span>
+            <button class="btn btn-warning btn-sm" id="btn-chat" data-behavior="room_speaker_enter">
+              Send
+            </button>
+          </span>
         </div>
       </div>
       <!-- /.panel-footer -->
@@ -80,3 +77,20 @@
   </div>
 </div>
 
+<script>
+  $('#pl').change(function () {
+    var selectedPl = $(this).find("option:selected").text();
+    var container = document.getElementById('ace');
+    var aceEditor = ace.edit(container);
+    console.log(selectedPl);
+    if (selectedPl == "Javascript") {
+      console.log("select Javascript");
+      aceEditor.session.setMode('ace/mode/javascript');
+    }
+    else if (selectedPl == "C/C++") {
+      console.log("select c/c++");
+      aceEditor.session.setMode('ace/mode/c_cpp');
+    }
+
+  });
+</script>
