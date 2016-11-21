@@ -30,10 +30,13 @@
 </div>
 <!-- /.row -->
 
-<%# don't change 'x' %>
-<div id="x">
-	<%= render partial: 'text', locals: { f: @editor } %>
+<div class="ace-editor">
+  <textarea> </textarea>
 </div>
+
+<section id="ace-container">
+
+  </section>
 
 <br>
 
@@ -100,3 +103,36 @@
 		</div>
 		<!-- /.panel .chat-panel -->
 	</div>
+
+
+<!--include themes you want to use here-->
+<% javascript_include_tag 'ace/theme-twilight.js' %>
+<% javascript_include_tag 'ace/mode-c_cpp.js' %>
+
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function() {
+    // initialize all Ace editors on the page.
+    $(".ace-editor").each(function(index, item) {
+      initAceEditor(item);
+    });
+  });
+
+  function initAceEditor(container) {
+    container = $(container);
+    var textarea = container.find("textarea");
+    var aceEditorDiv = $('<div>', {
+      "class": "ace"
+    }).insertBefore(textarea);
+    ace.config.set("basePath", "/ace");
+
+    var aceEditor = ace.edit(aceEditorDiv[0]);
+
+    aceEditor.setTheme("ace/theme/twilight");
+
+    aceEditor.session.setMode("ace/mode/c_cpp");
+
+    textarea.closest('form').submit(function() {
+      textarea.val(aceEditor.getValue());
+    });
+  }
+</script>>
