@@ -2,32 +2,63 @@
   <%= include_gon %>
 </head>
 
-<h1>Code Docs</h1>
+<h3>Code Docs</h3>
 
 <%= stylesheet_link_tag 'custom', media: 'all' %>
 <!--include themes you want to use here-->
+<% javascript_include_tag 'ace/theme-github.js' %>
+<% javascript_include_tag 'ace/theme-chaos.js' %>
 <% javascript_include_tag 'ace/theme-twilight.js' %>
+<% javascript_include_tag 'ace/theme-monokai.js' %>
+<% javascript_include_tag 'ace/theme-mono_industrial.js' %>
+<% javascript_include_tag 'ace/theme-xcode.js' %>
+
+
 <% javascript_include_tag 'ace/mode-c_cpp.js' %>
+<% javascript_include_tag 'ace/mode-javascript.js' %>
+<% javascript_include_tag 'ace/mode-java.js' %>
+<% javascript_include_tag 'ace/mode-ruby.js' %>
+<% javascript_include_tag 'ace/mode-python.js' %>
+<% javascript_include_tag 'ace/mode-lisp.js' %>
 <% javascript_include_tag "show" %>
 
 <div class="row show-grid">
   <div class="col-md-8" style="min-height: 594px;">
     <div class="ace" id="ace"></div>
   </div>
+
   <div class="col-lg-4">
-    <div class="btn-group">
-      <i class="dropdown-arrow dropdown-arrow-inverse"></i>
-      <button class="btn btn-primary status">status</button>
-      <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> <span class="caret"></span>
-      </button>
-      <ul class="dropdown-menu dropdown-inverse">
-        <li><a href="#fakelink">pending</a>
-        </li>
-        <li><a href="#fakelink">active</a>
-        </li>
-        <li><a href="#fakelink">discontinued</a>
-        </li>
-      </ul>
+
+    <div class="row show-grid">
+
+      <div class="col-lg-6">
+        <div class="form-group">
+          <label for="pl">Select language:</label>
+          <select class="form-control" id="pl">
+            <option>C/C++</option>
+            <option>Java</option>
+            <option>Javascript</option>
+            <option>Ruby</option>
+            <option>Python</option>
+            <option>Lisp</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="form-group">
+          <label for="theme">Select theme:</label>
+          <select class="form-control" id="theme">
+            <option>github</option>
+            <option>twilight</option>
+            <option>chaos</option>
+            <option>monokai</option>
+            <option>mono-industrial</option>
+            <option>xcode</option>
+          </select>
+        </div>
+      </div>
+
     </div>
 
     <div class="panel panel-info">
@@ -36,13 +67,10 @@
       </div>
       <div class="panel-body" id="active_users">
         <div class="row show-grid">
-    		<ul id="active_users_list"></ul>
+          <ul id="active_users_list"></ul>
         </div>
       </div>
 
-      <div class="panel-footer">
-        Panel Footer
-      </div>
     </div>
 
     <div class="chat-panel panel panel-default">
@@ -50,7 +78,7 @@
         <i class="glyphicon glyphicon-comment"></i> Chat
       </div>
       <!-- /.panel-heading -->
-      <div class="panel-body fixed-panel">
+      <div class="chat-panel-body fixed-panel">
         <ul class="chat">
           <div id="messages">
             <% unless @messages.blank? %>
@@ -64,10 +92,10 @@
         <div class="input-group">
           <input id="chat" type="text" class="form-control input-sm" data-behavior="room_speaker" placeholder="Type your message here..." />
           <span class="input-group-btn">
-                            <button class="btn btn-warning btn-sm" id="btn-chat" data-behavior="room_speaker_enter">
-                                Send
-                            </button>
-                        </span>
+            <button class="btn btn-warning btn-sm" id="btn-chat" data-behavior="room_speaker_enter">
+              Send
+            </button>
+          </span>
         </div>
       </div>
       <!-- /.panel-footer -->
@@ -76,3 +104,54 @@
   </div>
 </div>
 
+<script>
+  $('#pl').change(function () {
+    var selectedPl = $(this).find("option:selected").text();
+    var container = document.getElementById('ace');
+    var aceEditor = ace.edit(container);
+
+    if (selectedPl == "Javascript") {
+      aceEditor.session.setMode('ace/mode/javascript');
+    }
+    else if (selectedPl == "C/C++") {
+      aceEditor.session.setMode('ace/mode/c_cpp');
+    }
+    else if (selectedPl == "Java") {
+      aceEditor.session.setMode('ace/mode/java');
+    }
+    else if (selectedPl == "Ruby") {
+      aceEditor.session.setMode('ace/mode/ruby');
+    }
+    else if (selectedPl == "Python") {
+      aceEditor.session.setMode('ace/mode/python');
+    }
+    else if (selectedPl == "Lisp") {
+      aceEditor.session.setMode('ace/mode/lisp');
+    }
+  });
+
+  $('#theme').change(function () {
+    var selectedPl = $(this).find("option:selected").text();
+    var container = document.getElementById('ace');
+    var aceEditor = ace.edit(container);
+
+    if (selectedPl == "github") {
+      aceEditor.setTheme('ace/theme/github');
+    }
+    else if (selectedPl == "twilight") {
+      aceEditor.setTheme('ace/theme/twilight');
+    }
+    else if (selectedPl == "chaos") {
+      aceEditor.setTheme('ace/theme/chaos');
+    }
+    else if (selectedPl == "monokai") {
+      aceEditor.setTheme('ace/theme/monokai');
+    }
+    else if (selectedPl == "mono industrial") {
+      aceEditor.setTheme('ace/theme/mono_industrial');
+    }
+    else if (selectedPl == "xcode") {
+      aceEditor.setTheme('ace/theme/xcode');
+    }
+  });
+</script>

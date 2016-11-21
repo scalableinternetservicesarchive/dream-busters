@@ -46,8 +46,8 @@ App.page =
         @aceEditor = ace.edit(container)
         @aceEditor.setSession('')
         ace.config.set 'basePath', '/ace'
-        @aceEditor.setTheme 'ace/theme/twilight'
-        @aceEditor.getSession().setMode 'ace/mode/c_cpp'
+        @aceEditor.setTheme 'ace/theme/github'
+        @aceEditor.session.setMode 'ace/mode/c_cpp'
         @aceEditor.setShowPrintMargin false
         # aceEditor.session.textarea.closest('form').submit ->
         #     textarea.val aceEditor.getValue()
