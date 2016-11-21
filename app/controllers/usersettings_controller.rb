@@ -18,7 +18,8 @@ class UsersettingsController < ApplicationController
 
   def update_username
     unless params[:username].nil?
-      @username = Username.find(params[:id])
+      @username = User.username
+      # @username = Username.find(params[:id])
       @username.update(params.require(:username).permit(:username))
       return redirect_to welcomes_path, notice: "Username changed successfully"
     end
@@ -26,14 +27,17 @@ class UsersettingsController < ApplicationController
   end
 
   def update_password
-    unless params[:id].nil?
-      @user = User.find(params[:id])
+    # unless params[:id].nil?
+    #   @user = User.find(params[:id])
+    if current_user
+      @user = current_user
       if @user.update(params.require(:user).permit(:password, :password_confirmation))
         redirect_to welcomes_path, notice: "User password changed successfully"
       else
         redirect_to change_password_path, alert: "User password fail to change"
       end
     end
+    # end
   end
 
 
