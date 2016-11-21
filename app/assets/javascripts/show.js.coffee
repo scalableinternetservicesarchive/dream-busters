@@ -1,5 +1,4 @@
 App.page =
-
     active_users: {}
 
     set_current_user: (user) ->
