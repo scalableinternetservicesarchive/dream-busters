@@ -1,4 +1,5 @@
-App.page =  
+App.page =
+
     active_users: {}
 
     new_user: (user) ->
