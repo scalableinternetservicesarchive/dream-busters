@@ -81,8 +81,12 @@
       <div class="chat-panel-body fixed-panel">
         <ul class="chat">
           <div id="messages">
-            <% unless @messages.blank? %>
-                <%= render @messages %>
+            <% @messages.each do |message|%>
+              <% cache message do %>
+                <%# unless @messages.blank? %>
+                  <%= render message %>
+                <%# end %>
+              <% end %>
             <% end %>
           </div>
         </ul>
