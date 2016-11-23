@@ -17,7 +17,7 @@ class WelcomesController < ApplicationController
     end
 
     @editors = @user.editors.all
-
+    fresh_when(@editors)
   end
 
 end
