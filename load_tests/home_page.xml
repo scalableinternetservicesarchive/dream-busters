@@ -102,7 +102,7 @@
               </setdynvars>
               <request subst="true">
                   <http url="/change_username" method="POST" version="1.1"
-                    contents="utf8=%E2%9C%93&amp;_method=patch&amp;authenticity_token=%%_authenticity_token%%&amp;username%5Busername%5D=%%_random_username&amp;commit=Update"></http>
+                    contents="utf8=%E2%9C%93&amp;_method=patch&amp;authenticity_token=%%_authenticity_token%%&amp;username%5Busername%5D=%%_random_username%%&amp;commit=Update"></http>
               </request>
 
               <!-- view the home page time -->
