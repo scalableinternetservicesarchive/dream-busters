@@ -82,10 +82,8 @@
         <ul class="chat">
           <div id="messages">
             <% @messages.each do |message|%>
-              <% cache message do %>
-                <%# unless @messages.blank? %>
+              <% cache(cache_key_for_message(@editor, message)) do %>
                   <%= render message %>
-                <%# end %>
               <% end %>
             <% end %>
           </div>
