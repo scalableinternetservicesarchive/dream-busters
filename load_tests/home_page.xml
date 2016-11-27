@@ -9,7 +9,7 @@
 
   	<!-- Server side setup -->
   	<servers>
-    	<server host="ec2-35-164-6-186.us-west-2.compute.amazonaws.com" port="80" type="tcp"></server>
+    	<server host="ec2-35-164-103-191.us-west-2.compute.amazonaws.com" port="80" type="tcp"></server>
   	</servers>
 
 
@@ -77,6 +77,9 @@
 
               <!-- view the home page time -->
               <thinktime value="2" random="true"></thinktime>
+              <request subst="true">
+                  <http url='/welcomes' version='1.1' method='GET'></http>
+              </request>
           </transaction>
 
           <transaction name="change_user_name">
@@ -140,10 +143,6 @@
 
 
           </transaction>
-
-
-
-
     	</session>
   	</sessions>
 </tsung>
