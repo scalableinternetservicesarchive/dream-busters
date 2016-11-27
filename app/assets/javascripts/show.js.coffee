@@ -35,7 +35,7 @@ App.page =
             if name != @current_user.name && (line = user.selected_line)
                 console.log "line = "+line
                 Range = ace.require('ace/range').Range
-                marker = @page_editor.session.addMarker(new Range(line, 0, line, 1), "myMarker", "fullLine")
+                marker = @page_editor.session.addMarker(new Range(line, 0, line, 1), "myMarker-#{user.num}", "fullLine")
                 @markers.push(marker)
 
     setup: () ->

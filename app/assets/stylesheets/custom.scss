@@ -135,8 +135,75 @@ textarea.codemirror {
 .user-11 { @include colored-border(#ffff99);}
 .user-12 { @include colored-border(#1f78b4);}
 
-.myMarker {
+
+.myMarker-1 {
+  position:absolute;
+  background:rgba(210,105,30,0.3);
+  z-index:20
+}
+
+.myMarker-2 {
+  position:absolute;
+  background:rgba(102,205,70,0.3);
+  z-index:20
+}
+
+.myMarker-3 {
+  position:absolute;
+  background:rgba(128,0,128,0.3);
+  z-index:20
+}
+
+.myMarker-4 {
+  position:absolute;
+  background:papayawhip;
+  z-index:20
+}
+
+.myMarker-5 {
+  position:absolute;
+  background:lightyellow;
+  z-index:20
+}
+
+.myMarker-6 {
+  position:absolute;
+  background:wheat;
+  z-index:20
+}
+
+.myMarker-7 {
+  position:absolute;
+  background:lightcyan;
+  z-index:20
+}
+
+.myMarker-8 {
+  position:absolute;
+  background:lavender;
+  z-index:20
+}
+
+.myMarker-9 {
   position:absolute;
   background:rgba(100,200,100,0.5);
+  z-index:20
+}
+
+.myMarker-10 {
+  position:absolute;
+  background:lightblue;
+  z-index:20
+}
+
+.myMarker-11 {
+  position:absolute;
+  background:lightpink;
+  z-index:20
+}
+
+.myMarker-12 {
+  position:absolute;
+  background:lavender;
   z-index:20
 }
