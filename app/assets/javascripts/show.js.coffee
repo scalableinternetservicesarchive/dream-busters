@@ -1,5 +1,6 @@
 App.page =
     active_users: {}
+    page_editor: {}
 
     set_current_user: (user) ->
         @current_user = user
@@ -8,7 +9,7 @@ App.page =
         @active_users[user.name] = user
         @number_users()
         @render_active_users()
-        # @render_selected_line()
+        @render_selected_line()
 
     number_users: () ->
         num = 0
@@ -23,40 +24,41 @@ App.page =
 
     render_active_users: () ->
         $('#active_users_list').html(
-            ("<li class=\"user-#{user.num}\">#{user.name}</li>" for name,user of @active_users).join("")
+            ("<li class=\"user-#{user.num}\">#{name}</li>" for name,user of @active_users).join("")
         )
 
-    # render_selected_line: () ->
-    #     for line in @selected_line
-    #         if cell.classList.contains("current")
-    #             cell.classList = "current"
-    #         else
-    #             cell.classList = ""
-
-    #     @selected_cells = []
-    #     for id, user of @active_users
-    #         if id != @current_user.id && (cells = user.selected_cells)
-    #             @selected_cells.push(cells)
-    #             cell = @hot.getCell(cells.r, cells.c)
-    #             cell.classList.add('user-' + user.num)
+    render_selected_line: () ->
+        for marker in @markers
+            @page_editor.session.removeMarker(marker)
+        @markers = []
+        for name, user of @active_users
+            if name != @current_user.name && (line = user.selected_line)
+                console.log "line = "+line
+                Range = ace.require('ace/range').Range
+                marker = @page_editor.session.addMarker(new Range(line, 0, line, 1), "myMarker", "fullLine")
+                @markers.push(marker)
 
     setup: () ->
-        container = document.getElementById('ace')
-        EditSession = ace.require("ace/edit_session").EditSession
-        @aceEditor = ace.edit(container)
-        @aceEditor.setSession('')
+        @markers = []
         ace.config.set 'basePath', '/ace'
-        @aceEditor.setTheme 'ace/theme/github'
-        @aceEditor.session.setMode 'ace/mode/c_cpp'
-        @aceEditor.setShowPrintMargin false
-        # aceEditor.session.textarea.closest('form').submit ->
-        #     textarea.val aceEditor.getValue()
-        @aceEditor.on 'change', (event) ->
-            selected = event.end
-            deselected = event.start
-            # @select_line(selected)
-            # Range = ace.require('ace/range').Range
-            # @aceEditor.session.addMarker(new Range(1, 1, 2, 2), "myMarker", "fullLine")
+        container = document.getElementById('ace')
+        editor = ace.edit(container)
+        @page_editor = editor
+        doc = ace.createEditSession('\n\n\n\n\n\n\n', 'ace/mode/c_cpp')
+        editor.setSession(doc)
+        editor.setTheme 'ace/theme/github'
+        editor.session.setMode 'ace/mode/c_cpp'
+        editor.setShowPrintMargin false
+        # editor.session.textarea.closest('form').submit ->
+        #     textarea.val editor.getValue()
+        # range = editor.session.getTextRange(editor.getSelectionRange())
+        # console.log range
+        editor.on 'changeSelection', (event) ->
+            cursor = editor.selection.getCursor()
+            row = cursor.row
+            column = cursor.column
+            console.log row+", "+column
+            App.page.select_line(row)
 
     select_line: (line) ->
         App.active_users.select_line(line)
