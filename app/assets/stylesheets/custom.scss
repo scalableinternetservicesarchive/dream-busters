@@ -119,7 +119,7 @@ textarea.codemirror {
 }
 
 @mixin colored-border($color) {
-    box-shadow:inset 0px 0px 0px 2px $color;
+    background-color: $color;
 }
 
 .user-1 { @include colored-border(#33a02c);}

@@ -45,7 +45,7 @@ App.page =
         container = document.getElementById('ace')
         editor = ace.edit(container)
         @page_editor = editor
-        doc = ace.createEditSession('\n\n\n\n\n\n\n', 'ace/mode/c_cpp')
+        doc = ace.createEditSession('\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'ace/mode/c_cpp')
         editor.setSession(doc)
         editor.setTheme 'ace/theme/github'
         editor.session.setMode 'ace/mode/c_cpp'
