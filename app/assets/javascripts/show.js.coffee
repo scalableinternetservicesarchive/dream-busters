@@ -1,6 +1,7 @@
 App.page =
     active_users: {}
     page_editor: {}
+    old_line_num: {}
 
     set_current_user: (user) ->
         @current_user = user
@@ -51,18 +52,25 @@ App.page =
         editor.setShowPrintMargin false
         # editor.session.textarea.closest('form').submit ->
         #     textarea.val editor.getValue()
-        # range = editor.session.getTextRange(editor.getSelectionRange())
-        # console.log range
         editor.on 'changeSelection', (event) ->
             cursor = editor.selection.getCursor()
             row = cursor.row
             column = cursor.column
             console.log row+", "+column
+
+            value = editor.session.getLine(App.page.old_line_num)
+            console.log "old row = "+App.page.old_line_num+", old value = "+value
+            App.editor_lines.set_line_value(App.page.old_line_num, value)
             App.page.select_line(row)
+            App.page.old_line_num = row
 
     select_line: (line) ->
         App.active_users.select_line(line)
 
-    deselect_line: () -> App.active_users.select_line(null)
+    update_line: (update) ->
+        line_num = update.line_num
+        value = update.value
+        Range = ace.require('ace/range').Range
+        @page_editor.session.replace(new Range(line_num, 0, line_num, Number.MAX_VALUE), value)
 
 $ -> App.page.setup()
