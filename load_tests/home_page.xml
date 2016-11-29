@@ -119,30 +119,51 @@
 
             </transaction>
 
-          <transaction name="create_editor">
-            <!-- view the home page time -->
-            <thinktime value="2" random="true"></thinktime>
-            <request >
-              <dyn_variable name="authenticity_token" ></dyn_variable>
-              <http url='/welcomes' version='1.1' method='GET'></http>
-            </request>
-            <thinktime value="2" random="true"></thinktime>
+          <!--<transaction name="create_editor">-->
+            <!--&lt;!&ndash; view the home page time &ndash;&gt;-->
+            <!--<thinktime value="2" random="true"></thinktime>-->
+            <!--<request >-->
+              <!--<dyn_variable name="authenticity_token" ></dyn_variable>-->
+              <!--<http url='/welcomes' version='1.1' method='GET'></http>-->
+            <!--</request>-->
+            <!--<thinktime value="2" random="true"></thinktime>-->
 
+            <!--<setdynvars sourcetype="eval" code="fun({Pid,DynVars})->-->
+                      <!--{ok, Val} = ts_dynvars:lookup(authenticity_token, DynVars),-->
+                     <!--list_to_binary(http_uri:encode(binary_to_list(Val)))-->
+                      <!--end.">-->
+              <!--<var name="authenticity_token" />-->
+            <!--</setdynvars>-->
+            <!--<setdynvars sourcetype="random_number" start="1000" end="9999999">-->
+              <!--<var name="random_editor" />-->
+            <!--</setdynvars>-->
+            <!--<request subst="true">-->
+              <!--<http url="/editor/create" method="POST" version="1.1"-->
+                    <!--contents="utf8=%E2%9C%93&amp;authenticity_token=%%_authenticity_token%%&amp;editor%5Bfilename%5D=example1&amp;commit=ADD%21"></http>-->
+            <!--</request>-->
+          <!--</transaction>-->
+
+          <transaction name="enter_existed_editor">
+            <thinktime value="2" random="true"></thinktime>
+            <request>
+              <dyn_variable name="authenticity_token" ></dyn_variable>
+              <http url='/welcomes' version="1.1" method="GET"></http>
+            </request>
             <setdynvars sourcetype="eval" code="fun({Pid,DynVars})->
                       {ok, Val} = ts_dynvars:lookup(authenticity_token, DynVars),
                      list_to_binary(http_uri:encode(binary_to_list(Val)))
                       end.">
               <var name="authenticity_token" />
             </setdynvars>
-            <setdynvars sourcetype="random_number" start="1000" end="9999999">
-              <var name="random_editor" />
+            <setdynvars sourcetype="random_number" start="111111" end="111120">
+              <var name="existed_editor" />
             </setdynvars>
             <request subst="true">
-              <http url="/editor/create" method="POST" version="1.1"
-                    contents="utf8=%E2%9C%93&amp;authenticity_token=%%_authenticity_token%%&amp;editor%5Bfilename%5D=example1&amp;commit=ADD%21"></http>
+              <http url="/load?utf8=%E2%9C%93&amp;hashpath=%%_existed_editor%%&amp;button=" method="GET" version="1.1" ></http>
             </request>
-
+            <thinktime value="2" random="true"></thinktime>
           </transaction>
+
     	</session>
   	</sessions>
 </tsung>
