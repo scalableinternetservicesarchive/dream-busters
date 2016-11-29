@@ -5,6 +5,9 @@ source 'https://rubygems.org'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 # Use mysql as the database for Active Record
 
+# Memcache
+gem 'dalli'
+
 gem 'devise'
 
 gem 'gon'
@@ -15,6 +18,9 @@ gem 'devise-bootstrap-views'
 gem 'bootstrap-sass', '3.3.6'
 
 gem 'friendly_id'
+
+gem 'nobrainer'  
+gem 'nobrainer_streams'
 
 #gem 'sqlite3'
 # Use Puma as the app server

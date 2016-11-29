@@ -1,138 +1,159 @@
 <head>
-	<%= include_gon %>
+  <%= include_gon %>
 </head>
 
-<h1>Code Docs</h1>
+<h3>Code Docs</h3>
 
 <%= stylesheet_link_tag 'custom', media: 'all' %>
-
-<div class="row">
-	<div class="col-lg-12">
-		<div class="panel panel-info">
-			<div class="panel-heading">
-				<h3 class="panel-title">Code</h3>          
-			</div>
-			<div class="panel-body">
-				<div class="row show-grid">
-					<div class="col-md-8">int main(){}</div>
-					<div class="col-md-4">.col-md-4</div>
-				</div>
-			</div>
-
-			<div class="panel-footer">
-				Panel Footer
-			</div>
-
-		</div>
-
-	</div>
-	<!-- /.col-lg-12 -->
-</div>
-<!-- /.row -->
-
-<div class="ace-editor">
-  <textarea> </textarea>
-</div>
-
-<section id="ace-container">
-
-  </section>
-
-<br>
-
-
-<div class="col-lg-4">
-	<div class="chat-panel panel panel-default">
-		<div class="panel-heading">
-			<i class="glyphicon glyphicon-comment"></i> Chat
-		</div>
-		<!-- /.panel-heading -->
-		<div class="panel-body fixed-panel">
-			<ul class="chat">
-				<div id="messages">
-					<% unless @messages.blank? %>
-					<%= render @messages %>
-					<% end %>
-				</div>
-<!-- 				<li class="left clearfix">
-					<span class="chat-img pull-left">
-						<img src="http://placehold.it/50/55C1E7/fff" alt="
-						Shuang" class="img-circle" />
-					</span>
-					<div class="chat-body clearfix">
-						<div class="header">
-							<strong class="primary-font">Jack Sparrow</strong>
-							<small class="pull-right text-muted">
-								<i class="fa fa-clock-o fa-fw"></i> 12 mins ago
-							</small>
-						</div>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
-						</p>
-					</div>
-				</li>
-				<li class="left clearfix">
-					<span class="chat-img pull-right">
-						<img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar" class="img-circle" />
-					</span>
-					<div class="chat-body clearfix">
-						<div class="header">
-							<small class=" text-muted">
-								<i class="fa fa-clock-o fa-fw"></i> 13 mins ago</small>
-								<strong class="pull-right primary-font">Bhaumik Patel</strong>
-							</div>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
-							</p>
-						</div>
-					</li> -->
-				</ul>
-			</div>
-			<!-- /.panel-body -->
-			<div class="panel-footer">
-				<div class="input-group">
-					<input id="chat" type="text" class="form-control input-sm" data-behavior="room_speaker" placeholder="Type your message here..." />
-					<span class="input-group-btn">
-						<button class="btn btn-warning btn-sm" id="btn-chat" data-behavior="room_speaker_enter">
-							Send
-						</button>
-					</span>
-				</div>
-			</div>
-			<!-- /.panel-footer -->
-		</div>
-		<!-- /.panel .chat-panel -->
-	</div>
-
-
 <!--include themes you want to use here-->
+<% javascript_include_tag 'ace/theme-github.js' %>
+<% javascript_include_tag 'ace/theme-chaos.js' %>
 <% javascript_include_tag 'ace/theme-twilight.js' %>
-<% javascript_include_tag 'ace/mode-c_cpp.js' %>
+<% javascript_include_tag 'ace/theme-monokai.js' %>
+<% javascript_include_tag 'ace/theme-mono_industrial.js' %>
+<% javascript_include_tag 'ace/theme-xcode.js' %>
 
-<script type="text/javascript" charset="utf-8">
-  $(document).ready(function() {
-    // initialize all Ace editors on the page.
-    $(".ace-editor").each(function(index, item) {
-      initAceEditor(item);
-    });
+
+<% javascript_include_tag 'ace/mode-c_cpp.js' %>
+<% javascript_include_tag 'ace/mode-javascript.js' %>
+<% javascript_include_tag 'ace/mode-java.js' %>
+<% javascript_include_tag 'ace/mode-ruby.js' %>
+<% javascript_include_tag 'ace/mode-python.js' %>
+<% javascript_include_tag 'ace/mode-lisp.js' %>
+<% javascript_include_tag "show" %>
+
+<div class="row show-grid">
+  <div class="col-md-8" style="min-height: 594px;">
+    <div class="ace" id="ace"></div>
+  </div>
+
+  <div class="col-lg-4">
+
+    <div class="row show-grid">
+
+      <div class="col-lg-6">
+        <div class="form-group">
+          <label for="pl">Select language:</label>
+          <select class="form-control" id="pl">
+            <option>C/C++</option>
+            <option>Java</option>
+            <option>Javascript</option>
+            <option>Ruby</option>
+            <option>Python</option>
+            <option>Lisp</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="form-group">
+          <label for="theme">Select theme:</label>
+          <select class="form-control" id="theme">
+            <option>github</option>
+            <option>twilight</option>
+            <option>chaos</option>
+            <option>monokai</option>
+            <option>mono-industrial</option>
+            <option>xcode</option>
+          </select>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <h3 class="panel-title">Active User</h3>
+      </div>
+      <div class="panel-body" id="active_users">
+        <div class="row show-grid">
+          <ul id="active_users_list"></ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="chat-panel panel panel-default">
+      <div class="panel-heading">
+        <i class="glyphicon glyphicon-comment"></i> Chat
+      </div>
+      <!-- /.panel-heading -->
+      <div class="chat-panel-body fixed-panel">
+        <ul class="chat">
+          <div id="messages">
+            <% @messages.each do |message|%>
+              <% cache(cache_key_for_message(@editor, message)) do %>
+                  <%= render message %>
+              <% end %>
+            <% end %>
+          </div>
+        </ul>
+      </div>
+      <!-- /.panel-body -->
+      <div class="panel-footer">
+        <div class="input-group">
+          <input id="chat" type="text" class="form-control input-sm" data-behavior="room_speaker" placeholder="Type your message here..." />
+          <span class="input-group-btn">
+            <button class="btn btn-warning btn-sm" id="btn-chat" data-behavior="room_speaker_enter">
+              Send
+            </button>
+          </span>
+        </div>
+      </div>
+      <!-- /.panel-footer -->
+    </div>
+    <!-- /.panel .chat-panel -->
+  </div>
+</div>
+
+<script>
+  $('#pl').change(function () {
+    var selectedPl = $(this).find("option:selected").text();
+    var container = document.getElementById('ace');
+    var aceEditor = ace.edit(container);
+
+    if (selectedPl == "Javascript") {
+      aceEditor.session.setMode('ace/mode/javascript');
+    }
+    else if (selectedPl == "C/C++") {
+      aceEditor.session.setMode('ace/mode/c_cpp');
+    }
+    else if (selectedPl == "Java") {
+      aceEditor.session.setMode('ace/mode/java');
+    }
+    else if (selectedPl == "Ruby") {
+      aceEditor.session.setMode('ace/mode/ruby');
+    }
+    else if (selectedPl == "Python") {
+      aceEditor.session.setMode('ace/mode/python');
+    }
+    else if (selectedPl == "Lisp") {
+      aceEditor.session.setMode('ace/mode/lisp');
+    }
   });
 
-  function initAceEditor(container) {
-    container = $(container);
-    var textarea = container.find("textarea");
-    var aceEditorDiv = $('<div>', {
-      "class": "ace"
-    }).insertBefore(textarea);
-    ace.config.set("basePath", "/ace");
+  $('#theme').change(function () {
+    var selectedPl = $(this).find("option:selected").text();
+    var container = document.getElementById('ace');
+    var aceEditor = ace.edit(container);
 
-    var aceEditor = ace.edit(aceEditorDiv[0]);
-
-    aceEditor.setTheme("ace/theme/twilight");
-
-    aceEditor.session.setMode("ace/mode/c_cpp");
-
-    textarea.closest('form').submit(function() {
-      textarea.val(aceEditor.getValue());
-    });
-  }
-</script>>
+    if (selectedPl == "github") {
+      aceEditor.setTheme('ace/theme/github');
+    }
+    else if (selectedPl == "twilight") {
+      aceEditor.setTheme('ace/theme/twilight');
+    }
+    else if (selectedPl == "chaos") {
+      aceEditor.setTheme('ace/theme/chaos');
+    }
+    else if (selectedPl == "monokai") {
+      aceEditor.setTheme('ace/theme/monokai');
+    }
+    else if (selectedPl == "mono industrial") {
+      aceEditor.setTheme('ace/theme/mono_industrial');
+    }
+    else if (selectedPl == "xcode") {
+      aceEditor.setTheme('ace/theme/xcode');
+    }
+  });
+</script>

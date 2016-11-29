@@ -19,16 +19,13 @@ Configuration
 
 Development
   - Install VirtualBox from: www.virtualbox.org/wiki/Downloads
-  - Setup Ruby on Rails on Linux: https://gorails.com/setup/osx/10.11-el-capitan
+  - Setup Ruby on Rails on Linux: https://gorails.com/setup/ubuntu/16.04
 
-Database creation
-  - run command rake db:create to create new databases
-  - modify password in config/database.yml to own password instead
-  - uncomment the database names in development and test database
-
-Database initialization
-
+Database creation & initialization
+  - run command rails db:migrate
+  
 How to run the test suite
+  - Tsung test cases are in load_test folder
 
 Services (job queues, cache servers, search engines, etc.)
 

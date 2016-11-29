@@ -1,5 +1,5 @@
 class EditorsController < ApplicationController
-
+  include EditorsHelper
   def load
     if current_user     # if user exists
       @user = current_user
@@ -61,10 +61,8 @@ class EditorsController < ApplicationController
 
   def show
     @editor = Editor.where(hashpath: params[:id]).first
-
     @editor_id = @editor.id
     gon.editor_id = @editor_id
-
     @username = current_user.username.username
     gon.username = @username
 
