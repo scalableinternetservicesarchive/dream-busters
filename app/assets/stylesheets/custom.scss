@@ -66,7 +66,7 @@ h6.panel-title {
 
 .chat-panel-body
 {
-    overflow-y: scroll;
+    overflow-y: auto;
     height: 250px;
 }
 
@@ -115,25 +115,30 @@ h6.panel-title {
 }*/
 
 textarea.codemirror {
+  border:none;
   height: 310px;
+  margin-left:10px;
 }
 
 @mixin colored-border($color) {
+    width: 300px;
+    height: 20px;
     background-color: $color;
+    
 }
 
-.user-1 { @include colored-border(#33a02c);}
-.user-2 { @include colored-border(#e31a1c);}
-.user-3 { @include colored-border(#ff7f00);}
-.user-4 { @include colored-border(#6a3d9a);}
-.user-5 { @include colored-border(#b15928);}
-.user-6 { @include colored-border(#a6cee3);}
-.user-7 { @include colored-border(#b2df8a);}
-.user-8 { @include colored-border(#fb9a99);}
-.user-9 { @include colored-border(#fdbf6f);}
-.user-10 { @include colored-border(#cab2d6);}
-.user-11 { @include colored-border(#ffff99);}
-.user-12 { @include colored-border(#1f78b4);}
+.user-1 { @include colored-border(rgba(210,105,30,0.3));}
+.user-2 { @include colored-border(rgba(102,205,70,0.3));}
+.user-3 { @include colored-border(rgba(128,0,128,0.3));}
+.user-4 { @include colored-border(papayawhip);}
+.user-5 { @include colored-border(lightyellow);}
+.user-6 { @include colored-border(wheat);}
+.user-7 { @include colored-border(lightcyan);}
+.user-8 { @include colored-border(rgba(230,230,250,1.0));}
+.user-9 { @include colored-border(rgba(100,200,100,0.5));}
+.user-10 { @include colored-border(lightblue);}
+.user-11 { @include colored-border(lightpink);}
+.user-12 { @include colored-border(lavender);}
 
 
 .myMarker-1 {
@@ -180,7 +185,7 @@ textarea.codemirror {
 
 .myMarker-8 {
   position:absolute;
-  background:lavender;
+  background:rgba(230,230,250,1.0); 
   z-index:20
 }
 
