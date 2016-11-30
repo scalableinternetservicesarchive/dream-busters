@@ -14,12 +14,36 @@ Editor.create(
     updated_at:               '2016-11-06 01:09:46.995656'
 )
 
+$i = 0
+$num = 200
+while $i < $num  do
+  editor_id = Editor.find_by_hashpath('111111').id
+  Editor.find(editor_id).messages.create(
+      editor_id:                 editor_id,
+      speaker:                   'speaker1',
+      content:                   "message #$i",
+  )
+  $i +=1
+end
+
 Editor.create(
     filename:                 'editor02',
     hashpath:                 '111112',
     created_at:               '2016-11-07 01:08:46.995656',
     updated_at:               '2016-11-07 01:09:46.995656'
 )
+
+$i = 0
+$num = 200
+while $i < $num  do
+  editor_id = Editor.find_by_hashpath('111112').id
+  Editor.find(editor_id).messages.create(
+      editor_id:                 editor_id,
+      speaker:                   'speaker2',
+      content:                   "message #$i",
+  )
+  $i +=1
+end
 
 Editor.create(
     filename:                 'editor03',
@@ -28,12 +52,36 @@ Editor.create(
     updated_at:               '2016-11-08 01:09:46.995656'
 )
 
+$i = 0
+$num = 200
+while $i < $num  do
+  editor_id = Editor.find_by_hashpath('111113').id
+  Editor.find(editor_id).messages.create(
+      editor_id:                 editor_id,
+      speaker:                   'speaker3',
+      content:                   "message #$i",
+  )
+  $i +=1
+end
+
 Editor.create(
     filename:                 'editor04',
     hashpath:                 '111114',
     created_at:               '2016-11-09 01:08:46.995656',
     updated_at:               '2016-11-09 01:09:46.995656'
 )
+
+$i = 0
+$num = 200
+while $i < $num  do
+  editor_id = Editor.find_by_hashpath('111114').id
+  Editor.find(editor_id).messages.create(
+      editor_id:                 editor_id,
+      speaker:                   'speaker4',
+      content:                   "message #$i",
+  )
+  $i +=1
+end
 
 Editor.create(
     filename:                 'editor05',
@@ -42,12 +90,36 @@ Editor.create(
     updated_at:               '2016-11-10 01:09:46.995656'
 )
 
+$i = 0
+$num = 200
+while $i < $num  do
+  editor_id = Editor.find_by_hashpath('111115').id
+  Editor.find(editor_id).messages.create(
+      editor_id:                 editor_id,
+      speaker:                   'speaker5',
+      content:                   "message #$i",
+  )
+  $i +=1
+end
+
 Editor.create(
     filename:                 'editor06',
     hashpath:                 '111116',
     created_at:               '2016-11-11 01:08:46.995656',
     updated_at:               '2016-11-11 01:09:46.995656'
 )
+
+$i = 0
+$num = 200
+while $i < $num  do
+  editor_id = Editor.find_by_hashpath('111116').id
+  Editor.find(editor_id).messages.create(
+      editor_id:                 editor_id,
+      speaker:                   'speaker6',
+      content:                   "message #$i",
+  )
+  $i +=1
+end
 
 Editor.create(
     filename:                 'editor07',
@@ -56,12 +128,36 @@ Editor.create(
     updated_at:               '2016-11-12 01:09:46.995656'
 )
 
+$i = 0
+$num = 200
+while $i < $num  do
+  editor_id = Editor.find_by_hashpath('111117').id
+  Editor.find(editor_id).messages.create(
+      editor_id:                 editor_id,
+      speaker:                   'speaker7',
+      content:                   "message #$i",
+  )
+  $i +=1
+end
+
 Editor.create(
     filename:                 'editor08',
     hashpath:                 '111118',
     created_at:               '2016-11-13 01:08:46.995656',
     updated_at:               '2016-11-13 01:09:46.995656'
 )
+
+$i = 0
+$num = 200
+while $i < $num  do
+  editor_id = Editor.find_by_hashpath('111118').id
+  Editor.find(editor_id).messages.create(
+      editor_id:                 editor_id,
+      speaker:                   'speaker8',
+      content:                   "message #$i",
+  )
+  $i +=1
+end
 
 Editor.create(
     filename:                 'editor09',
@@ -70,12 +166,37 @@ Editor.create(
     updated_at:               '2016-11-14 01:09:46.995656'
 )
 
+$i = 0
+$num = 200
+while $i < $num  do
+  editor_id = Editor.find_by_hashpath('111119').id
+  Editor.find(editor_id).messages.create(
+      editor_id:                 editor_id,
+      speaker:                   'speaker9',
+      content:                   "message #$i",
+  )
+  $i +=1
+end
+
 Editor.create(
     filename:                 'editor10',
     hashpath:                 '111120',
     created_at:               '2016-11-15 01:08:46.995656',
     updated_at:               '2016-11-15 01:09:46.995656'
 )
+
+$i = 0
+$num = 200
+while $i < $num  do
+  editor_id = Editor.find_by_hashpath('111120').id
+  Editor.find(editor_id).messages.create(
+      editor_id:                 editor_id,
+      speaker:                   'speaker10',
+      content:                   "message #$i",
+  )
+  $i +=1
+end
+
 
 User.create(
     email:                    'test01@test.com',
