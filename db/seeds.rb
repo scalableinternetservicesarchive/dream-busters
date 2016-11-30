@@ -40,7 +40,7 @@ while $i < $num  do
   Editor.find(editor_id).messages.create(
       editor_id:                 editor_id,
       speaker:                   'speaker2',
-      content:                   "message #$i",
+      content:                   "message #$i"
   )
   $i +=1
 end
@@ -59,7 +59,7 @@ while $i < $num  do
   Editor.find(editor_id).messages.create(
       editor_id:                 editor_id,
       speaker:                   'speaker3',
-      content:                   "message #$i",
+      content:                   "message #$i"
   )
   $i +=1
 end
@@ -78,7 +78,7 @@ while $i < $num  do
   Editor.find(editor_id).messages.create(
       editor_id:                 editor_id,
       speaker:                   'speaker4',
-      content:                   "message #$i",
+      content:                   "message #$i"
   )
   $i +=1
 end
@@ -97,7 +97,7 @@ while $i < $num  do
   Editor.find(editor_id).messages.create(
       editor_id:                 editor_id,
       speaker:                   'speaker5',
-      content:                   "message #$i",
+      content:                   "message #$i"
   )
   $i +=1
 end
@@ -116,7 +116,7 @@ while $i < $num  do
   Editor.find(editor_id).messages.create(
       editor_id:                 editor_id,
       speaker:                   'speaker6',
-      content:                   "message #$i",
+      content:                   "message #$i"
   )
   $i +=1
 end
@@ -135,7 +135,7 @@ while $i < $num  do
   Editor.find(editor_id).messages.create(
       editor_id:                 editor_id,
       speaker:                   'speaker7',
-      content:                   "message #$i",
+      content:                   "message #$i"
   )
   $i +=1
 end
@@ -154,7 +154,7 @@ while $i < $num  do
   Editor.find(editor_id).messages.create(
       editor_id:                 editor_id,
       speaker:                   'speaker8',
-      content:                   "message #$i",
+      content:                   "message #$i"
   )
   $i +=1
 end
@@ -173,7 +173,7 @@ while $i < $num  do
   Editor.find(editor_id).messages.create(
       editor_id:                 editor_id,
       speaker:                   'speaker9',
-      content:                   "message #$i",
+      content:                   "message #$i"
   )
   $i +=1
 end
@@ -192,7 +192,7 @@ while $i < $num  do
   Editor.find(editor_id).messages.create(
       editor_id:                 editor_id,
       speaker:                   'speaker10',
-      content:                   "message #$i",
+      content:                   "message #$i"
   )
   $i +=1
 end
