@@ -8,7 +8,7 @@
   	</clients>
   	<!-- Server side setup -->
   	<servers>
-    	<server host="dream-busters-2m3xxlarge-1764585514.us-west-2.elb.amazonaws.com" port="80" type="tcp"></server>
+    	<server host="dream-busters-4m3xxlarge-1512724541.us-west-2.elb.amazonaws.com" port="80" type="tcp"></server>
   	</servers>
 <!--     <servers>
       <server host="localhost" port="3000" type="tcp"></server>
@@ -34,12 +34,12 @@
 	<arrivalphase phase="6" duration="30" unit="second">
 	     	<users arrivalrate="32" unit="second"></users>
 	</arrivalphase>
-	<arrivalphase phase="7" duration="30" unit="second">
+<!-- 	<arrivalphase phase="7" duration="30" unit="second">
 	     	<users arrivalrate="64" unit="second"></users>
 	</arrivalphase>
 	<arrivalphase phase="8" duration="30" unit="second">
 	     	<users arrivalrate="128" unit="second"></users>
-	</arrivalphase>
+	</arrivalphase> -->
   	</load>
 
   	<options>
