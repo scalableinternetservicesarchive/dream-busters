@@ -9,7 +9,7 @@
 
   	<!-- Server side setup -->
   	<servers>
-    	<server host="ec2-35-164-8-164.us-west-2.compute.amazonaws.com" port="80" type="tcp"></server>
+    	<server host="c2-35-162-80-135.us-west-2.compute.amazonaws.com" port="80" type="tcp"></server>
   	</servers>
 <!--     <servers>
       <server host="localhost" port="3000" type="tcp"></server>
@@ -34,12 +34,6 @@
 	   </arrivalphase>
 	   <arrivalphase phase="6" duration="30" unit="second">
 	     <users arrivalrate="32" unit="second"></users>
-	   </arrivalphase>
-	   <arrivalphase phase="7" duration="30" unit="second">
-	     <users arrivalrate="64" unit="second"></users>
-	   </arrivalphase>
-	   <arrivalphase phase="8" duration="30" unit="second">
-	     <users arrivalrate="128" unit="second"></users>
 	   </arrivalphase>
   	</load>
 
