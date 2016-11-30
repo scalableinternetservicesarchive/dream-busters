@@ -43,23 +43,23 @@
     <session name="before_type_in_editor" probability="100" type="ts_http">
 
       <!-- start at the home page -->
-      <transaction name="get_root">
+      <!--<transaction name="get_root">-->
         <request>
           <http url='/' version='1.1' method='GET'></http>
         </request>
-      </transaction>
+      <!--</transaction>-->
 
       <!-- wait while viewing home page -->
       <thinktime value="2" random="true"></thinktime>
 
       <!-- get sign up page -->
-      <transaction name="get_sign_up_page">
+      <!--<transaction name="get_sign_up_page">-->
         <request>
           <!-- get authenticity token -->
           <dyn_variable name="authenticity_token" ></dyn_variable>
           <http url='/users/sign_up' version='1.1' method='GET'></http>
         </request>
-      </transaction>
+      <!--</transaction>-->
       <setdynvars sourcetype="eval" code="fun({Pid,DynVars})->
                         {ok, Val} = ts_dynvars:lookup(authenticity_token, DynVars),
                         list_to_binary(http_uri:encode(binary_to_list(Val)))
@@ -74,12 +74,12 @@
         <var name="random_email_address" />
       </setdynvars>
 
-      <transaction name="sign_up">
+      <!--<transaction name="sign_up">-->
         <request subst="true">
           <http url="/users" method="POST" version="1.1"
                 contents="utf8=%E2%9C%93&amp;authenticity_token=%%_authenticity_token%%&amp;user%5Bemail%5D=user%%_random_email_address%%@hotmail.com&amp;user%5Bpassword%5D=password&amp;user%5Bpassword_confirmation%5D=password&amp;commit=Sign+up"></http>
         </request>
-      </transaction>
+      <!--</transaction>-->
 
       <!-- view the home page time -->
       <thinktime value="2" random="true"></thinktime>
