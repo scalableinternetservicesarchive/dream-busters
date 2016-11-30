@@ -8,12 +8,12 @@
   </clients>
 
   <!-- Server side setup -->
-  <!--<servers>-->
-  <!--<server host="ec2-35-164-103-191.us-west-2.compute.amazonaws.com" port="80" type="tcp"></server>-->
-  <!--</servers>-->
   <servers>
-    <server host="localhost" port="3000" type="tcp"></server>
+  <server host="ec2-35-163-163-90.us-west-2.compute.amazonaws.com" port="80" type="tcp"></server>
   </servers>
+<!--   <servers>
+    <server host="localhost" port="3000" type="tcp"></server>
+  </servers> -->
 
 
   <load>
@@ -101,7 +101,7 @@
       </setdynvars>
       <thinktime value="2" random="true"></thinktime>
 
-      <transaction name="enter_existed_editor">
+      <transaction name="load_existed_editor">
         <request subst="true">
           <http url="/load?utf8=%E2%9C%93&amp;hashpath=%%_existed_editor%%&amp;button=" method="GET" version="1.1" ></http>
         </request>
