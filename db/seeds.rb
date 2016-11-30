@@ -15,7 +15,7 @@ Editor.create(
 )
 
 $i = 0
-$num = 200
+$num = 20000
 while $i < $num  do
   editor_id = Editor.find_by_hashpath('111111').id
   Editor.find(editor_id).messages.create(
@@ -34,7 +34,7 @@ Editor.create(
 )
 
 $i = 0
-$num = 200
+$num = 20000
 while $i < $num  do
   editor_id = Editor.find_by_hashpath('111112').id
   Editor.find(editor_id).messages.create(
@@ -53,7 +53,7 @@ Editor.create(
 )
 
 $i = 0
-$num = 200
+$num = 20000
 while $i < $num  do
   editor_id = Editor.find_by_hashpath('111113').id
   Editor.find(editor_id).messages.create(
@@ -72,7 +72,7 @@ Editor.create(
 )
 
 $i = 0
-$num = 200
+$num = 20000
 while $i < $num  do
   editor_id = Editor.find_by_hashpath('111114').id
   Editor.find(editor_id).messages.create(
@@ -91,7 +91,7 @@ Editor.create(
 )
 
 $i = 0
-$num = 200
+$num = 20000
 while $i < $num  do
   editor_id = Editor.find_by_hashpath('111115').id
   Editor.find(editor_id).messages.create(
@@ -110,7 +110,7 @@ Editor.create(
 )
 
 $i = 0
-$num = 200
+$num = 20000
 while $i < $num  do
   editor_id = Editor.find_by_hashpath('111116').id
   Editor.find(editor_id).messages.create(
@@ -129,7 +129,7 @@ Editor.create(
 )
 
 $i = 0
-$num = 200
+$num = 20000
 while $i < $num  do
   editor_id = Editor.find_by_hashpath('111117').id
   Editor.find(editor_id).messages.create(
@@ -148,7 +148,7 @@ Editor.create(
 )
 
 $i = 0
-$num = 200
+$num = 20000
 while $i < $num  do
   editor_id = Editor.find_by_hashpath('111118').id
   Editor.find(editor_id).messages.create(
@@ -167,7 +167,7 @@ Editor.create(
 )
 
 $i = 0
-$num = 200
+$num = 20000
 while $i < $num  do
   editor_id = Editor.find_by_hashpath('111119').id
   Editor.find(editor_id).messages.create(
@@ -186,7 +186,7 @@ Editor.create(
 )
 
 $i = 0
-$num = 200
+$num = 20000
 while $i < $num  do
   editor_id = Editor.find_by_hashpath('111120').id
   Editor.find(editor_id).messages.create(

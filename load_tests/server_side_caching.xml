@@ -99,9 +99,14 @@
       <thinktime value="2" random="true"></thinktime>
 
       <transaction name="enter_existed_editor">
-        <request subst="true">
-          <http url="/load?utf8=%E2%9C%93&amp;hashpath=%%_existed_editor%%&amp;button=" method="GET" version="1.1" ></http>
-        </request>
+        <for from="1" to="10" incr="1" var="counter">
+          <request subst="true">
+            <http url="/load?utf8=%E2%9C%93&amp;hashpath=%%_existed_editor%%&amp;button=" method="GET" version="1.1" ></http>
+          </request>
+          <request subst="true">
+            <http url="/editors/%%_existed_editor%%" method="GET" version="1.1" ></http>
+          </request>
+        </for>
       </transaction>
 
       <!--view existed editor-->
