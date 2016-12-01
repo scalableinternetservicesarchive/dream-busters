@@ -197,23 +197,23 @@ while $i < $num  do
   $i +=1
 end
 
-# User.create(
-#     email:                    'test01@test.com',
-#     password:                 'test01',
-#     password_confirmation:    'test01',
-#     sign_in_count:            '0'
-# )
-# user = User.find_by_email('test01@test.com')
-#
-# $i = 100
-# $num = 999
-# while $i < $num  do
-#   user.editors.create(
-#       filename:                 "editor#$i",
-#       hashpath:                 "111#$i"
-#   )
-#   $i +=1
-# end
+User.create(
+    email:                    'test01@test.com',
+    password:                 'test01',
+    password_confirmation:    'test01',
+    sign_in_count:            '0'
+)
+user = User.find_by_email('test01@test.com')
+
+$i = 100
+$num = 999
+while $i < $num  do
+  user.editors.create(
+      filename:                 "editor#$i",
+      hashpath:                 "111#$i"
+  )
+  $i +=1
+end
 
 
 User.create(

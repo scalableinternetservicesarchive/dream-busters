@@ -29,11 +29,13 @@
               </thead>
               <tbody>
                 <% @editors.each do |editor| %>
-                <tr>
-                  <td><%= editor.filename %></td>
-                  <td><%= editor.updated_at %></td>
-                  <td><%= link_to 'Edit', editor_path(editor), class: "btn btn-primary" %></td>
-                </tr>
+                  <tr>
+                    <% cache(cache_key_for_editor(editor)) do %>
+                      <td><%= editor.filename %></td>
+                      <td><%= editor.updated_at %></td>
+                      <td><%= link_to 'Edit', editor_path(editor), class: "btn btn-primary" %></td>
+                    <% end %>
+                  </tr>
                 <% end %>
               </tbody>
             </table>
