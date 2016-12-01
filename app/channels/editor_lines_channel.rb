@@ -16,8 +16,5 @@ class EditorLinesChannel < ApplicationCable::Channel
     else
       line = EditorLine.create(editor_id: message['editor_id'], line_num: message['line_num'], value: message['value'])
     end
-    # editor_id = message['editor_id']
-    # line_num = message['line_num']
-    # EditorLine.upsert! editor_id: editor_id, line_num: line_num, value: message['value']
   end
 end

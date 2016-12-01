@@ -45,24 +45,22 @@ App.page =
         container = document.getElementById('ace')
         editor = ace.edit(container)
         @page_editor = editor
-        doc = ace.createEditSession('\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'ace/mode/c_cpp')
+        doc = ace.createEditSession('\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'ace/mode/c_cpp')
         editor.setSession(doc)
         editor.setTheme 'ace/theme/github'
         editor.session.setMode 'ace/mode/c_cpp'
         editor.setShowPrintMargin false
-        # editor.session.textarea.closest('form').submit ->
-        #     textarea.val editor.getValue()
         editor.on 'changeSelection', (event) ->
             cursor = editor.selection.getCursor()
             row = cursor.row
             column = cursor.column
-            console.log row+", "+column
-
+            # console.log row+", "+column
             value = editor.session.getLine(App.page.old_line_num)
-            console.log "old row = "+App.page.old_line_num+", old value = "+value
+            # console.log "old row = "+App.page.old_line_num+", old value = "+value
             App.editor_lines.set_line_value(App.page.old_line_num, value)
             App.page.select_line(row)
             App.page.old_line_num = row
+
 
     select_line: (line) ->
         App.active_users.select_line(line)
