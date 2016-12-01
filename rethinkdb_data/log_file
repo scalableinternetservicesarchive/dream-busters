@@ -1,0 +1,44 @@
+2016-11-30T19:36:26.550165000 40.100352s notice: Recursively removing directory /Users/apple/Desktop/dream-busters/rethinkdb_data/tmp
+2016-11-30T19:36:26.560905000 40.111103s notice: Initializing directory /Users/apple/Desktop/dream-busters/rethinkdb_data
+2016-11-30T19:36:26.561120000 40.111307s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/Users/apple/Desktop/dream-busters/rethinkdb_data' did not already exist or is empty.)
+2016-11-30T19:36:26.561205000 40.111392s notice: Running rethinkdb 2.3.5 (CLANG 8.0.0 (clang-800.0.38))...
+2016-11-30T19:36:26.574738000 40.124926s notice: Running on Darwin 16.1.0 x86_64
+2016-11-30T19:36:26.574795000 40.124981s notice: Loading data from directory /Users/apple/Desktop/dream-busters/rethinkdb_data
+2016-11-30T19:36:26.682433000 40.232620s info: Automatically using cache size of 100 MB
+2016-11-30T19:36:26.682451000 40.232637s warn: Cache size does not leave much memory for server and query overhead (available memory: 751 MB).
+2016-11-30T19:36:26.682462000 40.232648s warn: Cache size is very low and may impact performance.
+2016-11-30T19:36:26.683354000 40.233540s notice: Listening for intracluster connections on port 29015
+2016-11-30T19:36:26.687276000 40.237463s notice: Listening for client driver connections on port 28015
+2016-11-30T19:36:26.687487000 40.237673s notice: Listening for administrative HTTP connections on port 8080
+2016-11-30T19:36:26.687491000 40.237677s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2016-11-30T19:36:26.687498000 40.237684s notice: Listening on driver addresses: 127.0.0.1, ::1
+2016-11-30T19:36:26.687500000 40.237686s notice: Listening on http addresses: 127.0.0.1, ::1
+2016-11-30T19:36:26.687506000 40.237692s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-11-30T19:36:26.687513000 40.237698s notice: Server ready, "SHAO_Jiuru_local_8za" 10312232-6012-45c1-a915-3a6aac50135a
+2016-11-30T20:38:53.647732000 1861.795467s notice: Server got SIGINT from pid 12728, uid 501; shutting down...
+2016-11-30T20:38:53.648292000 1861.796026s notice: Shutting down client connections...
+2016-11-30T20:38:53.648706000 1861.796440s notice: All client connections closed.
+2016-11-30T20:38:53.648716000 1861.796450s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2016-11-30T20:38:53.664846000 1861.812581s notice: Storage engine shut down.
+2016-11-30T20:40:02.159443000 40.042270s notice: Running rethinkdb 2.3.5 (CLANG 8.0.0 (clang-800.0.38))...
+2016-11-30T20:40:02.184605000 40.067427s notice: Running on Darwin 16.1.0 x86_64
+2016-11-30T20:40:02.184675000 40.067495s notice: Loading data from directory /Users/apple/Desktop/dream-busters/rethinkdb_data
+2016-11-30T20:40:02.206331000 40.089152s info: Automatically using cache size of 100 MB
+2016-11-30T20:40:02.206347000 40.089167s warn: Cache size does not leave much memory for server and query overhead (available memory: 719 MB).
+2016-11-30T20:40:02.206355000 40.089175s warn: Cache size is very low and may impact performance.
+2016-11-30T20:40:02.207059000 40.089880s notice: Listening for intracluster connections on port 29015
+2016-11-30T20:40:02.208844000 40.091664s notice: Listening for client driver connections on port 28015
+2016-11-30T20:40:02.208996000 40.091817s notice: Listening for administrative HTTP connections on port 8080
+2016-11-30T20:40:02.208999000 40.091819s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2016-11-30T20:40:02.209004000 40.091824s notice: Listening on driver addresses: 127.0.0.1, ::1
+2016-11-30T20:40:02.209006000 40.091826s notice: Listening on http addresses: 127.0.0.1, ::1
+2016-11-30T20:40:02.209011000 40.091831s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-11-30T20:40:02.209016000 40.091836s notice: Server ready, "SHAO_Jiuru_local_8za" 10312232-6012-45c1-a915-3a6aac50135a
+2016-11-30T20:40:56.018692000 93.899277s info: Table 5e969081-bb20-494e-a31c-2ab3e21390d1: Starting a new Raft election for term 1.
+2016-11-30T20:40:56.020519000 93.901105s info: Table 5e969081-bb20-494e-a31c-2ab3e21390d1: Added replica on this server.
+2016-11-30T20:40:56.033205000 93.913791s info: Table 5e969081-bb20-494e-a31c-2ab3e21390d1: This server is Raft leader for term 1. Latest log index is 0.
+2016-11-30T20:40:56.534731000 94.415244s info: Table 5e969081-bb20-494e-a31c-2ab3e21390d1: Configuration is changing.
+2016-11-30T20:43:36.330439000 254.204316s info: Table a2f197f1-1c22-4e21-974f-894d282e2019: Starting a new Raft election for term 1.
+2016-11-30T20:43:36.330735000 254.204612s info: Table a2f197f1-1c22-4e21-974f-894d282e2019: Added replica on this server.
+2016-11-30T20:43:36.341460000 254.215338s info: Table a2f197f1-1c22-4e21-974f-894d282e2019: This server is Raft leader for term 1. Latest log index is 0.
+2016-11-30T20:43:36.889855000 254.763660s info: Table a2f197f1-1c22-4e21-974f-894d282e2019: Configuration is changing.
