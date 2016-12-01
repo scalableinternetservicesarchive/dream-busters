@@ -16,7 +16,8 @@ class WelcomesController < ApplicationController
       @user.username = @username
     end
 
-    @editors = @user.editors.all
+    @editors = @user.editors.order(:created_at)
+    @editors = Kaminari.paginate_array(@editors).page(params[:page]).per(5)
 
   end
 

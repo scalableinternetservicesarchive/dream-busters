@@ -42,3 +42,8 @@
 2016-11-30T20:43:36.330735000 254.204612s info: Table a2f197f1-1c22-4e21-974f-894d282e2019: Added replica on this server.
 2016-11-30T20:43:36.341460000 254.215338s info: Table a2f197f1-1c22-4e21-974f-894d282e2019: This server is Raft leader for term 1. Latest log index is 0.
 2016-11-30T20:43:36.889855000 254.763660s info: Table a2f197f1-1c22-4e21-974f-894d282e2019: Configuration is changing.
+2016-11-30T21:28:20.294986000 2938.056446s notice: Server got SIGINT from pid 12728, uid 501; shutting down...
+2016-11-30T21:28:20.295335000 2938.056794s notice: Shutting down client connections...
+2016-11-30T21:28:20.295781000 2938.057240s notice: All client connections closed.
+2016-11-30T21:28:20.295791000 2938.057250s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2016-11-30T21:28:20.318083000 2938.079542s notice: Storage engine shut down.

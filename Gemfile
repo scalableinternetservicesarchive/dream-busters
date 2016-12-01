@@ -9,6 +9,8 @@ gem 'devise'
 
 gem 'gon'
 
+gem 'kaminari'
+
 gem 'twitter-bootstrap-rails'
 gem 'devise-bootstrap-views'
 

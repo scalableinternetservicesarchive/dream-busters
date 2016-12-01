@@ -6,6 +6,9 @@ class Editor < ApplicationRecord
   	has_many :users, :through => :user_editor_relationships
   	has_many :messages
 
+	max_paginates_per 10
+	paginates_per 5
+
 	def get_content
 		@hashpath = self.hashpath
 		file = File.open("/tmp/"+@hashpath+"/file.txt", "rb")

@@ -9,11 +9,11 @@
   </div>
 
   <div class="row">
-    <div class="col-lg-10 col-lg-offset-1">                 
+    <div class="col-lg-10 col-lg-offset-1">
       <div class="panel panel-info">
         <!-- Panel Heading -->
         <div class="panel-heading">
-        <h3 class="panel-title">Documents</h3>          
+          <h3 class="panel-title">Documents</h3>
         </div>
 
         <!-- Panel Body -->
@@ -21,23 +21,32 @@
           <div class="table-responsive">
             <table class="table">
               <thead>
-                <tr>
-                  <th>Filename</th>
-                  <th>Last modified time</th>
-                  <th>Action</th>
-                </tr>
+              <tr>
+                <th>Filename</th>
+                <th>Last modified time</th>
+                <th>Action</th>
+              </tr>
               </thead>
+
               <tbody>
-                <% @editors.each do |editor| %>
-                <tr>
-                  <td><%= editor.filename %></td>
-                  <td><%= editor.updated_at %></td>
-                  <td><%= link_to 'Edit', editor_path(editor), class: "btn btn-primary" %></td>
-                </tr>
-                <% end %>
+
+              <% @editors.each do |editor| %>
+                  <tr>
+                    <td><%= editor.filename %></td>
+                    <td><%= editor.updated_at %></td>
+                    <td><%= link_to 'Edit', editor_path(editor), class: "btn btn-primary" %></td>
+                  </tr>
+              <% end %>
+
               </tbody>
+
             </table>
+
           </div>
+
+          <div class="col-lg-6 col-lg-offset-5">
+          <%= paginate @editors, window: 5 %>
+            </div>
           <!-- /.table-responsive -->
         </div>
 
@@ -62,48 +71,48 @@
 
 <!-- Modal -->
 <%= form_for Editor.new, :url => create_editor_path(@editor), :html => {:method => :post} do |f| %>
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Please enter document name: </h4>
-      </div>
-      <div class="modal-body">
-        <div class="form-group">
-          <%= f.text_field :filename, autofocus: true, class: 'form-control' %>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Please enter document name: </h4>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <%= f.text_field :filename, autofocus: true, class: 'form-control' %>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <%= f.submit "Add!", class: 'btn btn-primary' %>
+          </div>
         </div>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <%= f.submit "Add!", class: 'btn btn-primary' %>
-      </div>
     </div>
-  </div>
-</div>
 <% end %>
 
 <!-- Modal -->
 <%= form_tag("/load", method: "get") do %>
-<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Please enter document ID: </h4>
-      </div>
-      <div class="modal-body">
-        <div class="form-group">
-          <%= text_field_tag(:hashpath, '', :class => 'form-control') %>
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Please enter document ID: </h4>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <%= text_field_tag(:hashpath, '', :class => 'form-control') %>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <%= button_tag(type: 'submit', class: "btn btn-large btn-search btn-primary") do %>
+                <i class="icon icon-search"></i>Load
+            <% end %>
+          </div>
         </div>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <%= button_tag(type: 'submit', class: "btn btn-large btn-search btn-primary") do %>
-          <i class="icon icon-search"></i>Load
-          <% end %>
-      </div>
     </div>
-  </div>
-</div>
 <% end %>
