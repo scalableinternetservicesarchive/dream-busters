@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   resources :editors
 
   get '/load', to: 'editors#load'
+  post '/addEditor', to: 'editors#addEditor'
   post '/editor/create' => 'editors#create', :as => :create_editor
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

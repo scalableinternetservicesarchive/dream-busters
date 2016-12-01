@@ -2,7 +2,7 @@
   <%= include_gon %>
 </head>
 
-<h3>Code Docs</h3>
+
 
 <%= stylesheet_link_tag 'custom', media: 'all' %>
 <!--include themes you want to use here-->
@@ -22,10 +22,20 @@
 <% javascript_include_tag 'ace/mode-lisp.js' %>
 <% javascript_include_tag "show" %>
 
+
 <div class="row show-grid">
+
+
+
   <div class="col-md-8" style="min-height: 594px;">
-    <div class="ace" id="ace" style="margin-left: 15px;"></div>
+    <div class="col-md-2 col-md-offset-5" style="height: 100px;">
+      <h3> <%= @editor.filename %> </h3>
+    </div>
+
+    <div class="ace" id="ace" style="margin-left: 15px; margin-top: 50px;"></div>
   </div>
+
+
 
   <div class="col-lg-4">
 
@@ -63,7 +73,24 @@
 
     <div class="panel panel-info">
       <div class="panel-heading">
-        <h3 class="panel-title">Active User</h3>
+
+        <div class="row show-grid">
+          <div class="col-lg-6">
+            <div>
+              <h4 class="panel-title">Active User</h4>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-lg-offset-4">
+            <div class="panel-title">
+              <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#myModal2">
+                Invite
+              </button>
+            </div>
+          </div>
+        </div>
+
+
       </div>
       <div class="panel-body" id="active_users">
         <div class="row show-grid">
@@ -75,7 +102,24 @@
 
     <div class="chat-panel panel panel-info">
       <div class="panel-heading">
-        <i class="glyphicon glyphicon-comment"></i> Chat
+
+
+
+        <div class="row show-grid">
+          <div class="col-lg-1">
+            <i class="glyphicon glyphicon-comment"></i>
+          </div>
+
+          <div class="col-lg-1">
+            <div class="panel-title">
+              <h4 class="panel-title">Chat</h4>
+            </div>
+          </div>
+        </div>
+
+
+
+
       </div>
       <!-- /.panel-heading -->
       <div class="chat-panel-body fixed-panel">
@@ -155,3 +199,32 @@
     }
   });
 </script>
+
+
+<%= form_tag("/addEditor", method: "post") do %>
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Please enter the user's email: </h4>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <%= text_field_tag(:email, '', :class => 'form-control') %>
+            </div>
+            <div class="form-group" style="display: none">
+              <%= text_field_tag(:id, @editor.hashpath, :class => 'form-control', :readonly => true) %>
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <%= button_tag(type: 'submit', class: "btn btn-large btn-search btn-primary") do %>
+                <i class="icon icon-search"></i>Invite
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+<% end %>

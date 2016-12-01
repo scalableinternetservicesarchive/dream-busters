@@ -12,7 +12,6 @@ class EditorsController < ApplicationController
           # if the file is in the relationship table, pass
         else
           UserEditorRelationship.create user_id: @user.id, editor_id: @editor.id
-          system("git -C /tmp/#{@editor.id} checkout -b" + @user.email)
         end
         redirect_to editor_path(@editor)
 
@@ -83,6 +82,22 @@ class EditorsController < ApplicationController
     respond_to do |format|
       format.js
     end 
+  end
+
+  def addEditor
+    @editor = Editor.where(hashpath: params[:id]).first
+    @emailtoAdd = params[:email]
+    if User.where(email: @emailtoAdd).exists?
+      @user = User.find_by_email(@emailtoAdd)
+      if UserEditorRelationship.where(user_id: @user.id, editor_id: @editor.id).exists?
+        # if the file is in the relationship table, pass
+      else
+        UserEditorRelationship.create user_id: @user.id, editor_id: @editor.id
+      end
+    else
+      flash[:error] = "This user email doesn't exist"
+    end
+    render 'editors/show'
   end
 
 end
