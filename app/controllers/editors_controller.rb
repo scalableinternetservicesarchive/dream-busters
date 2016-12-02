@@ -97,7 +97,7 @@ class EditorsController < ApplicationController
     else
       flash[:error] = "This user email doesn't exist"
     end
-    render 'editors/show'
+    redirect_to editor_path(@editor)
   end
 
 end
